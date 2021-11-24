@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head th:replace="layouts :: hlavicka">
+    <title>Seznam zaměstnanců</title>
+</head>
+<body>
+    <div class="container">
+        <nav th:replace="layouts :: navbar"></nav>
+        <h4>Zaměstnanci</h4>
+        <a th:href="@{'/zamestnanci/novy'}" class="btn btn-primary btn-sm mb-3">
+            Nový zaměstnanec
+        </a>
+        <table class="table table-bordered table-striped">
+            <thead class="thead-dark">
+            <tr>
+                <th> Jméno </th>
+                <th> Příjmení </th>
+                <th> Emailová adresa </th>
+            </tr>
+            </thead>
+            <tbody>
+            <tr th:each="zamestnanec : ${seznam}">
+                <td th:text="${zamestnanec.jmeno}"></td>
+                <td th:text="${zamestnanec.prijmeni}"></td>
+                <td th:text="${zamestnanec.email}"></td>
+            </tr>
+            </tbody>
+        </table>
+    </div>
+</body>
+</html>

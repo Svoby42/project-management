@@ -9,12 +9,22 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import svoby.spring.projectmanagement.domain.Zamestnanec;
 import svoby.spring.projectmanagement.repositories.ZamestnanecRepository;
 
+import java.util.List;
+
 @Controller
 @RequestMapping("/zamestnanci")
 public class ZamestnanecController {
 
     @Autowired
     ZamestnanecRepository zamestnanecRepository;
+
+    @GetMapping({"","/"})
+    public String zobrazitSeznamZamestnancu(Model model){
+        List<Zamestnanec> zamestnanciList = zamestnanecRepository.findAll();
+        model.addAttribute("seznam", zamestnanciList);
+
+        return "zamestnanci/zamestnanci-seznam";
+    }
 
     @GetMapping("/novy")
     public String zobrazitZamestnanecFormular(Model model){
@@ -26,7 +36,7 @@ public class ZamestnanecController {
     @PostMapping("/ulozit")
     public String vytvoritZamestnance(Zamestnanec zamestnanec, Model model){
         zamestnanecRepository.save(zamestnanec);
-        return "redirect:/zamestnanci/novy";
+        return "redirect:/zamestnanci";
     }
 
 }
