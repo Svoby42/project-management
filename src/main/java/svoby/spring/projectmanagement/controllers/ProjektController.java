@@ -23,7 +23,7 @@ public class ProjektController {
         Projekt projekt = new Projekt();
         model.addAttribute("projekt", projekt);
 
-        return "novy-projekt";
+        return "projekty/novy-projekt";
     }
 
     @PostMapping("/ulozit")

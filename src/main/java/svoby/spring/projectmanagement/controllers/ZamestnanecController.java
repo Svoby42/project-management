@@ -20,7 +20,7 @@ public class ZamestnanecController {
     public String zobrazitZamestnanecFormular(Model model){
         Zamestnanec zamestnanec = new Zamestnanec();
         model.addAttribute("zamestnanec", zamestnanec);
-        return "novy-zamestnanec";
+        return "zamestnanci/novy-zamestnanec";
     }
 
     @PostMapping("/ulozit")
