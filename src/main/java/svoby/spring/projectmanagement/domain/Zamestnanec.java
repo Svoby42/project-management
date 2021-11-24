@@ -1,9 +1,6 @@
 package svoby.spring.projectmanagement.domain;
 
-import javax.persistence.Entity;
-import javax.persistence.GeneratedValue;
-import javax.persistence.GenerationType;
-import javax.persistence.Id;
+import javax.persistence.*;
 
 @Entity
 public class Zamestnanec {
@@ -16,6 +13,9 @@ public class Zamestnanec {
     private String prijmeni;
     private String email;
 
+    @ManyToOne
+    @JoinColumn(name = "projekt_id")
+    private Projekt projekt;
 
     public Zamestnanec(){
 
