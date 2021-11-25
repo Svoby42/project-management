@@ -59,4 +59,12 @@ public class Projekt {
     public void setPopis(String popis) {
         this.popis = popis;
     }
+
+    public List<Zamestnanec> getZamestnanci() {
+        return zamestnanci;
+    }
+
+    public void setZamestnanci(List<Zamestnanec> zamestnanci) {
+        this.zamestnanci = zamestnanci;
+    }
 }

@@ -13,7 +13,7 @@ public class Zamestnanec {
     private String prijmeni;
     private String email;
 
-    @ManyToOne
+    @ManyToOne(cascade = {CascadeType.DETACH, CascadeType.MERGE, CascadeType.REFRESH, CascadeType.PERSIST}, fetch = FetchType.LAZY)
     @JoinColumn(name = "projekt_id")
     private Projekt projekt;
 
@@ -57,5 +57,13 @@ public class Zamestnanec {
 
     public void setEmail(String email) {
         this.email = email;
+    }
+
+    public Projekt getProjekt() {
+        return projekt;
+    }
+
+    public void setProjekt(Projekt projekt) {
+        this.projekt = projekt;
     }
 }
