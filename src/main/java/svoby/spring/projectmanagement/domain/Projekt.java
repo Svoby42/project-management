@@ -1,13 +1,14 @@
 package svoby.spring.projectmanagement.domain;
 
 import javax.persistence.*;
+import java.util.ArrayList;
 import java.util.List;
 
 @Entity
 public class Projekt {
 
     @Id
-    @GeneratedValue(strategy = GenerationType.AUTO)
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
     private long projektId;
 
     private String nazev;
@@ -70,4 +71,13 @@ public class Projekt {
     public void setZamestnanci(List<Zamestnanec> zamestnanci) {
         this.zamestnanci = zamestnanci;
     }
+
+    public void pridatZamestnance(Zamestnanec zamestnanec){
+        if(zamestnanci == null){
+            zamestnanci = new ArrayList<>();
+        }
+        zamestnanci.add(zamestnanec);
+
+    }
+
 }
