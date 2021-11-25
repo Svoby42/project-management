@@ -44,11 +44,9 @@ public class ProjektController {
     }
 
     @PostMapping("/ulozit")
-    public String vytvoritProjekt(Projekt projekt, @RequestParam List<Long> zamestnanci, Model model){
+    public String vytvoritProjekt(Projekt projekt, Model model){
 
         projektRepository.save(projekt);
-        Iterable<Zamestnanec> vybraniZamestnanci = zamestnanecRepository.findAllById(zamestnanci);
-        vybraniZamestnanci.forEach(zamestnanec -> { zamestnanec.setProjekt(projekt); zamestnanecRepository.save(zamestnanec); });
 
         return "redirect:/projekty";
     }

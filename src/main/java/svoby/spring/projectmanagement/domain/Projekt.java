@@ -14,7 +14,10 @@ public class Projekt {
     private String stav;
     private String popis;
 
-    @OneToMany(mappedBy = "projekt")
+    @ManyToMany(cascade = {CascadeType.DETACH, CascadeType.MERGE, CascadeType.REFRESH, CascadeType.PERSIST}, fetch = FetchType.LAZY)
+    @JoinTable(name = "projekt_zamestnanec",
+            joinColumns = @JoinColumn(name = "projekt_id"),
+            inverseJoinColumns = @JoinColumn(name = "zamestnanec_id"))
     private List<Zamestnanec> zamestnanci;
 
     public Projekt(){

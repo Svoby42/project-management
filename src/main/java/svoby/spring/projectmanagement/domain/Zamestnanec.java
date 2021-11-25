@@ -1,6 +1,7 @@
 package svoby.spring.projectmanagement.domain;
 
 import javax.persistence.*;
+import java.util.List;
 
 @Entity
 public class Zamestnanec {
@@ -13,9 +14,11 @@ public class Zamestnanec {
     private String prijmeni;
     private String email;
 
-    @ManyToOne(cascade = {CascadeType.DETACH, CascadeType.MERGE, CascadeType.REFRESH, CascadeType.PERSIST}, fetch = FetchType.LAZY)
-    @JoinColumn(name = "projekt_id")
-    private Projekt projekt;
+    @ManyToMany(cascade = {CascadeType.DETACH, CascadeType.MERGE, CascadeType.REFRESH, CascadeType.PERSIST}, fetch = FetchType.LAZY)
+    @JoinTable(name = "projekt_zamestnanec",
+            joinColumns = @JoinColumn(name = "zamestnanec_id"),
+            inverseJoinColumns = @JoinColumn(name = "projekt_id"))
+    private List<Projekt> projekty;
 
     public Zamestnanec(){
 
@@ -59,11 +62,11 @@ public class Zamestnanec {
         this.email = email;
     }
 
-    public Projekt getProjekt() {
-        return projekt;
+    public List<Projekt> getProjekty() {
+        return projekty;
     }
 
-    public void setProjekt(Projekt projekt) {
-        this.projekt = projekt;
+    public void setProjekty(List<Projekt> projekty) {
+        this.projekty = projekty;
     }
 }
