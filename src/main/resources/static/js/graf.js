@@ -17,11 +17,20 @@ new Chart(document.getElementById("graf"), {
     type: 'pie',
     // The data for our dataset
     data: {
-        labels: labelData,
+        labels: [
+            'Red',
+            'Blue',
+            'Yellow'
+        ],
         datasets: [{
             label: 'Dataset',
-            backgroundColor: ["#3e95cd", "#8e5ea2", "#3cba9f"],
-            data: numericData
+            data: [300, 50, 100],
+            backgroundColor: [
+                'rgb(255, 99, 132)',
+                'rgb(54, 162, 235)',
+                'rgb(255, 205, 86)'
+            ],
+            hoverOffset: 4
         }]
     },
 
@@ -34,9 +43,3 @@ new Chart(document.getElementById("graf"), {
 
     }
 });
-
-function decodeHtml(html){
-    var txt = document.createElement("textarea");
-    txt.innerHTML = html;
-    return txt.value;
-}

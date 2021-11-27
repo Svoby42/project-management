@@ -44,14 +44,14 @@
                         <tr>
                             <th> Jméno </th>
                             <th> Příjmení </th>
-                            <th> Emailová adresa </th>
+                            <th> Počet projektů </th>
                         </tr>
                         </thead>
                         <tbody>
-                        <tr th:each="zamestnanec : ${zamestnanciList}">
+                        <tr th:each="zamestnanec : ${zamestnanciListProjektyPocet}">
                             <td th:text="${zamestnanec.jmeno}"></td>
                             <td th:text="${zamestnanec.prijmeni}"></td>
-                            <td th:text="${zamestnanec.email}"></td>
+                            <td th:text="${zamestnanec.projektPocet}"></td>
                         </tr>
                         </tbody>
                     </table>

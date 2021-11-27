@@ -19,7 +19,7 @@ insert into projekt (projekt_id, nazev, stav, popis) values (1007, 'Kondiciogram
 
 insert into projekt_zamestnanec (zamestnanec_id, projekt_id) values (4, 1000);
 insert into projekt_zamestnanec (zamestnanec_id, projekt_id) values (6, 1001);
-insert into projekt_zamestnanec (zamestnanec_id, projekt_id) values (7, 1002);
+insert into projekt_zamestnanec (zamestnanec_id, projekt_id) values (8, 1002);
 insert into projekt_zamestnanec (zamestnanec_id, projekt_id) values (9, 1003);
 insert into projekt_zamestnanec (zamestnanec_id, projekt_id) values (3, 1004);
 insert into projekt_zamestnanec (zamestnanec_id, projekt_id) values (2, 1005);
