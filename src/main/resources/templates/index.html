@@ -2,49 +2,54 @@
 <html lang="en" xmlns:th="http://www.thymeleaf.org">
 
 <head th:replace="layouts :: hlavicka">
-
+    <title>Domovská stránka</title>
 </head>
-
 <body>
-<div class="container">
-    <nav th:replace="layouts :: navbar"></nav>
-    <h4>Projekty</h4>
-    <table class="table table-bordered table-striped">
-        <thead class="thead-dark">
-            <tr>
-                <th> Název projektu </th>
-                <th> Stav projektu </th>
-                <th> Popis projektu </th>
+    <div class="container">
+        <nav th:replace="layouts :: navbar"></nav>
+        <h4>Projekty</h4>
+        <table class="table table-bordered table-striped">
+            <thead class="thead-dark">
+                <tr>
+                    <th> Název projektu </th>
+                    <th> Stav projektu </th>
+                    <th> Popis projektu </th>
+                </tr>
+            </thead>
+            <tbody>
+            <tr th:each="projekt : ${projektyList}">
+                <td th:text="${projekt.nazev}"></td>
+                <td th:text="${projekt.stav}"></td>
+                <td th:text="${projekt.popis}"></td>
             </tr>
-        </thead>
-        <tbody>
-        <tr th:each="projekt : ${projektyList}">
-            <td th:text="${projekt.nazev}"></td>
-            <td th:text="${projekt.stav}"></td>
-            <td th:text="${projekt.popis}"></td>
-        </tr>
-        </tbody>
-    </table>
+            </tbody>
+        </table>
 
-    <h4>Zaměstnanci</h4>
-    <table class="table table-bordered table-striped">
-        <thead class="thead-dark">
-        <tr>
-            <th> Jméno </th>
-            <th> Příjmení </th>
-            <th> Emailová adresa </th>
-        </tr>
-        </thead>
-        <tbody>
-        <tr th:each="zamestnanec : ${zamestnanciList}">
-            <td th:text="${zamestnanec.jmeno}"></td>
-            <td th:text="${zamestnanec.prijmeni}"></td>
-            <td th:text="${zamestnanec.email}"></td>
-        </tr>
-        </tbody>
-    </table>
-</div>
+        <h4>Zaměstnanci</h4>
+        <table class="table table-bordered table-striped">
+            <thead class="thead-dark">
+            <tr>
+                <th> Jméno </th>
+                <th> Příjmení </th>
+                <th> Emailová adresa </th>
+            </tr>
+            </thead>
+            <tbody>
+            <tr th:each="zamestnanec : ${zamestnanciList}">
+                <td th:text="${zamestnanec.jmeno}"></td>
+                <td th:text="${zamestnanec.prijmeni}"></td>
+                <td th:text="${zamestnanec.email}"></td>
+            </tr>
+            </tbody>
+        </table>
+    </div>
 
+    <dív class="col-md-4">
+        <canvas id="graf" height="50" width="50">
+
+        </canvas>
+    </dív>
+<script type="text/javascript" th:src="@{js/graf.js}"></script>
 <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
 <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
