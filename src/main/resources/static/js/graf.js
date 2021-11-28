@@ -1,27 +1,22 @@
+var grafDataStr = decodeHtml(grafData);
+var grafJsonArray = JSON.parse(grafDataStr);
 
-var chartDataStr = decodeHtml(chartData);
-var chartJsonArray = JSON.parse(chartDataStr);
-
-var arrayLength = chartJsonArray.length;
+var arrayLength = grafJsonArray.length;
 
 var numericData = [];
 var labelData = [];
 
-for(var i=0; i < arrayLength; i++){
-    numericData[i] = chartJsonArray[i].value;
-    labelData[i] = chartJsonArray[i].label;
+for(var i = 0; i < arrayLength; i++){
+    numericData[i] = grafJsonArray[i].pocet;
+    labelData[i] = grafJsonArray[i].stav;
 }
 
-// For a pie chart
+
 new Chart(document.getElementById("graf"), {
     type: 'pie',
     // The data for our dataset
     data: {
-        labels: [
-            'Red',
-            'Blue',
-            'Yellow'
-        ],
+        labels: labelData,
         datasets: [{
             label: 'Dataset',
             data: [300, 50, 100],
@@ -30,16 +25,20 @@ new Chart(document.getElementById("graf"), {
                 'rgb(54, 162, 235)',
                 'rgb(255, 205, 86)'
             ],
-            hoverOffset: 4
+            data: numericData
         }]
     },
-
-    // Configuration options go here
     options: {
         title: {
             display: true,
-            text: 'Project Statuses'
+            text: "Stavy projektů"
         }
-
     }
 });
+
+// [{"value":1, "label": "Nezahájen"}, {"value":2,"label": "Ve vývoji"}, {"value":3, "label": "Hotovo"}]
+function decodeHtml(html){
+    var txt = document.createElement("textarea");
+    txt.innerHTML = html;
+    return txt.value;
+}
