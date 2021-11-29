@@ -7,7 +7,7 @@ import java.util.List;
 public class Zamestnanec {
 
     @Id
-    @GeneratedValue(strategy = GenerationType.IDENTITY)
+    @GeneratedValue(strategy = GenerationType.SEQUENCE, generator = "zamestnanec_seq")
     private long zamestnanecId;
 
     private String jmeno;

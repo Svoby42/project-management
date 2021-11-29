@@ -3,6 +3,7 @@ package svoby.spring.projectmanagement.controllers;
 import com.fasterxml.jackson.core.JsonProcessingException;
 import com.fasterxml.jackson.databind.ObjectMapper;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.beans.factory.annotation.Value;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.GetMapping;
@@ -18,6 +19,9 @@ import java.util.*;
 @Controller
 public class IndexController {
 
+    @Value("${version}")
+    private String verze;
+
     @Autowired
     ProjektRepository projektRepository;
 
@@ -26,6 +30,8 @@ public class IndexController {
 
     @GetMapping({"", "/", "/index"})
     public String zobrazitIndex(Model model) throws JsonProcessingException {
+
+        model.addAttribute("verzeCislo", verze);
 
         Map<String, Object> map = new HashMap<>();
         List<Projekt> projekty = projektRepository.findAll();

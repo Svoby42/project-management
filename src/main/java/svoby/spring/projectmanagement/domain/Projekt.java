@@ -8,7 +8,7 @@ import java.util.List;
 public class Projekt {
 
     @Id
-    @GeneratedValue(strategy = GenerationType.IDENTITY)
+    @GeneratedValue(strategy = GenerationType.SEQUENCE, generator = "projekt_seq")
     private long projektId;
 
     private String nazev;
