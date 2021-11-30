@@ -1,0 +1,148 @@
+2021-11-30 20:36:22.889  INFO 23264 --- [restartedMain] s.s.p.ProjectManagementApplication       : Starting ProjectManagementApplication on svobypc with PID 23264 (/home/svoby/Documents/project-management/target/classes started by svoby in /home/svoby/Documents/project-management)
+2021-11-30 20:36:22.893 DEBUG 23264 --- [restartedMain] s.s.p.ProjectManagementApplication       : Running with Spring Boot v2.1.0.RELEASE, Spring v5.1.2.RELEASE
+2021-11-30 20:36:22.895  INFO 23264 --- [restartedMain] s.s.p.ProjectManagementApplication       : The following profiles are active: dev
+2021-11-30 20:36:26.176  WARN 23264 --- [restartedMain] aWebConfiguration$JpaWebMvcConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2021-11-30 20:36:26.430  INFO 23264 --- [restartedMain] s.s.p.ProjectManagementApplication       : Started ProjectManagementApplication in 4.172 seconds (JVM running for 5.415)
+2021-11-30 20:36:34.597 DEBUG 23264 --- [http-nio-8080-exec-1] s.s.p.logging.ApplicationLoggerAspect    : 
+ ------------------------------------------ 
+2021-11-30 20:36:34.602 DEBUG 23264 --- [http-nio-8080-exec-1] s.s.p.logging.ApplicationLoggerAspect    :  Před metodou 
+ svoby.spring.projectmanagement.controllers.IndexController, zobrazitIndex () with arguments[s] = [{}]
+2021-11-30 20:36:34.603 DEBUG 23264 --- [http-nio-8080-exec-1] s.s.p.logging.ApplicationLoggerAspect    :  ---------------------------------------------- 
+ 
+ 
+
+2021-11-30 20:36:34.898 DEBUG 23264 --- [http-nio-8080-exec-1] s.s.p.logging.ApplicationLoggerAspect    :  Po metodě 
+ svoby.spring.projectmanagement.controllers.IndexController, zobrazitIndex () with arguments[s] = [{verzeCislo=0.0.1, projektStatusPocet=[], projektyList=[], zamestnanciListProjektyPocet=[]}]
+2021-11-30 20:36:34.899 DEBUG 23264 --- [http-nio-8080-exec-1] s.s.p.logging.ApplicationLoggerAspect    :  ---------------------------------------------- 
+ 
+ 
+
+2021-11-30 20:37:24.194  INFO 23522 --- [restartedMain] s.s.p.ProjectManagementApplication       : Starting ProjectManagementApplication on svobypc with PID 23522 (/home/svoby/Documents/project-management/target/classes started by svoby in /home/svoby/Documents/project-management)
+2021-11-30 20:37:24.197 DEBUG 23522 --- [restartedMain] s.s.p.ProjectManagementApplication       : Running with Spring Boot v2.1.0.RELEASE, Spring v5.1.2.RELEASE
+2021-11-30 20:37:24.199  INFO 23522 --- [restartedMain] s.s.p.ProjectManagementApplication       : The following profiles are active: dev
+2021-11-30 20:37:27.593  WARN 23522 --- [restartedMain] aWebConfiguration$JpaWebMvcConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2021-11-30 20:37:28.056  INFO 23522 --- [restartedMain] s.s.p.ProjectManagementApplication       : Started ProjectManagementApplication in 4.469 seconds (JVM running for 5.945)
+2021-11-30 20:39:38.023  INFO 23722 --- [restartedMain] s.s.p.ProjectManagementApplication       : Starting ProjectManagementApplication on svobypc with PID 23722 (/home/svoby/Documents/project-management/target/classes started by svoby in /home/svoby/Documents/project-management)
+2021-11-30 20:39:38.030 DEBUG 23722 --- [restartedMain] s.s.p.ProjectManagementApplication       : Running with Spring Boot v2.1.0.RELEASE, Spring v5.1.2.RELEASE
+2021-11-30 20:39:38.032  INFO 23722 --- [restartedMain] s.s.p.ProjectManagementApplication       : The following profiles are active: dev
+2021-11-30 20:39:38.111  INFO 23722 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2021-11-30 20:39:38.111  INFO 23722 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2021-11-30 20:39:39.005  INFO 23722 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data repositories in DEFAULT mode.
+2021-11-30 20:39:39.054  INFO 23722 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 44ms. Found 2 repository interfaces.
+2021-11-30 20:39:39.423  INFO 23722 --- [restartedMain] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$782c137b] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2021-11-30 20:39:39.792  INFO 23722 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2021-11-30 20:39:39.814  INFO 23722 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2021-11-30 20:39:39.814  INFO 23722 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet Engine: Apache Tomcat/9.0.12
+2021-11-30 20:39:39.823  INFO 23722 --- [restartedMain] o.a.catalina.core.AprLifecycleListener   : The APR based Apache Tomcat Native library which allows optimal performance in production environments was not found on the java.library.path: [/usr/java/packages/lib:/usr/lib64:/lib64:/lib:/usr/lib]
+2021-11-30 20:39:39.900  INFO 23722 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2021-11-30 20:39:39.900  INFO 23722 --- [restartedMain] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 1789 ms
+2021-11-30 20:39:39.942  INFO 23722 --- [restartedMain] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'characterEncodingFilter' to: [/*]
+2021-11-30 20:39:39.942  INFO 23722 --- [restartedMain] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+2021-11-30 20:39:39.943  INFO 23722 --- [restartedMain] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'formContentFilter' to: [/*]
+2021-11-30 20:39:39.943  INFO 23722 --- [restartedMain] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'requestContextFilter' to: [/*]
+2021-11-30 20:39:39.944  INFO 23722 --- [restartedMain] .s.DelegatingFilterProxyRegistrationBean : Mapping filter: 'springSecurityFilterChain' to: [/*]
+2021-11-30 20:39:39.944  INFO 23722 --- [restartedMain] o.s.b.w.servlet.ServletRegistrationBean  : Servlet dispatcherServlet mapped to [/]
+2021-11-30 20:39:39.945  INFO 23722 --- [restartedMain] o.s.b.w.servlet.ServletRegistrationBean  : Servlet webServlet mapped to [/h2-console/*]
+2021-11-30 20:39:40.094  INFO 23722 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2021-11-30 20:39:40.189  INFO 23722 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2021-11-30 20:39:40.230  INFO 23722 --- [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [
+	name: default
+	...]
+2021-11-30 20:39:40.266  INFO 23722 --- [restartedMain] org.hibernate.Version                    : HHH000412: Hibernate Core {5.3.7.Final}
+2021-11-30 20:39:40.267  INFO 23722 --- [restartedMain] org.hibernate.cfg.Environment            : HHH000206: hibernate.properties not found
+2021-11-30 20:39:40.363  INFO 23722 --- [restartedMain] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.0.4.Final}
+2021-11-30 20:39:40.440  INFO 23722 --- [restartedMain] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.H2Dialect
+2021-11-30 20:39:40.876  INFO 23722 --- [restartedMain] o.h.t.schema.internal.SchemaCreatorImpl  : HHH000476: Executing import script 'org.hibernate.tool.schema.internal.exec.ScriptSourceInputNonExistentImpl@362b01c'
+2021-11-30 20:39:40.878  INFO 23722 --- [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2021-11-30 20:39:40.916  INFO 23722 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2021-11-30 20:39:41.344  INFO 23722 --- [restartedMain] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2021-11-30 20:39:41.393  WARN 23722 --- [restartedMain] aWebConfiguration$JpaWebMvcConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2021-11-30 20:39:41.510  INFO 23722 --- [restartedMain] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page template: index
+2021-11-30 20:39:41.658  INFO 23722 --- [restartedMain] .s.s.UserDetailsServiceAutoConfiguration : 
+
+Using generated security password: 81963646-6bf6-4589-940e-b9f83b7b6269
+
+2021-11-30 20:39:41.740  INFO 23722 --- [restartedMain] o.s.s.web.DefaultSecurityFilterChain     : Creating filter chain: any request, [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@1b602beb, org.springframework.security.web.context.SecurityContextPersistenceFilter@5938fa21, org.springframework.security.web.header.HeaderWriterFilter@1f0218a8, org.springframework.security.web.csrf.CsrfFilter@24f85377, org.springframework.security.web.authentication.logout.LogoutFilter@2aebaaba, org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter@193305f, org.springframework.security.web.authentication.ui.DefaultLoginPageGeneratingFilter@5abf9758, org.springframework.security.web.authentication.ui.DefaultLogoutPageGeneratingFilter@551e8e84, org.springframework.security.web.authentication.www.BasicAuthenticationFilter@48047f36, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@2feb08f8, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@166f6b75, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@2d69330, org.springframework.security.web.session.SessionManagementFilter@2aa496fa, org.springframework.security.web.access.ExceptionTranslationFilter@4d32e1a9, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@654220f6]
+2021-11-30 20:39:41.846  INFO 23722 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2021-11-30 20:39:41.851  INFO 23722 --- [restartedMain] s.s.p.ProjectManagementApplication       : Started ProjectManagementApplication in 4.506 seconds (JVM running for 5.894)
+2021-11-30 20:39:51.042  INFO 23722 --- [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2021-11-30 20:39:51.042  INFO 23722 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2021-11-30 20:39:51.051  INFO 23722 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 9 ms
+2021-11-30 20:39:54.863 DEBUG 23722 --- [http-nio-8080-exec-3] s.s.p.logging.ApplicationLoggerAspect    : 
+ ------------------------------------------ 
+2021-11-30 20:39:54.864 DEBUG 23722 --- [http-nio-8080-exec-3] s.s.p.logging.ApplicationLoggerAspect    :  Před metodou 
+ svoby.spring.projectmanagement.controllers.IndexController, zobrazitIndex () with arguments[s] = [{}]
+2021-11-30 20:39:54.865 DEBUG 23722 --- [http-nio-8080-exec-3] s.s.p.logging.ApplicationLoggerAspect    :  ---------------------------------------------- 
+ 
+ 
+
+2021-11-30 20:39:54.898  INFO 23722 --- [http-nio-8080-exec-3] o.h.h.i.QueryTranslatorFactoryInitiator  : HHH000397: Using ASTQueryTranslatorFactory
+2021-11-30 20:39:55.000 DEBUG 23722 --- [http-nio-8080-exec-3] s.s.p.logging.ApplicationLoggerAspect    :  Po metodě 
+ svoby.spring.projectmanagement.controllers.IndexController, zobrazitIndex () with arguments[s] = [{verzeCislo=0.0.1, projektStatusPocet=[], projektyList=[], zamestnanciListProjektyPocet=[]}]
+2021-11-30 20:39:55.000 DEBUG 23722 --- [http-nio-8080-exec-3] s.s.p.logging.ApplicationLoggerAspect    :  ---------------------------------------------- 
+ 
+ 
+
+2021-11-30 20:46:34.312  INFO 23722 --- [Thread-9] o.s.s.concurrent.ThreadPoolTaskExecutor  : Shutting down ExecutorService 'applicationTaskExecutor'
+2021-11-30 20:46:34.314  INFO 23722 --- [Thread-9] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2021-11-30 20:46:34.315  INFO 23722 --- [Thread-9] .SchemaDropperImpl$DelayedDropActionImpl : HHH000477: Starting delayed evictData of schema as part of SessionFactory shut-down'
+2021-11-30 20:46:34.333  INFO 23722 --- [Thread-9] o.s.b.f.support.DisposableBeanAdapter    : Invocation of destroy method failed on bean with name 'inMemoryDatabaseShutdownExecutor': org.h2.jdbc.JdbcSQLException: Database is already closed (to disable automatic closing at VM shutdown, add ";DB_CLOSE_ON_EXIT=FALSE" to the db URL) [90121-197]
+2021-11-30 20:46:34.334  INFO 23722 --- [Thread-9] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2021-11-30 20:46:34.346  INFO 23722 --- [Thread-9] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2021-11-30 20:46:44.024  INFO 24052 --- [restartedMain] s.s.p.ProjectManagementApplication       : Starting ProjectManagementApplication on svobypc with PID 24052 (/home/svoby/Documents/project-management/target/classes started by svoby in /home/svoby/Documents/project-management)
+2021-11-30 20:46:44.028 DEBUG 24052 --- [restartedMain] s.s.p.ProjectManagementApplication       : Running with Spring Boot v2.1.0.RELEASE, Spring v5.1.2.RELEASE
+2021-11-30 20:46:44.030  INFO 24052 --- [restartedMain] s.s.p.ProjectManagementApplication       : The following profiles are active: dev
+2021-11-30 20:46:44.103  INFO 24052 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2021-11-30 20:46:44.104  INFO 24052 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2021-11-30 20:46:44.982  INFO 24052 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data repositories in DEFAULT mode.
+2021-11-30 20:46:45.036  INFO 24052 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 47ms. Found 2 repository interfaces.
+2021-11-30 20:46:45.391  INFO 24052 --- [restartedMain] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$90f683b5] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2021-11-30 20:46:45.758  INFO 24052 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2021-11-30 20:46:45.774  INFO 24052 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2021-11-30 20:46:45.774  INFO 24052 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet Engine: Apache Tomcat/9.0.12
+2021-11-30 20:46:45.782  INFO 24052 --- [restartedMain] o.a.catalina.core.AprLifecycleListener   : The APR based Apache Tomcat Native library which allows optimal performance in production environments was not found on the java.library.path: [/usr/java/packages/lib:/usr/lib64:/lib64:/lib:/usr/lib]
+2021-11-30 20:46:45.859  INFO 24052 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2021-11-30 20:46:45.860  INFO 24052 --- [restartedMain] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 1755 ms
+2021-11-30 20:46:45.904  INFO 24052 --- [restartedMain] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'characterEncodingFilter' to: [/*]
+2021-11-30 20:46:45.905  INFO 24052 --- [restartedMain] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+2021-11-30 20:46:45.905  INFO 24052 --- [restartedMain] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'formContentFilter' to: [/*]
+2021-11-30 20:46:45.905  INFO 24052 --- [restartedMain] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'requestContextFilter' to: [/*]
+2021-11-30 20:46:45.906  INFO 24052 --- [restartedMain] .s.DelegatingFilterProxyRegistrationBean : Mapping filter: 'springSecurityFilterChain' to: [/*]
+2021-11-30 20:46:45.906  INFO 24052 --- [restartedMain] o.s.b.w.servlet.ServletRegistrationBean  : Servlet dispatcherServlet mapped to [/]
+2021-11-30 20:46:45.907  INFO 24052 --- [restartedMain] o.s.b.w.servlet.ServletRegistrationBean  : Servlet webServlet mapped to [/h2-console/*]
+2021-11-30 20:46:46.022  INFO 24052 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2021-11-30 20:46:46.101  INFO 24052 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2021-11-30 20:46:46.143  INFO 24052 --- [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [
+	name: default
+	...]
+2021-11-30 20:46:46.176  INFO 24052 --- [restartedMain] org.hibernate.Version                    : HHH000412: Hibernate Core {5.3.7.Final}
+2021-11-30 20:46:46.177  INFO 24052 --- [restartedMain] org.hibernate.cfg.Environment            : HHH000206: hibernate.properties not found
+2021-11-30 20:46:46.262  INFO 24052 --- [restartedMain] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.0.4.Final}
+2021-11-30 20:46:46.338  INFO 24052 --- [restartedMain] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.H2Dialect
+2021-11-30 20:46:46.860  INFO 24052 --- [restartedMain] o.h.t.schema.internal.SchemaCreatorImpl  : HHH000476: Executing import script 'org.hibernate.tool.schema.internal.exec.ScriptSourceInputNonExistentImpl@d2eedc3'
+2021-11-30 20:46:46.864  INFO 24052 --- [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2021-11-30 20:46:46.912  INFO 24052 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2021-11-30 20:46:47.371  INFO 24052 --- [restartedMain] o.s.s.web.DefaultSecurityFilterChain     : Creating filter chain: any request, [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@3b617639, org.springframework.security.web.context.SecurityContextPersistenceFilter@75c76a8a, org.springframework.security.web.header.HeaderWriterFilter@3ed03683, org.springframework.security.web.csrf.CsrfFilter@435ba6d2, org.springframework.security.web.authentication.logout.LogoutFilter@4bdc4bfc, org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter@17c17c03, org.springframework.security.web.authentication.ui.DefaultLoginPageGeneratingFilter@51810041, org.springframework.security.web.authentication.ui.DefaultLogoutPageGeneratingFilter@59efe4bb, org.springframework.security.web.authentication.www.BasicAuthenticationFilter@69cd2694, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@347dad07, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@1b3afbc3, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@71fae028, org.springframework.security.web.session.SessionManagementFilter@34821589, org.springframework.security.web.access.ExceptionTranslationFilter@1441dc00, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@2526c2ac]
+2021-11-30 20:46:47.556  INFO 24052 --- [restartedMain] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2021-11-30 20:46:47.584  WARN 24052 --- [restartedMain] aWebConfiguration$JpaWebMvcConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2021-11-30 20:46:47.674  INFO 24052 --- [restartedMain] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page template: index
+2021-11-30 20:46:47.808  INFO 24052 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2021-11-30 20:46:47.812  INFO 24052 --- [restartedMain] s.s.p.ProjectManagementApplication       : Started ProjectManagementApplication in 4.234 seconds (JVM running for 5.62)
+2021-11-30 20:47:02.240  INFO 24052 --- [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2021-11-30 20:47:02.241  INFO 24052 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2021-11-30 20:47:02.248  INFO 24052 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 7 ms
+2021-11-30 20:47:06.792 DEBUG 24052 --- [http-nio-8080-exec-4] s.s.p.logging.ApplicationLoggerAspect    : 
+ ------------------------------------------ 
+2021-11-30 20:47:06.793 DEBUG 24052 --- [http-nio-8080-exec-4] s.s.p.logging.ApplicationLoggerAspect    :  Před metodou 
+ svoby.spring.projectmanagement.controllers.IndexController, zobrazitIndex () with arguments[s] = [{}]
+2021-11-30 20:47:06.794 DEBUG 24052 --- [http-nio-8080-exec-4] s.s.p.logging.ApplicationLoggerAspect    :  ---------------------------------------------- 
+ 
+ 
+
+2021-11-30 20:47:06.835  INFO 24052 --- [http-nio-8080-exec-4] o.h.h.i.QueryTranslatorFactoryInitiator  : HHH000397: Using ASTQueryTranslatorFactory
+2021-11-30 20:47:06.930 DEBUG 24052 --- [http-nio-8080-exec-4] s.s.p.logging.ApplicationLoggerAspect    :  Po metodě 
+ svoby.spring.projectmanagement.controllers.IndexController, zobrazitIndex () with arguments[s] = [{verzeCislo=0.0.1, projektStatusPocet=[], projektyList=[], zamestnanciListProjektyPocet=[]}]
+2021-11-30 20:47:06.930 DEBUG 24052 --- [http-nio-8080-exec-4] s.s.p.logging.ApplicationLoggerAspect    :  ---------------------------------------------- 
+ 
+ 
+
