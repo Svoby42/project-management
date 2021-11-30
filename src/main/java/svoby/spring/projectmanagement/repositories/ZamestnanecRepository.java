@@ -15,6 +15,6 @@ public interface ZamestnanecRepository extends CrudRepository<Zamestnanec, Long>
     @Query(nativeQuery = true, value = "select z.jmeno, z.prijmeni, COUNT(pz.zamestnanec_id) as projektPocet " +
             "from zamestnanec z left join projekt_zamestnanec pz ON pz.zamestnanec_id = z.zamestnanec_id " +
             "group by z.jmeno, z.prijmeni order by 3 desc")
-    public List<ZamestnanecProjekt> zamestnanciProjekty();
+    public List<ZamestnanecProjekt> zamestnanecProjekty();
 
 }

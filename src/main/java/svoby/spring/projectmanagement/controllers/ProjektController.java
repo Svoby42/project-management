@@ -11,6 +11,8 @@ import svoby.spring.projectmanagement.domain.Projekt;
 import svoby.spring.projectmanagement.domain.Zamestnanec;
 import svoby.spring.projectmanagement.repositories.ProjektRepository;
 import svoby.spring.projectmanagement.repositories.ZamestnanecRepository;
+import svoby.spring.projectmanagement.services.ProjektService;
+import svoby.spring.projectmanagement.services.ZamestnanecService;
 
 import java.util.List;
 
@@ -19,14 +21,14 @@ import java.util.List;
 public class ProjektController {
 
     @Autowired
-    ProjektRepository projektRepository;
+    ProjektService projektService;
 
     @Autowired
-    ZamestnanecRepository zamestnanecRepository;
+    ZamestnanecService zamestnanecService;
 
     @GetMapping({"","/"})
     public String zobrazitSeznamProjektu(Model model){
-        List<Projekt> projektList = projektRepository.findAll();
+        List<Projekt> projektList = projektService.getAll();
         model.addAttribute("seznam", projektList);
 
         return "projekty/projekty-seznam";
@@ -36,7 +38,7 @@ public class ProjektController {
     public String zobrazitProjektFormular(Model model){
 
         Projekt projekt = new Projekt();
-        List<Zamestnanec> zamestnanci = zamestnanecRepository.findAll();
+        List<Zamestnanec> zamestnanci = zamestnanecService.getAll();
         model.addAttribute("projekt", projekt);
         model.addAttribute("zamestnanciList", zamestnanci);
 
@@ -46,7 +48,7 @@ public class ProjektController {
     @PostMapping("/ulozit")
     public String vytvoritProjekt(Projekt projekt, Model model){
 
-        projektRepository.save(projekt);
+        projektService.save(projekt);
 
         return "redirect:/projekty";
     }

@@ -8,6 +8,7 @@ import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
 import svoby.spring.projectmanagement.domain.Zamestnanec;
 import svoby.spring.projectmanagement.repositories.ZamestnanecRepository;
+import svoby.spring.projectmanagement.services.ZamestnanecService;
 
 import java.util.List;
 
@@ -16,11 +17,11 @@ import java.util.List;
 public class ZamestnanecController {
 
     @Autowired
-    ZamestnanecRepository zamestnanecRepository;
+    ZamestnanecService zamestnanecService;
 
     @GetMapping({"","/"})
     public String zobrazitSeznamZamestnancu(Model model){
-        List<Zamestnanec> zamestnanciList = zamestnanecRepository.findAll();
+        List<Zamestnanec> zamestnanciList = zamestnanecService.getAll();
         model.addAttribute("seznam", zamestnanciList);
 
         return "zamestnanci/zamestnanci-seznam";
@@ -35,7 +36,7 @@ public class ZamestnanecController {
 
     @PostMapping("/ulozit")
     public String vytvoritZamestnance(Zamestnanec zamestnanec, Model model){
-        zamestnanecRepository.save(zamestnanec);
+        zamestnanecService.save(zamestnanec);
         return "redirect:/zamestnanci";
     }
 

@@ -8,7 +8,6 @@ import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.GetMapping;
 import svoby.spring.projectmanagement.domain.Projekt;
-import svoby.spring.projectmanagement.domain.Zamestnanec;
 import svoby.spring.projectmanagement.dto.ProjektStav;
 import svoby.spring.projectmanagement.dto.ZamestnanecProjekt;
 import svoby.spring.projectmanagement.repositories.ProjektRepository;
@@ -35,7 +34,7 @@ public class IndexController {
 
         Map<String, Object> map = new HashMap<>();
         List<Projekt> projekty = projektRepository.findAll();
-        List<ZamestnanecProjekt> zamestnanciProjektyPocet = zamestnanecRepository.zamestnanciProjekty();
+        List<ZamestnanecProjekt> zamestnanciProjektyPocet = zamestnanecRepository.zamestnanecProjekty();
 
         List<ProjektStav> projektData = projektRepository.getProjektStav();
         ObjectMapper objectMapper = new ObjectMapper();
