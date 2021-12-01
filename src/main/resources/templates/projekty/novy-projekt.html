@@ -10,7 +10,7 @@
     <div class="container">
 
         <nav th:replace="layouts :: navbar"></nav>
-        <form action="/projekty/ulozit" th:object="${projekt}" method="post">
+        <form th:action="@{/projekty/ulozit}" th:object="${projekt}" method="post">
 
             <input type="text" placeholder="Název projektu" th:field="${projekt.nazev}">
 
@@ -28,7 +28,6 @@
                         th:text="${zamestnanec.jmeno}">
                 </option>
             </select>
-
             <button type="submit">Vytvořit projekt</button>
 
         </form>

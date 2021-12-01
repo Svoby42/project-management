@@ -9,12 +9,12 @@
     <div class="container">
 
         <nav th:replace="layouts :: navbar"></nav>
-        <form action="/zamestnanci/ulozit" th:object="${zamestnanec}" method="post">
+        <form th:action="@{/zamestnanci/ulozit}" th:object="${zamestnanec}" method="post">
 
             <input type="text" placeholder="Jméno: " th:field="${zamestnanec.jmeno}">
             <input type="text" placeholder="Přijmení: " th:field="${zamestnanec.prijmeni}">
             <input type="text" placeholder="email" th:field="${zamestnanec.email}">
-
+            <input type="hidden" name="csrf" th:value="${_csrf.token}"/>
             <button type="submit">Uložit zaměstnance</button>
 
         </form>
