@@ -21,7 +21,7 @@ public class ZamestnanecController {
 
     @GetMapping({"","/"})
     public String zobrazitSeznamZamestnancu(Model model){
-        List<Zamestnanec> zamestnanciList = zamestnanecService.getAll();
+        Iterable<Zamestnanec> zamestnanciList = zamestnanecService.getAll();
         model.addAttribute("seznam", zamestnanciList);
 
         return "zamestnanci/zamestnanci-seznam";

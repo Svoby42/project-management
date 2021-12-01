@@ -38,7 +38,7 @@ public class ProjektController {
     public String zobrazitProjektFormular(Model model){
 
         Projekt projekt = new Projekt();
-        List<Zamestnanec> zamestnanci = zamestnanecService.getAll();
+        Iterable<Zamestnanec> zamestnanci = zamestnanecService.getAll();
         model.addAttribute("projekt", projekt);
         model.addAttribute("zamestnanciList", zamestnanci);
 

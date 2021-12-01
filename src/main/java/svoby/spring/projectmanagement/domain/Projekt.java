@@ -1,5 +1,7 @@
 package svoby.spring.projectmanagement.domain;
 
+import com.fasterxml.jackson.annotation.JsonIgnore;
+
 import javax.persistence.*;
 import java.util.ArrayList;
 import java.util.List;
@@ -19,6 +21,7 @@ public class Projekt {
     @JoinTable(name = "projekt_zamestnanec",
             joinColumns = @JoinColumn(name = "projekt_id"),
             inverseJoinColumns = @JoinColumn(name = "zamestnanec_id"))
+    @JsonIgnore
     private List<Zamestnanec> zamestnanci;
 
     public Projekt(){

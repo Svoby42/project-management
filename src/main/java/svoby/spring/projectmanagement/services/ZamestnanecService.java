@@ -18,7 +18,7 @@ public class ZamestnanecService {
         return zamestnanecRepository.save(zamestnanec);
     }
 
-    public List<Zamestnanec> getAll(){
+    public Iterable<Zamestnanec> getAll(){
         return zamestnanecRepository.findAll();
     }
 
