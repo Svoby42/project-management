@@ -621,3 +621,381 @@ Caused by: org.postgresql.util.PSQLException: ERROR: relation "authorities" does
  
  
 
+2021-12-01 16:36:51.806  INFO 34817 --- [Thread-9] o.s.s.concurrent.ThreadPoolTaskExecutor  : Shutting down ExecutorService 'applicationTaskExecutor'
+2021-12-01 16:36:51.809  INFO 34817 --- [Thread-9] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2021-12-01 16:36:51.815  INFO 34817 --- [Thread-9] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2021-12-01 16:36:51.832  INFO 34817 --- [Thread-9] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2021-12-01 16:37:02.398  INFO 40203 --- [restartedMain] s.s.p.ProjectManagementApplication       : Starting ProjectManagementApplication on svobypc with PID 40203 (/home/svoby/Documents/project-management/target/classes started by svoby in /home/svoby/Documents/project-management)
+2021-12-01 16:37:02.401 DEBUG 40203 --- [restartedMain] s.s.p.ProjectManagementApplication       : Running with Spring Boot v2.1.0.RELEASE, Spring v5.1.2.RELEASE
+2021-12-01 16:37:02.402  INFO 40203 --- [restartedMain] s.s.p.ProjectManagementApplication       : The following profiles are active: dev
+2021-12-01 16:37:02.513  INFO 40203 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2021-12-01 16:37:02.514  INFO 40203 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2021-12-01 16:37:03.404  INFO 40203 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data repositories in DEFAULT mode.
+2021-12-01 16:37:03.455  INFO 40203 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 47ms. Found 3 repository interfaces.
+2021-12-01 16:37:03.804  INFO 40203 --- [restartedMain] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$451d6bc7] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2021-12-01 16:37:04.166  INFO 40203 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2021-12-01 16:37:04.181  INFO 40203 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2021-12-01 16:37:04.182  INFO 40203 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet Engine: Apache Tomcat/9.0.12
+2021-12-01 16:37:04.189  INFO 40203 --- [restartedMain] o.a.catalina.core.AprLifecycleListener   : The APR based Apache Tomcat Native library which allows optimal performance in production environments was not found on the java.library.path: [/usr/java/packages/lib:/usr/lib64:/lib64:/lib:/usr/lib]
+2021-12-01 16:37:04.268  INFO 40203 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2021-12-01 16:37:04.269  INFO 40203 --- [restartedMain] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 1755 ms
+2021-12-01 16:37:04.321  INFO 40203 --- [restartedMain] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'characterEncodingFilter' to: [/*]
+2021-12-01 16:37:04.321  INFO 40203 --- [restartedMain] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+2021-12-01 16:37:04.321  INFO 40203 --- [restartedMain] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'formContentFilter' to: [/*]
+2021-12-01 16:37:04.321  INFO 40203 --- [restartedMain] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'requestContextFilter' to: [/*]
+2021-12-01 16:37:04.322  INFO 40203 --- [restartedMain] .s.DelegatingFilterProxyRegistrationBean : Mapping filter: 'springSecurityFilterChain' to: [/*]
+2021-12-01 16:37:04.322  INFO 40203 --- [restartedMain] o.s.b.w.servlet.ServletRegistrationBean  : Servlet dispatcherServlet mapped to [/]
+2021-12-01 16:37:04.323  INFO 40203 --- [restartedMain] o.s.b.w.servlet.ServletRegistrationBean  : Servlet webServlet mapped to [/h2-console/*]
+2021-12-01 16:37:04.450  INFO 40203 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2021-12-01 16:37:04.507  INFO 40203 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2021-12-01 16:37:04.546  INFO 40203 --- [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [
+	name: default
+	...]
+2021-12-01 16:37:04.580  INFO 40203 --- [restartedMain] org.hibernate.Version                    : HHH000412: Hibernate Core {5.3.7.Final}
+2021-12-01 16:37:04.581  INFO 40203 --- [restartedMain] org.hibernate.cfg.Environment            : HHH000206: hibernate.properties not found
+2021-12-01 16:37:04.664  INFO 40203 --- [restartedMain] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.0.4.Final}
+2021-12-01 16:37:04.747  INFO 40203 --- [restartedMain] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.PostgreSQL95Dialect
+2021-12-01 16:37:04.869  INFO 40203 --- [restartedMain] o.h.e.j.e.i.LobCreatorBuilderImpl        : HHH000421: Disabling contextual LOB creation as hibernate.jdbc.lob.non_contextual_creation is true
+2021-12-01 16:37:04.875  INFO 40203 --- [restartedMain] org.hibernate.type.BasicTypeRegistry     : HHH000270: Type registration [java.util.UUID] overrides previous : org.hibernate.type.UUIDBinaryType@5b84036b
+2021-12-01 16:37:05.265  INFO 40203 --- [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2021-12-01 16:37:05.700  INFO 40203 --- [restartedMain] o.s.s.web.DefaultSecurityFilterChain     : Creating filter chain: any request, [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@58dd06dd, org.springframework.security.web.context.SecurityContextPersistenceFilter@159dbfd4, org.springframework.security.web.header.HeaderWriterFilter@c57176b, org.springframework.security.web.csrf.CsrfFilter@747ab437, org.springframework.security.web.authentication.logout.LogoutFilter@490665ae, org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter@2d6eb26c, org.springframework.security.web.authentication.ui.DefaultLoginPageGeneratingFilter@ded9359, org.springframework.security.web.authentication.ui.DefaultLogoutPageGeneratingFilter@1cc11ed5, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@4a34a48f, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@690ab37b, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@582f36d4, org.springframework.security.web.session.SessionManagementFilter@315d06e8, org.springframework.security.web.access.ExceptionTranslationFilter@a03697c, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@4d53a9c3]
+2021-12-01 16:37:05.825  INFO 40203 --- [restartedMain] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2021-12-01 16:37:05.850  WARN 40203 --- [restartedMain] aWebConfiguration$JpaWebMvcConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2021-12-01 16:37:05.962  INFO 40203 --- [restartedMain] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page template: index
+2021-12-01 16:37:06.081  INFO 40203 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2021-12-01 16:37:06.128  INFO 40203 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2021-12-01 16:37:06.132  INFO 40203 --- [restartedMain] s.s.p.ProjectManagementApplication       : Started ProjectManagementApplication in 4.203 seconds (JVM running for 5.556)
+2021-12-01 16:37:12.370  INFO 40203 --- [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2021-12-01 16:37:12.373  INFO 40203 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2021-12-01 16:37:12.385  INFO 40203 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 11 ms
+2021-12-01 16:37:12.442 DEBUG 40203 --- [http-nio-8080-exec-1] s.s.p.logging.ApplicationLoggerAspect    : 
+ ------------------------------------------ 
+2021-12-01 16:37:12.444 DEBUG 40203 --- [http-nio-8080-exec-1] s.s.p.logging.ApplicationLoggerAspect    :  Před metodou 
+ svoby.spring.projectmanagement.controllers.IndexController, zobrazitIndex () with arguments[s] = [{}]
+2021-12-01 16:37:12.444 DEBUG 40203 --- [http-nio-8080-exec-1] s.s.p.logging.ApplicationLoggerAspect    :  ---------------------------------------------- 
+ 
+ 
+
+2021-12-01 16:37:12.494  INFO 40203 --- [http-nio-8080-exec-1] o.h.h.i.QueryTranslatorFactoryInitiator  : HHH000397: Using ASTQueryTranslatorFactory
+2021-12-01 16:37:12.679 DEBUG 40203 --- [http-nio-8080-exec-1] s.s.p.logging.ApplicationLoggerAspect    :  Po metodě 
+ svoby.spring.projectmanagement.controllers.IndexController, zobrazitIndex () with arguments[s] = [{verzeCislo=0.0.1, projektStatusPocet=[{"stav":"nezahajen","pocet":2}], projektyList=[svoby.spring.projectmanagement.domain.Projekt@53af814e, svoby.spring.projectmanagement.domain.Projekt@6cf9497], zamestnanciListProjektyPocet=[org.springframework.data.jpa.repository.query.AbstractJpaQuery$TupleConverter$TupleBackedMap@1c7acc54, org.springframework.data.jpa.repository.query.AbstractJpaQuery$TupleConverter$TupleBackedMap@3126f7a9, org.springframework.data.jpa.repository.query.AbstractJpaQuery$TupleConverter$TupleBackedMap@353a5246]}]
+2021-12-01 16:37:12.680 DEBUG 40203 --- [http-nio-8080-exec-1] s.s.p.logging.ApplicationLoggerAspect    :  ---------------------------------------------- 
+ 
+ 
+
+2021-12-01 16:37:18.482 DEBUG 40203 --- [http-nio-8080-exec-4] s.s.p.logging.ApplicationLoggerAspect    : 
+ ------------------------------------------ 
+2021-12-01 16:37:18.483 DEBUG 40203 --- [http-nio-8080-exec-4] s.s.p.logging.ApplicationLoggerAspect    :  Před metodou 
+ svoby.spring.projectmanagement.controllers.ZamestnanecController, zobrazitSeznamZamestnancu () with arguments[s] = [{}]
+2021-12-01 16:37:18.483 DEBUG 40203 --- [http-nio-8080-exec-4] s.s.p.logging.ApplicationLoggerAspect    :  ---------------------------------------------- 
+ 
+ 
+
+2021-12-01 16:37:18.499 DEBUG 40203 --- [http-nio-8080-exec-4] s.s.p.logging.ApplicationLoggerAspect    :  Po metodě 
+ svoby.spring.projectmanagement.controllers.ZamestnanecController, zobrazitSeznamZamestnancu () with arguments[s] = [{seznam=[svoby.spring.projectmanagement.domain.Zamestnanec@4425a7d2, svoby.spring.projectmanagement.domain.Zamestnanec@1526ea83, svoby.spring.projectmanagement.domain.Zamestnanec@70ba5d9f]}]
+2021-12-01 16:37:18.499 DEBUG 40203 --- [http-nio-8080-exec-4] s.s.p.logging.ApplicationLoggerAspect    :  ---------------------------------------------- 
+ 
+ 
+
+2021-12-01 16:37:24.559 DEBUG 40203 --- [http-nio-8080-exec-8] s.s.p.logging.ApplicationLoggerAspect    : 
+ ------------------------------------------ 
+2021-12-01 16:37:24.559 DEBUG 40203 --- [http-nio-8080-exec-8] s.s.p.logging.ApplicationLoggerAspect    :  Před metodou 
+ svoby.spring.projectmanagement.controllers.ZamestnanecController, zobrazitSeznamZamestnancu () with arguments[s] = [{}]
+2021-12-01 16:37:24.560 DEBUG 40203 --- [http-nio-8080-exec-8] s.s.p.logging.ApplicationLoggerAspect    :  ---------------------------------------------- 
+ 
+ 
+
+2021-12-01 16:37:24.563 DEBUG 40203 --- [http-nio-8080-exec-8] s.s.p.logging.ApplicationLoggerAspect    :  Po metodě 
+ svoby.spring.projectmanagement.controllers.ZamestnanecController, zobrazitSeznamZamestnancu () with arguments[s] = [{seznam=[svoby.spring.projectmanagement.domain.Zamestnanec@53e272d4, svoby.spring.projectmanagement.domain.Zamestnanec@b0abdc1, svoby.spring.projectmanagement.domain.Zamestnanec@62fba44f]}]
+2021-12-01 16:37:24.563 DEBUG 40203 --- [http-nio-8080-exec-8] s.s.p.logging.ApplicationLoggerAspect    :  ---------------------------------------------- 
+ 
+ 
+
+2021-12-01 16:37:30.590 DEBUG 40203 --- [http-nio-8080-exec-10] s.s.p.logging.ApplicationLoggerAspect    : 
+ ------------------------------------------ 
+2021-12-01 16:37:30.591 DEBUG 40203 --- [http-nio-8080-exec-10] s.s.p.logging.ApplicationLoggerAspect    :  Před metodou 
+ svoby.spring.projectmanagement.controllers.AppErrorController, handleError () with arguments[s] = [SecurityContextHolderAwareRequestWrapper[ org.springframework.security.web.context.HttpSessionSecurityContextRepository$Servlet3SaveToSessionRequestWrapper@1bd1ca0b]]
+2021-12-01 16:37:30.591 DEBUG 40203 --- [http-nio-8080-exec-10] s.s.p.logging.ApplicationLoggerAspect    :  ---------------------------------------------- 
+ 
+ 
+
+2021-12-01 16:37:30.595 DEBUG 40203 --- [http-nio-8080-exec-10] s.s.p.logging.ApplicationLoggerAspect    :  Po metodě 
+ svoby.spring.projectmanagement.controllers.AppErrorController, handleError () with arguments[s] = [SecurityContextHolderAwareRequestWrapper[ org.springframework.security.web.context.HttpSessionSecurityContextRepository$Servlet3SaveToSessionRequestWrapper@1bd1ca0b]]
+2021-12-01 16:37:30.595 DEBUG 40203 --- [http-nio-8080-exec-10] s.s.p.logging.ApplicationLoggerAspect    :  ---------------------------------------------- 
+ 
+ 
+
+2021-12-01 16:37:30.652 DEBUG 40203 --- [http-nio-8080-exec-1] s.s.p.logging.ApplicationLoggerAspect    : 
+ ------------------------------------------ 
+2021-12-01 16:37:30.652 DEBUG 40203 --- [http-nio-8080-exec-1] s.s.p.logging.ApplicationLoggerAspect    :  Před metodou 
+ svoby.spring.projectmanagement.controllers.AppErrorController, handleError () with arguments[s] = [SecurityContextHolderAwareRequestWrapper[ org.springframework.security.web.context.HttpSessionSecurityContextRepository$Servlet3SaveToSessionRequestWrapper@1c35da7f]]
+2021-12-01 16:37:30.652 DEBUG 40203 --- [http-nio-8080-exec-1] s.s.p.logging.ApplicationLoggerAspect    :  ---------------------------------------------- 
+ 
+ 
+
+2021-12-01 16:37:30.653 DEBUG 40203 --- [http-nio-8080-exec-1] s.s.p.logging.ApplicationLoggerAspect    :  Po metodě 
+ svoby.spring.projectmanagement.controllers.AppErrorController, handleError () with arguments[s] = [SecurityContextHolderAwareRequestWrapper[ org.springframework.security.web.context.HttpSessionSecurityContextRepository$Servlet3SaveToSessionRequestWrapper@1c35da7f]]
+2021-12-01 16:37:30.653 DEBUG 40203 --- [http-nio-8080-exec-1] s.s.p.logging.ApplicationLoggerAspect    :  ---------------------------------------------- 
+ 
+ 
+
+2021-12-01 16:43:16.828 DEBUG 40203 --- [http-nio-8080-exec-5] s.s.p.logging.ApplicationLoggerAspect    : 
+ ------------------------------------------ 
+2021-12-01 16:43:16.829 DEBUG 40203 --- [http-nio-8080-exec-5] s.s.p.logging.ApplicationLoggerAspect    :  Před metodou 
+ svoby.spring.projectmanagement.controllers.AppErrorController, handleError () with arguments[s] = [SecurityContextHolderAwareRequestWrapper[ org.springframework.security.web.context.HttpSessionSecurityContextRepository$Servlet3SaveToSessionRequestWrapper@12f0a227]]
+2021-12-01 16:43:16.831 DEBUG 40203 --- [http-nio-8080-exec-5] s.s.p.logging.ApplicationLoggerAspect    :  ---------------------------------------------- 
+ 
+ 
+
+2021-12-01 16:43:16.831 DEBUG 40203 --- [http-nio-8080-exec-5] s.s.p.logging.ApplicationLoggerAspect    :  Po metodě 
+ svoby.spring.projectmanagement.controllers.AppErrorController, handleError () with arguments[s] = [SecurityContextHolderAwareRequestWrapper[ org.springframework.security.web.context.HttpSessionSecurityContextRepository$Servlet3SaveToSessionRequestWrapper@12f0a227]]
+2021-12-01 16:43:16.831 DEBUG 40203 --- [http-nio-8080-exec-5] s.s.p.logging.ApplicationLoggerAspect    :  ---------------------------------------------- 
+ 
+ 
+
+2021-12-01 16:43:17.021 DEBUG 40203 --- [http-nio-8080-exec-7] s.s.p.logging.ApplicationLoggerAspect    : 
+ ------------------------------------------ 
+2021-12-01 16:43:17.022 DEBUG 40203 --- [http-nio-8080-exec-7] s.s.p.logging.ApplicationLoggerAspect    :  Před metodou 
+ svoby.spring.projectmanagement.controllers.AppErrorController, handleError () with arguments[s] = [SecurityContextHolderAwareRequestWrapper[ org.springframework.security.web.context.HttpSessionSecurityContextRepository$Servlet3SaveToSessionRequestWrapper@2222bbe8]]
+2021-12-01 16:43:17.022 DEBUG 40203 --- [http-nio-8080-exec-7] s.s.p.logging.ApplicationLoggerAspect    :  ---------------------------------------------- 
+ 
+ 
+
+2021-12-01 16:43:17.022 DEBUG 40203 --- [http-nio-8080-exec-7] s.s.p.logging.ApplicationLoggerAspect    :  Po metodě 
+ svoby.spring.projectmanagement.controllers.AppErrorController, handleError () with arguments[s] = [SecurityContextHolderAwareRequestWrapper[ org.springframework.security.web.context.HttpSessionSecurityContextRepository$Servlet3SaveToSessionRequestWrapper@2222bbe8]]
+2021-12-01 16:43:17.022 DEBUG 40203 --- [http-nio-8080-exec-7] s.s.p.logging.ApplicationLoggerAspect    :  ---------------------------------------------- 
+ 
+ 
+
+2021-12-01 16:43:18.444 DEBUG 40203 --- [http-nio-8080-exec-8] s.s.p.logging.ApplicationLoggerAspect    : 
+ ------------------------------------------ 
+2021-12-01 16:43:18.444 DEBUG 40203 --- [http-nio-8080-exec-8] s.s.p.logging.ApplicationLoggerAspect    :  Před metodou 
+ svoby.spring.projectmanagement.controllers.AppErrorController, handleError () with arguments[s] = [SecurityContextHolderAwareRequestWrapper[ org.springframework.security.web.context.HttpSessionSecurityContextRepository$Servlet3SaveToSessionRequestWrapper@64f30df3]]
+2021-12-01 16:43:18.445 DEBUG 40203 --- [http-nio-8080-exec-8] s.s.p.logging.ApplicationLoggerAspect    :  ---------------------------------------------- 
+ 
+ 
+
+2021-12-01 16:43:18.445 DEBUG 40203 --- [http-nio-8080-exec-8] s.s.p.logging.ApplicationLoggerAspect    :  Po metodě 
+ svoby.spring.projectmanagement.controllers.AppErrorController, handleError () with arguments[s] = [SecurityContextHolderAwareRequestWrapper[ org.springframework.security.web.context.HttpSessionSecurityContextRepository$Servlet3SaveToSessionRequestWrapper@64f30df3]]
+2021-12-01 16:43:18.445 DEBUG 40203 --- [http-nio-8080-exec-8] s.s.p.logging.ApplicationLoggerAspect    :  ---------------------------------------------- 
+ 
+ 
+
+2021-12-01 16:43:18.497 DEBUG 40203 --- [http-nio-8080-exec-10] s.s.p.logging.ApplicationLoggerAspect    : 
+ ------------------------------------------ 
+2021-12-01 16:43:18.497 DEBUG 40203 --- [http-nio-8080-exec-10] s.s.p.logging.ApplicationLoggerAspect    :  Před metodou 
+ svoby.spring.projectmanagement.controllers.AppErrorController, handleError () with arguments[s] = [SecurityContextHolderAwareRequestWrapper[ org.springframework.security.web.context.HttpSessionSecurityContextRepository$Servlet3SaveToSessionRequestWrapper@761c0cb5]]
+2021-12-01 16:43:18.497 DEBUG 40203 --- [http-nio-8080-exec-10] s.s.p.logging.ApplicationLoggerAspect    :  ---------------------------------------------- 
+ 
+ 
+
+2021-12-01 16:43:18.497 DEBUG 40203 --- [http-nio-8080-exec-10] s.s.p.logging.ApplicationLoggerAspect    :  Po metodě 
+ svoby.spring.projectmanagement.controllers.AppErrorController, handleError () with arguments[s] = [SecurityContextHolderAwareRequestWrapper[ org.springframework.security.web.context.HttpSessionSecurityContextRepository$Servlet3SaveToSessionRequestWrapper@761c0cb5]]
+2021-12-01 16:43:18.498 DEBUG 40203 --- [http-nio-8080-exec-10] s.s.p.logging.ApplicationLoggerAspect    :  ---------------------------------------------- 
+ 
+ 
+
+2021-12-01 16:43:35.128 DEBUG 40203 --- [http-nio-8080-exec-1] s.s.p.logging.ApplicationLoggerAspect    : 
+ ------------------------------------------ 
+2021-12-01 16:43:35.129 DEBUG 40203 --- [http-nio-8080-exec-1] s.s.p.logging.ApplicationLoggerAspect    :  Před metodou 
+ svoby.spring.projectmanagement.controllers.AppErrorController, handleError () with arguments[s] = [SecurityContextHolderAwareRequestWrapper[ org.springframework.security.web.context.HttpSessionSecurityContextRepository$Servlet3SaveToSessionRequestWrapper@52f25974]]
+2021-12-01 16:43:35.129 DEBUG 40203 --- [http-nio-8080-exec-1] s.s.p.logging.ApplicationLoggerAspect    :  ---------------------------------------------- 
+ 
+ 
+
+2021-12-01 16:43:35.129 DEBUG 40203 --- [http-nio-8080-exec-1] s.s.p.logging.ApplicationLoggerAspect    :  Po metodě 
+ svoby.spring.projectmanagement.controllers.AppErrorController, handleError () with arguments[s] = [SecurityContextHolderAwareRequestWrapper[ org.springframework.security.web.context.HttpSessionSecurityContextRepository$Servlet3SaveToSessionRequestWrapper@52f25974]]
+2021-12-01 16:43:35.129 DEBUG 40203 --- [http-nio-8080-exec-1] s.s.p.logging.ApplicationLoggerAspect    :  ---------------------------------------------- 
+ 
+ 
+
+2021-12-01 16:43:35.248 DEBUG 40203 --- [http-nio-8080-exec-4] s.s.p.logging.ApplicationLoggerAspect    : 
+ ------------------------------------------ 
+2021-12-01 16:43:35.248 DEBUG 40203 --- [http-nio-8080-exec-4] s.s.p.logging.ApplicationLoggerAspect    :  Před metodou 
+ svoby.spring.projectmanagement.controllers.AppErrorController, handleError () with arguments[s] = [SecurityContextHolderAwareRequestWrapper[ org.springframework.security.web.context.HttpSessionSecurityContextRepository$Servlet3SaveToSessionRequestWrapper@1103eaca]]
+2021-12-01 16:43:35.249 DEBUG 40203 --- [http-nio-8080-exec-4] s.s.p.logging.ApplicationLoggerAspect    :  ---------------------------------------------- 
+ 
+ 
+
+2021-12-01 16:43:35.249 DEBUG 40203 --- [http-nio-8080-exec-4] s.s.p.logging.ApplicationLoggerAspect    :  Po metodě 
+ svoby.spring.projectmanagement.controllers.AppErrorController, handleError () with arguments[s] = [SecurityContextHolderAwareRequestWrapper[ org.springframework.security.web.context.HttpSessionSecurityContextRepository$Servlet3SaveToSessionRequestWrapper@1103eaca]]
+2021-12-01 16:43:35.249 DEBUG 40203 --- [http-nio-8080-exec-4] s.s.p.logging.ApplicationLoggerAspect    :  ---------------------------------------------- 
+ 
+ 
+
+2021-12-01 16:46:23.472 DEBUG 40203 --- [http-nio-8080-exec-7] s.s.p.logging.ApplicationLoggerAspect    : 
+ ------------------------------------------ 
+2021-12-01 16:46:23.472 DEBUG 40203 --- [http-nio-8080-exec-7] s.s.p.logging.ApplicationLoggerAspect    :  Před metodou 
+ svoby.spring.projectmanagement.controllers.IndexController, zobrazitIndex () with arguments[s] = [{}]
+2021-12-01 16:46:23.473 DEBUG 40203 --- [http-nio-8080-exec-7] s.s.p.logging.ApplicationLoggerAspect    :  ---------------------------------------------- 
+ 
+ 
+
+2021-12-01 16:46:23.487 DEBUG 40203 --- [http-nio-8080-exec-7] s.s.p.logging.ApplicationLoggerAspect    :  Po metodě 
+ svoby.spring.projectmanagement.controllers.IndexController, zobrazitIndex () with arguments[s] = [{verzeCislo=0.0.1, projektStatusPocet=[{"stav":"nezahajen","pocet":2}], projektyList=[svoby.spring.projectmanagement.domain.Projekt@df7b4a8, svoby.spring.projectmanagement.domain.Projekt@452f0d71], zamestnanciListProjektyPocet=[org.springframework.data.jpa.repository.query.AbstractJpaQuery$TupleConverter$TupleBackedMap@6bff29ba, org.springframework.data.jpa.repository.query.AbstractJpaQuery$TupleConverter$TupleBackedMap@60cdc9c5, org.springframework.data.jpa.repository.query.AbstractJpaQuery$TupleConverter$TupleBackedMap@634ad2ba]}]
+2021-12-01 16:46:23.487 DEBUG 40203 --- [http-nio-8080-exec-7] s.s.p.logging.ApplicationLoggerAspect    :  ---------------------------------------------- 
+ 
+ 
+
+2021-12-01 16:46:28.859 DEBUG 40203 --- [http-nio-8080-exec-10] s.s.p.logging.ApplicationLoggerAspect    : 
+ ------------------------------------------ 
+2021-12-01 16:46:28.859 DEBUG 40203 --- [http-nio-8080-exec-10] s.s.p.logging.ApplicationLoggerAspect    :  Před metodou 
+ svoby.spring.projectmanagement.controllers.AppErrorController, handleError () with arguments[s] = [SecurityContextHolderAwareRequestWrapper[ org.springframework.security.web.context.HttpSessionSecurityContextRepository$Servlet3SaveToSessionRequestWrapper@1990f9a9]]
+2021-12-01 16:46:28.859 DEBUG 40203 --- [http-nio-8080-exec-10] s.s.p.logging.ApplicationLoggerAspect    :  ---------------------------------------------- 
+ 
+ 
+
+2021-12-01 16:46:28.859 DEBUG 40203 --- [http-nio-8080-exec-10] s.s.p.logging.ApplicationLoggerAspect    :  Po metodě 
+ svoby.spring.projectmanagement.controllers.AppErrorController, handleError () with arguments[s] = [SecurityContextHolderAwareRequestWrapper[ org.springframework.security.web.context.HttpSessionSecurityContextRepository$Servlet3SaveToSessionRequestWrapper@1990f9a9]]
+2021-12-01 16:46:28.860 DEBUG 40203 --- [http-nio-8080-exec-10] s.s.p.logging.ApplicationLoggerAspect    :  ---------------------------------------------- 
+ 
+ 
+
+2021-12-01 16:46:28.917 DEBUG 40203 --- [http-nio-8080-exec-1] s.s.p.logging.ApplicationLoggerAspect    : 
+ ------------------------------------------ 
+2021-12-01 16:46:28.918 DEBUG 40203 --- [http-nio-8080-exec-1] s.s.p.logging.ApplicationLoggerAspect    :  Před metodou 
+ svoby.spring.projectmanagement.controllers.AppErrorController, handleError () with arguments[s] = [SecurityContextHolderAwareRequestWrapper[ org.springframework.security.web.context.HttpSessionSecurityContextRepository$Servlet3SaveToSessionRequestWrapper@2bdb50a7]]
+2021-12-01 16:46:28.918 DEBUG 40203 --- [http-nio-8080-exec-1] s.s.p.logging.ApplicationLoggerAspect    :  ---------------------------------------------- 
+ 
+ 
+
+2021-12-01 16:46:28.918 DEBUG 40203 --- [http-nio-8080-exec-1] s.s.p.logging.ApplicationLoggerAspect    :  Po metodě 
+ svoby.spring.projectmanagement.controllers.AppErrorController, handleError () with arguments[s] = [SecurityContextHolderAwareRequestWrapper[ org.springframework.security.web.context.HttpSessionSecurityContextRepository$Servlet3SaveToSessionRequestWrapper@2bdb50a7]]
+2021-12-01 16:46:28.918 DEBUG 40203 --- [http-nio-8080-exec-1] s.s.p.logging.ApplicationLoggerAspect    :  ---------------------------------------------- 
+ 
+ 
+
+2021-12-01 16:52:40.234  INFO 40203 --- [Thread-9] o.s.s.concurrent.ThreadPoolTaskExecutor  : Shutting down ExecutorService 'applicationTaskExecutor'
+2021-12-01 16:52:40.236  INFO 40203 --- [Thread-9] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2021-12-01 16:52:40.242  INFO 40203 --- [Thread-9] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2021-12-01 16:52:40.264  INFO 40203 --- [Thread-9] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2021-12-01 16:52:50.040  INFO 41384 --- [restartedMain] s.s.p.ProjectManagementApplication       : Starting ProjectManagementApplication on svobypc with PID 41384 (/home/svoby/Documents/project-management/target/classes started by svoby in /home/svoby/Documents/project-management)
+2021-12-01 16:52:50.044 DEBUG 41384 --- [restartedMain] s.s.p.ProjectManagementApplication       : Running with Spring Boot v2.1.0.RELEASE, Spring v5.1.2.RELEASE
+2021-12-01 16:52:50.045  INFO 41384 --- [restartedMain] s.s.p.ProjectManagementApplication       : The following profiles are active: dev
+2021-12-01 16:52:50.093  INFO 41384 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2021-12-01 16:52:50.093  INFO 41384 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2021-12-01 16:52:51.499  INFO 41384 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data repositories in DEFAULT mode.
+2021-12-01 16:52:51.562  INFO 41384 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 56ms. Found 3 repository interfaces.
+2021-12-01 16:52:51.938  INFO 41384 --- [restartedMain] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$ffc8af58] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2021-12-01 16:52:52.409  INFO 41384 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2021-12-01 16:52:52.426  INFO 41384 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2021-12-01 16:52:52.427  INFO 41384 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet Engine: Apache Tomcat/9.0.12
+2021-12-01 16:52:52.433  INFO 41384 --- [restartedMain] o.a.catalina.core.AprLifecycleListener   : The APR based Apache Tomcat Native library which allows optimal performance in production environments was not found on the java.library.path: [/usr/java/packages/lib:/usr/lib64:/lib64:/lib:/usr/lib]
+2021-12-01 16:52:52.523  INFO 41384 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2021-12-01 16:52:52.523  INFO 41384 --- [restartedMain] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 2429 ms
+2021-12-01 16:52:52.566  INFO 41384 --- [restartedMain] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'characterEncodingFilter' to: [/*]
+2021-12-01 16:52:52.566  INFO 41384 --- [restartedMain] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+2021-12-01 16:52:52.567  INFO 41384 --- [restartedMain] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'formContentFilter' to: [/*]
+2021-12-01 16:52:52.567  INFO 41384 --- [restartedMain] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'requestContextFilter' to: [/*]
+2021-12-01 16:52:52.567  INFO 41384 --- [restartedMain] .s.DelegatingFilterProxyRegistrationBean : Mapping filter: 'springSecurityFilterChain' to: [/*]
+2021-12-01 16:52:52.567  INFO 41384 --- [restartedMain] o.s.b.w.servlet.ServletRegistrationBean  : Servlet dispatcherServlet mapped to [/]
+2021-12-01 16:52:52.568  INFO 41384 --- [restartedMain] o.s.b.w.servlet.ServletRegistrationBean  : Servlet webServlet mapped to [/h2-console/*]
+2021-12-01 16:52:52.713  INFO 41384 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2021-12-01 16:52:52.768  INFO 41384 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2021-12-01 16:52:52.804  INFO 41384 --- [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [
+	name: default
+	...]
+2021-12-01 16:52:52.839  INFO 41384 --- [restartedMain] org.hibernate.Version                    : HHH000412: Hibernate Core {5.3.7.Final}
+2021-12-01 16:52:52.840  INFO 41384 --- [restartedMain] org.hibernate.cfg.Environment            : HHH000206: hibernate.properties not found
+2021-12-01 16:52:52.933  INFO 41384 --- [restartedMain] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.0.4.Final}
+2021-12-01 16:52:53.026  INFO 41384 --- [restartedMain] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.PostgreSQL95Dialect
+2021-12-01 16:52:53.134  INFO 41384 --- [restartedMain] o.h.e.j.e.i.LobCreatorBuilderImpl        : HHH000421: Disabling contextual LOB creation as hibernate.jdbc.lob.non_contextual_creation is true
+2021-12-01 16:52:53.139  INFO 41384 --- [restartedMain] org.hibernate.type.BasicTypeRegistry     : HHH000270: Type registration [java.util.UUID] overrides previous : org.hibernate.type.UUIDBinaryType@6322172f
+2021-12-01 16:52:53.687  INFO 41384 --- [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2021-12-01 16:52:54.357  INFO 41384 --- [restartedMain] o.s.s.web.DefaultSecurityFilterChain     : Creating filter chain: any request, [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@2232500f, org.springframework.security.web.context.SecurityContextPersistenceFilter@44706e2b, org.springframework.security.web.header.HeaderWriterFilter@3954ebe1, org.springframework.security.web.csrf.CsrfFilter@33104d11, org.springframework.security.web.authentication.logout.LogoutFilter@3de17799, org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter@67be658c, org.springframework.security.web.authentication.ui.DefaultLoginPageGeneratingFilter@1eac044c, org.springframework.security.web.authentication.ui.DefaultLogoutPageGeneratingFilter@497814f2, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@15180db9, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@543c0027, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@5f3f749c, org.springframework.security.web.session.SessionManagementFilter@5369bdfc, org.springframework.security.web.access.ExceptionTranslationFilter@a97d1, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@3685cd18]
+2021-12-01 16:52:54.509  INFO 41384 --- [restartedMain] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2021-12-01 16:52:54.551  WARN 41384 --- [restartedMain] aWebConfiguration$JpaWebMvcConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2021-12-01 16:52:54.672  INFO 41384 --- [restartedMain] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page template: index
+2021-12-01 16:52:54.835  INFO 41384 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2021-12-01 16:52:54.898  INFO 41384 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2021-12-01 16:52:54.902  INFO 41384 --- [restartedMain] s.s.p.ProjectManagementApplication       : Started ProjectManagementApplication in 5.295 seconds (JVM running for 6.382)
+2021-12-01 16:53:45.802  INFO 41384 --- [Thread-9] o.s.s.concurrent.ThreadPoolTaskExecutor  : Shutting down ExecutorService 'applicationTaskExecutor'
+2021-12-01 16:53:45.805  INFO 41384 --- [Thread-9] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2021-12-01 16:53:45.808  INFO 41384 --- [Thread-9] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2021-12-01 16:53:45.822  INFO 41384 --- [Thread-9] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2021-12-01 16:53:55.645  INFO 41636 --- [restartedMain] s.s.p.ProjectManagementApplication       : Starting ProjectManagementApplication on svobypc with PID 41636 (/home/svoby/Documents/project-management/target/classes started by svoby in /home/svoby/Documents/project-management)
+2021-12-01 16:53:55.655 DEBUG 41636 --- [restartedMain] s.s.p.ProjectManagementApplication       : Running with Spring Boot v2.1.0.RELEASE, Spring v5.1.2.RELEASE
+2021-12-01 16:53:55.657  INFO 41636 --- [restartedMain] s.s.p.ProjectManagementApplication       : The following profiles are active: dev
+2021-12-01 16:53:55.776  INFO 41636 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2021-12-01 16:53:55.776  INFO 41636 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2021-12-01 16:53:56.915  INFO 41636 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data repositories in DEFAULT mode.
+2021-12-01 16:53:56.980  INFO 41636 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 61ms. Found 3 repository interfaces.
+2021-12-01 16:53:57.390  INFO 41636 --- [restartedMain] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$437bf7ba] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2021-12-01 16:53:57.993  INFO 41636 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2021-12-01 16:53:58.015  INFO 41636 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2021-12-01 16:53:58.015  INFO 41636 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet Engine: Apache Tomcat/9.0.12
+2021-12-01 16:53:58.023  INFO 41636 --- [restartedMain] o.a.catalina.core.AprLifecycleListener   : The APR based Apache Tomcat Native library which allows optimal performance in production environments was not found on the java.library.path: [/usr/java/packages/lib:/usr/lib64:/lib64:/lib:/usr/lib]
+2021-12-01 16:53:58.130  INFO 41636 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2021-12-01 16:53:58.130  INFO 41636 --- [restartedMain] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 2354 ms
+2021-12-01 16:53:58.200  INFO 41636 --- [restartedMain] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'characterEncodingFilter' to: [/*]
+2021-12-01 16:53:58.200  INFO 41636 --- [restartedMain] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+2021-12-01 16:53:58.200  INFO 41636 --- [restartedMain] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'formContentFilter' to: [/*]
+2021-12-01 16:53:58.201  INFO 41636 --- [restartedMain] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'requestContextFilter' to: [/*]
+2021-12-01 16:53:58.201  INFO 41636 --- [restartedMain] .s.DelegatingFilterProxyRegistrationBean : Mapping filter: 'springSecurityFilterChain' to: [/*]
+2021-12-01 16:53:58.202  INFO 41636 --- [restartedMain] o.s.b.w.servlet.ServletRegistrationBean  : Servlet dispatcherServlet mapped to [/]
+2021-12-01 16:53:58.203  INFO 41636 --- [restartedMain] o.s.b.w.servlet.ServletRegistrationBean  : Servlet webServlet mapped to [/h2-console/*]
+2021-12-01 16:53:58.390  INFO 41636 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2021-12-01 16:53:58.500  INFO 41636 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2021-12-01 16:53:58.561  INFO 41636 --- [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [
+	name: default
+	...]
+2021-12-01 16:53:58.603  INFO 41636 --- [restartedMain] org.hibernate.Version                    : HHH000412: Hibernate Core {5.3.7.Final}
+2021-12-01 16:53:58.605  INFO 41636 --- [restartedMain] org.hibernate.cfg.Environment            : HHH000206: hibernate.properties not found
+2021-12-01 16:53:58.793  INFO 41636 --- [restartedMain] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.0.4.Final}
+2021-12-01 16:53:58.941  INFO 41636 --- [restartedMain] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.PostgreSQL95Dialect
+2021-12-01 16:53:59.084  INFO 41636 --- [restartedMain] o.h.e.j.e.i.LobCreatorBuilderImpl        : HHH000421: Disabling contextual LOB creation as hibernate.jdbc.lob.non_contextual_creation is true
+2021-12-01 16:53:59.089  INFO 41636 --- [restartedMain] org.hibernate.type.BasicTypeRegistry     : HHH000270: Type registration [java.util.UUID] overrides previous : org.hibernate.type.UUIDBinaryType@5ca38e0e
+2021-12-01 16:53:59.609  INFO 41636 --- [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2021-12-01 16:54:00.106  INFO 41636 --- [restartedMain] o.s.s.web.DefaultSecurityFilterChain     : Creating filter chain: any request, [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@2f856ec3, org.springframework.security.web.context.SecurityContextPersistenceFilter@32bb9457, org.springframework.security.web.header.HeaderWriterFilter@2562d9ab, org.springframework.security.web.csrf.CsrfFilter@24c5d1e8, org.springframework.security.web.authentication.logout.LogoutFilter@33a0174f, org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter@14aa968e, org.springframework.security.web.authentication.ui.DefaultLoginPageGeneratingFilter@1169914c, org.springframework.security.web.authentication.ui.DefaultLogoutPageGeneratingFilter@14033296, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@37e7e941, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@71ee70, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@548ec21b, org.springframework.security.web.session.SessionManagementFilter@2aabbb42, org.springframework.security.web.access.ExceptionTranslationFilter@74ece2d, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@45fadddb]
+2021-12-01 16:54:00.242  INFO 41636 --- [restartedMain] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2021-12-01 16:54:00.270  WARN 41636 --- [restartedMain] aWebConfiguration$JpaWebMvcConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2021-12-01 16:54:00.409  INFO 41636 --- [restartedMain] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page template: index
+2021-12-01 16:54:00.536  INFO 41636 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2021-12-01 16:54:00.586  INFO 41636 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2021-12-01 16:54:00.591  INFO 41636 --- [restartedMain] s.s.p.ProjectManagementApplication       : Started ProjectManagementApplication in 5.544 seconds (JVM running for 6.952)
+2021-12-01 16:54:48.889  INFO 41636 --- [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2021-12-01 16:54:48.890  INFO 41636 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2021-12-01 16:54:48.898  INFO 41636 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 8 ms
+2021-12-01 16:54:48.949 DEBUG 41636 --- [http-nio-8080-exec-1] s.s.p.logging.ApplicationLoggerAspect    : 
+ ------------------------------------------ 
+2021-12-01 16:54:48.950 DEBUG 41636 --- [http-nio-8080-exec-1] s.s.p.logging.ApplicationLoggerAspect    :  Před metodou 
+ svoby.spring.projectmanagement.controllers.IndexController, zobrazitIndex () with arguments[s] = [{}]
+2021-12-01 16:54:48.950 DEBUG 41636 --- [http-nio-8080-exec-1] s.s.p.logging.ApplicationLoggerAspect    :  ---------------------------------------------- 
+ 
+ 
+
+2021-12-01 16:54:49.011  INFO 41636 --- [http-nio-8080-exec-1] o.h.h.i.QueryTranslatorFactoryInitiator  : HHH000397: Using ASTQueryTranslatorFactory
+2021-12-01 16:54:49.251 DEBUG 41636 --- [http-nio-8080-exec-1] s.s.p.logging.ApplicationLoggerAspect    :  Po metodě 
+ svoby.spring.projectmanagement.controllers.IndexController, zobrazitIndex () with arguments[s] = [{verzeCislo=0.0.1, projektStatusPocet=[{"stav":"nezahajen","pocet":2}], projektyList=[svoby.spring.projectmanagement.domain.Projekt@27934d9c, svoby.spring.projectmanagement.domain.Projekt@6c158259], zamestnanciListProjektyPocet=[org.springframework.data.jpa.repository.query.AbstractJpaQuery$TupleConverter$TupleBackedMap@78173a0c, org.springframework.data.jpa.repository.query.AbstractJpaQuery$TupleConverter$TupleBackedMap@336e8f92, org.springframework.data.jpa.repository.query.AbstractJpaQuery$TupleConverter$TupleBackedMap@73524e63]}]
+2021-12-01 16:54:49.252 DEBUG 41636 --- [http-nio-8080-exec-1] s.s.p.logging.ApplicationLoggerAspect    :  ---------------------------------------------- 
+ 
+ 
+
+2021-12-01 16:54:53.284 DEBUG 41636 --- [http-nio-8080-exec-4] s.s.p.logging.ApplicationLoggerAspect    : 
+ ------------------------------------------ 
+2021-12-01 16:54:53.285 DEBUG 41636 --- [http-nio-8080-exec-4] s.s.p.logging.ApplicationLoggerAspect    :  Před metodou 
+ svoby.spring.projectmanagement.controllers.AppErrorController, handleError () with arguments[s] = [SecurityContextHolderAwareRequestWrapper[ org.springframework.security.web.context.HttpSessionSecurityContextRepository$Servlet3SaveToSessionRequestWrapper@52fe2851]]
+2021-12-01 16:54:53.285 DEBUG 41636 --- [http-nio-8080-exec-4] s.s.p.logging.ApplicationLoggerAspect    :  ---------------------------------------------- 
+ 
+ 
+
+2021-12-01 16:54:53.288 DEBUG 41636 --- [http-nio-8080-exec-4] s.s.p.logging.ApplicationLoggerAspect    :  Po metodě 
+ svoby.spring.projectmanagement.controllers.AppErrorController, handleError () with arguments[s] = [SecurityContextHolderAwareRequestWrapper[ org.springframework.security.web.context.HttpSessionSecurityContextRepository$Servlet3SaveToSessionRequestWrapper@52fe2851]]
+2021-12-01 16:54:53.288 DEBUG 41636 --- [http-nio-8080-exec-4] s.s.p.logging.ApplicationLoggerAspect    :  ---------------------------------------------- 
+ 
+ 
+
+2021-12-01 16:56:28.195 DEBUG 41636 --- [http-nio-8080-exec-9] s.s.p.logging.ApplicationLoggerAspect    : 
+ ------------------------------------------ 
+2021-12-01 16:56:28.195 DEBUG 41636 --- [http-nio-8080-exec-9] s.s.p.logging.ApplicationLoggerAspect    :  Před metodou 
+ svoby.spring.projectmanagement.controllers.AppErrorController, handleError () with arguments[s] = [SecurityContextHolderAwareRequestWrapper[ org.springframework.security.web.context.HttpSessionSecurityContextRepository$Servlet3SaveToSessionRequestWrapper@60a74e3f]]
+2021-12-01 16:56:28.195 DEBUG 41636 --- [http-nio-8080-exec-9] s.s.p.logging.ApplicationLoggerAspect    :  ---------------------------------------------- 
+ 
+ 
+
+2021-12-01 16:56:28.195 DEBUG 41636 --- [http-nio-8080-exec-9] s.s.p.logging.ApplicationLoggerAspect    :  Po metodě 
+ svoby.spring.projectmanagement.controllers.AppErrorController, handleError () with arguments[s] = [SecurityContextHolderAwareRequestWrapper[ org.springframework.security.web.context.HttpSessionSecurityContextRepository$Servlet3SaveToSessionRequestWrapper@60a74e3f]]
+2021-12-01 16:56:28.195 DEBUG 41636 --- [http-nio-8080-exec-9] s.s.p.logging.ApplicationLoggerAspect    :  ---------------------------------------------- 
+ 
+ 
+

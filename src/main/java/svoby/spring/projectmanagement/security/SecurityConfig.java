@@ -41,7 +41,7 @@ public class SecurityConfig extends WebSecurityConfigurerAdapter {
                 .antMatchers("/projekty/ulozit").hasRole("ADMIN")
                 .antMatchers("/zamestnanci/novy").hasRole("ADMIN")
                 .antMatchers("/zamestnanci/ulozit").hasRole("ADMIN")
-                .antMatchers("/", "/**").permitAll()
+                .antMatchers("/", "/**", "/assets/**").permitAll()
                 .and().formLogin()/*.loginPage("/login-page")*/;
 
     }
