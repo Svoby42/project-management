@@ -1,8 +1,12 @@
 package svoby.spring.projectmanagement.domain;
 
 import com.fasterxml.jackson.annotation.JsonIgnore;
+import svoby.spring.projectmanagement.validators.UniqueValue;
 
 import javax.persistence.*;
+import javax.validation.constraints.Email;
+import javax.validation.constraints.NotNull;
+import javax.validation.constraints.Size;
 import java.util.List;
 
 @Entity
@@ -12,8 +16,17 @@ public class Zamestnanec {
     @GeneratedValue(strategy = GenerationType.SEQUENCE, generator = "zamestnanec_seq")
     private long zamestnanecId;
 
+    @NotNull
+    @Size(min=2, max=50)
     private String jmeno;
+
+    @NotNull
+    @Size(min=1, max=50)
     private String prijmeni;
+
+    @NotNull
+    @Email
+    @UniqueValue
     private String email;
 
     @ManyToMany(cascade = {CascadeType.DETACH, CascadeType.MERGE, CascadeType.REFRESH, CascadeType.PERSIST}, fetch = FetchType.LAZY)

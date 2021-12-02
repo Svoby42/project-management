@@ -14,4 +14,8 @@ public interface ZamestnanecRepository extends CrudRepository<Zamestnanec, Long>
             "group by z.jmeno, z.prijmeni order by 3 desc")
     public List<ZamestnanecProjekt> zamestnanecProjekty();
 
+    public Zamestnanec findByEmail(String value);
+
+    public Zamestnanec findByZamestnanecId(long id);
+
 }
