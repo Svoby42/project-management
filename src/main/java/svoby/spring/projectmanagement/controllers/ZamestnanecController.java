@@ -6,6 +6,7 @@ import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.RequestParam;
 import svoby.spring.projectmanagement.domain.Zamestnanec;
 import svoby.spring.projectmanagement.repositories.ZamestnanecRepository;
 import svoby.spring.projectmanagement.services.ZamestnanecService;
@@ -38,6 +39,22 @@ public class ZamestnanecController {
     public String vytvoritZamestnance(Zamestnanec zamestnanec, Model model){
         zamestnanecService.save(zamestnanec);
         return "redirect:/zamestnanci";
+    }
+
+    @GetMapping("/zmenit")
+    public String zmenitDataZamestnance(@RequestParam("id") Long id, Model model){
+        Zamestnanec zamestnanec = zamestnanecService.findByZamestnanecId(id);
+        model.addAttribute("zamestnanec", zamestnanec);
+
+        return "zamestnanci/novy-zamestnanec";
+    }
+
+    @GetMapping("/smazat")
+    public String smazatZamestnance(@RequestParam("id") Long id, Model model){
+        Zamestnanec zamestnanec = zamestnanecService.findByZamestnanecId(id);
+        zamestnanecService.delete(zamestnanec);
+
+        return "redirect/zamestnanci";
     }
 
 }

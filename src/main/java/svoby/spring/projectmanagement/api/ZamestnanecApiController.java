@@ -43,7 +43,7 @@ public class ZamestnanecApiController {
 
     @PostMapping(consumes = "application/json")
     @ResponseStatus(HttpStatus.CREATED)
-    public Zamestnanec vytvorit(@RequestBody @Valid Zamestnanec zamestnanec){
+    public Zamestnanec create(@RequestBody @Valid Zamestnanec zamestnanec){
         return zamestnanecRepository.save(zamestnanec);
     }
 
@@ -78,6 +78,14 @@ public class ZamestnanecApiController {
         }catch (EmptyResultDataAccessException e) {
 
         }
+    }
+
+    @GetMapping(params = {"page", "size"})
+    @ResponseStatus(HttpStatus.OK)
+    public Iterable<Zamestnanec> findPaginatedZamestnanci(@RequestParam("page") int page, @RequestParam("size") int size){
+        Pageable pageable = PageRequest.of(page, size);
+
+        return zamestnanecRepository.findAll(pageable);
     }
 
 }

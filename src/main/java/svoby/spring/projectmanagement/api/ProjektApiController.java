@@ -28,7 +28,7 @@ public class ProjektApiController {
 
     @PostMapping(consumes = "application/json")
     @ResponseStatus(HttpStatus.CREATED)
-    public Projekt vytvorit(@RequestBody @Valid Projekt projekt){
+    public Projekt create(@RequestBody @Valid Projekt projekt){
         return projektRepository.save(projekt);
     }
 

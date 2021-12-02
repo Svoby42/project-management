@@ -16,6 +16,7 @@
                 <th> Jméno </th>
                 <th> Příjmení </th>
                 <th> Emailová adresa </th>
+                <th> Možnosti </th>
             </tr>
             </thead>
             <tbody>
@@ -23,6 +24,10 @@
                 <td th:text="${zamestnanec.jmeno}"></td>
                 <td th:text="${zamestnanec.prijmeni}"></td>
                 <td th:text="${zamestnanec.email}"></td>
+                <td>
+                    <a class="btn btn-info btn-sm" th:href="@{/zamestnanci/zmenit(id=${zamestnanec.zamestnanecId})}">Změnit</a>
+                    <a class="btn btn-danger btn-sm" th:href="@{/zamestnanci/smazat(id=${zamestnanec.zamestnanecId})}" onclick="if (!(confirm('Potvrdit smazání'))) return false">Smazat</a>
+                </td>
             </tr>
             </tbody>
         </table>

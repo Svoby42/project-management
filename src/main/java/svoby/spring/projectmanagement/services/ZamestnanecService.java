@@ -26,5 +26,13 @@ public class ZamestnanecService {
         return zamestnanecRepository.zamestnanecProjekty();
     }
 
+    public Zamestnanec findByZamestnanecId(Long id){
+        return zamestnanecRepository.findByZamestnanecId(id);
+    }
+
+    public void delete(Zamestnanec zamestnanec){
+        zamestnanecRepository.delete(zamestnanec);
+    }
+
 
 }
