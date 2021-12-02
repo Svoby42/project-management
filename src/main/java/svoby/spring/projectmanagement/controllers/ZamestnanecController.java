@@ -3,6 +3,7 @@ package svoby.spring.projectmanagement.controllers;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
+import org.springframework.validation.Errors;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
@@ -11,6 +12,7 @@ import svoby.spring.projectmanagement.domain.Zamestnanec;
 import svoby.spring.projectmanagement.repositories.ZamestnanecRepository;
 import svoby.spring.projectmanagement.services.ZamestnanecService;
 
+import javax.validation.Valid;
 import java.util.List;
 
 @Controller
@@ -36,7 +38,11 @@ public class ZamestnanecController {
     }
 
     @PostMapping("/ulozit")
-    public String vytvoritZamestnance(Zamestnanec zamestnanec, Model model){
+    public String vytvoritZamestnance(@Valid Zamestnanec zamestnanec, Model model, Errors errors){
+
+        if(errors.hasErrors()){
+            return "zamestnanci/novy-zamestnanec";
+        }
         zamestnanecService.save(zamestnanec);
         return "redirect:/zamestnanci";
     }

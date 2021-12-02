@@ -6,29 +6,36 @@
 </head>
 
 <body>
-<h1>Vytvoření projektu</h1>
     <div class="container">
 
         <nav th:replace="layouts :: navbar"></nav>
         <form th:action="@{/projekty/ulozit}" th:object="${projekt}" method="post">
+            <h3>Vytvoření projektu</h3>
+            <div class="row form-group pl-3 pr-3">
+                <input type="text" class="form-control" placeholder="Název projektu" th:field="${projekt.nazev}">
+            </div>
 
-            <input type="text" placeholder="Název projektu" th:field="${projekt.nazev}">
+            <div class="row form-group pl-3 pr-3">
+                <select class="form-control" th:field="${projekt.stav}">
+                    <option th:value="nezahajen">Nezahájen</option>
+                    <option th:value="vevyvoji">Ve vývoji</option>
+                    <option th:value="hotovo">Hotovo</option>
+                </select>
+            </div>
 
-            <select th:field="${projekt.stav}">
-                <option th:value="nezahajen">Nezahájen</option>
-                <option th:value="vevyvoji">Ve vývoji</option>
-                <option th:value="hotovo">Hotovo</option>
-            </select>
+            <div class="row form-group pl-3 pr-3">
+                <textarea class="form-control" type="text" placeholder="Popis projektu" th:field="${projekt.popis}"></textarea>
+            </div>
 
-            <textarea type="text" placeholder="Popis projektu" th:field="${projekt.popis}"></textarea>
-
-            <select th:field="${projekt.zamestnanci}" multiple="multiple">
+            <div class="row form-group pl-3 pr-3">
+            <select class="form-control" th:field="${projekt.zamestnanci}" multiple="multiple">
                 <option th:each="zamestnanec : ${zamestnanciList}"
                         th:value="${zamestnanec.zamestnanecId}"
                         th:text="${zamestnanec.jmeno}">
                 </option>
             </select>
-            <button type="submit">Vytvořit projekt</button>
+            </div>
+            <button class="btn btn-dark" type="submit">Vytvořit projekt</button>
 
         </form>
     </div>

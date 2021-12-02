@@ -1458,3 +1458,524 @@ Caused by: java.lang.ClassNotFoundException: com.fasterxml.jackson.core.exc.Stre
  
  
 
+2021-12-02 18:19:35.335  INFO 25350 --- [Thread-9] o.s.s.concurrent.ThreadPoolTaskExecutor  : Shutting down ExecutorService 'applicationTaskExecutor'
+2021-12-02 18:19:35.338  INFO 25350 --- [Thread-9] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2021-12-02 18:19:35.342  INFO 25350 --- [Thread-9] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2021-12-02 18:19:35.358  INFO 25350 --- [Thread-9] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2021-12-02 22:03:01.647  INFO 29337 --- [restartedMain] s.s.p.ProjectManagementApplication       : Starting ProjectManagementApplication on svobypc with PID 29337 (/home/svoby/Documents/project-management/target/classes started by svoby in /home/svoby/Documents/project-management)
+2021-12-02 22:03:01.651 DEBUG 29337 --- [restartedMain] s.s.p.ProjectManagementApplication       : Running with Spring Boot v2.1.4.RELEASE, Spring v5.1.6.RELEASE
+2021-12-02 22:03:01.652  INFO 29337 --- [restartedMain] s.s.p.ProjectManagementApplication       : The following profiles are active: dev
+2021-12-02 22:03:01.786  INFO 29337 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2021-12-02 22:03:01.787  INFO 29337 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2021-12-02 22:03:02.747  INFO 29337 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data repositories in DEFAULT mode.
+2021-12-02 22:03:02.830  INFO 29337 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 74ms. Found 3 repository interfaces.
+2021-12-02 22:03:03.224  INFO 29337 --- [restartedMain] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$5b92e7a9] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2021-12-02 22:03:03.276  INFO 29337 --- [restartedMain] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.hateoas.config.HateoasConfiguration' of type [org.springframework.hateoas.config.HateoasConfiguration$$EnhancerBySpringCGLIB$$db1334db] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2021-12-02 22:03:03.682  INFO 29337 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2021-12-02 22:03:03.713  INFO 29337 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2021-12-02 22:03:03.714  INFO 29337 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.17]
+2021-12-02 22:03:03.800  INFO 29337 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2021-12-02 22:03:03.800  INFO 29337 --- [restartedMain] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 2013 ms
+2021-12-02 22:03:04.041  INFO 29337 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2021-12-02 22:03:04.096  INFO 29337 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2021-12-02 22:03:04.148  INFO 29337 --- [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [
+	name: default
+	...]
+2021-12-02 22:03:04.211  INFO 29337 --- [restartedMain] org.hibernate.Version                    : HHH000412: Hibernate Core {5.3.9.Final}
+2021-12-02 22:03:04.213  INFO 29337 --- [restartedMain] org.hibernate.cfg.Environment            : HHH000206: hibernate.properties not found
+2021-12-02 22:03:04.347  INFO 29337 --- [restartedMain] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.0.4.Final}
+2021-12-02 22:03:04.429  INFO 29337 --- [restartedMain] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.PostgreSQL95Dialect
+2021-12-02 22:03:04.550  INFO 29337 --- [restartedMain] o.h.e.j.e.i.LobCreatorBuilderImpl        : HHH000421: Disabling contextual LOB creation as hibernate.jdbc.lob.non_contextual_creation is true
+2021-12-02 22:03:04.557  INFO 29337 --- [restartedMain] org.hibernate.type.BasicTypeRegistry     : HHH000270: Type registration [java.util.UUID] overrides previous : org.hibernate.type.UUIDBinaryType@2a3e10c8
+2021-12-02 22:03:04.999  INFO 29337 --- [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2021-12-02 22:03:05.991  INFO 29337 --- [restartedMain] o.s.s.web.DefaultSecurityFilterChain     : Creating filter chain: any request, [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@471a4df6, org.springframework.security.web.context.SecurityContextPersistenceFilter@db8b4a6, org.springframework.security.web.header.HeaderWriterFilter@f0e3482, org.springframework.security.web.csrf.CsrfFilter@3bbd150f, org.springframework.security.web.authentication.logout.LogoutFilter@8a9d34, org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter@41e944e6, org.springframework.security.web.authentication.ui.DefaultLoginPageGeneratingFilter@29a9fd6f, org.springframework.security.web.authentication.ui.DefaultLogoutPageGeneratingFilter@79469aa2, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@7f22730c, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@7efe5226, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@734932c7, org.springframework.security.web.session.SessionManagementFilter@5409fa1, org.springframework.security.web.access.ExceptionTranslationFilter@ffbe375, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@1255fd2d]
+2021-12-02 22:03:06.156  INFO 29337 --- [restartedMain] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2021-12-02 22:03:06.198  WARN 29337 --- [restartedMain] aWebConfiguration$JpaWebMvcConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2021-12-02 22:03:06.402  INFO 29337 --- [restartedMain] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page template: index
+2021-12-02 22:03:06.738  INFO 29337 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2021-12-02 22:03:06.790  INFO 29337 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2021-12-02 22:03:06.796  INFO 29337 --- [restartedMain] s.s.p.ProjectManagementApplication       : Started ProjectManagementApplication in 6.135 seconds (JVM running for 7.899)
+2021-12-02 22:03:13.099  INFO 29337 --- [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2021-12-02 22:03:13.101  INFO 29337 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2021-12-02 22:03:13.120  INFO 29337 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 19 ms
+2021-12-02 22:03:13.164 DEBUG 29337 --- [http-nio-8080-exec-1] s.s.p.logging.ApplicationLoggerAspect    : 
+ ------------------------------------------ 
+2021-12-02 22:03:13.166 DEBUG 29337 --- [http-nio-8080-exec-1] s.s.p.logging.ApplicationLoggerAspect    :  Před metodou 
+ svoby.spring.projectmanagement.controllers.IndexController, zobrazitIndex () with arguments[s] = [{}]
+2021-12-02 22:03:13.166 DEBUG 29337 --- [http-nio-8080-exec-1] s.s.p.logging.ApplicationLoggerAspect    :  ---------------------------------------------- 
+ 
+ 
+
+2021-12-02 22:03:13.203  INFO 29337 --- [http-nio-8080-exec-1] o.h.h.i.QueryTranslatorFactoryInitiator  : HHH000397: Using ASTQueryTranslatorFactory
+2021-12-02 22:03:13.398 DEBUG 29337 --- [http-nio-8080-exec-1] s.s.p.logging.ApplicationLoggerAspect    :  Po metodě 
+ svoby.spring.projectmanagement.controllers.IndexController, zobrazitIndex () with arguments[s] = [{verzeCislo=0.0.1, projektStatusPocet=[{"stav":"Nezahájen","pocet":8}], projektyList=[svoby.spring.projectmanagement.domain.Projekt@7b49464d, svoby.spring.projectmanagement.domain.Projekt@7ff9600, svoby.spring.projectmanagement.domain.Projekt@6d59597f, svoby.spring.projectmanagement.domain.Projekt@77074c1e, svoby.spring.projectmanagement.domain.Projekt@5f6dfcc4, svoby.spring.projectmanagement.domain.Projekt@24d92ebf, svoby.spring.projectmanagement.domain.Projekt@36c09fa, svoby.spring.projectmanagement.domain.Projekt@4e46c235], zamestnanciListProjektyPocet=[org.springframework.data.jpa.repository.query.AbstractJpaQuery$TupleConverter$TupleBackedMap@665a6c43, org.springframework.data.jpa.repository.query.AbstractJpaQuery$TupleConverter$TupleBackedMap@3365cc16, org.springframework.data.jpa.repository.query.AbstractJpaQuery$TupleConverter$TupleBackedMap@3c1fc764, org.springframework.data.jpa.repository.query.AbstractJpaQuery$TupleConverter$TupleBackedMap@9129cd0, org.springframework.data.jpa.repository.query.AbstractJpaQuery$TupleConverter$TupleBackedMap@529825b1, org.springframework.data.jpa.repository.query.AbstractJpaQuery$TupleConverter$TupleBackedMap@4f804688, org.springframework.data.jpa.repository.query.AbstractJpaQuery$TupleConverter$TupleBackedMap@de69cfb, org.springframework.data.jpa.repository.query.AbstractJpaQuery$TupleConverter$TupleBackedMap@100f658b]}]
+2021-12-02 22:03:13.398 DEBUG 29337 --- [http-nio-8080-exec-1] s.s.p.logging.ApplicationLoggerAspect    :  ---------------------------------------------- 
+ 
+ 
+
+2021-12-02 22:03:15.461 DEBUG 29337 --- [http-nio-8080-exec-4] s.s.p.logging.ApplicationLoggerAspect    : 
+ ------------------------------------------ 
+2021-12-02 22:03:15.462 DEBUG 29337 --- [http-nio-8080-exec-4] s.s.p.logging.ApplicationLoggerAspect    :  Před metodou 
+ svoby.spring.projectmanagement.controllers.ZamestnanecController, zobrazitSeznamZamestnancu () with arguments[s] = [{}]
+2021-12-02 22:03:15.462 DEBUG 29337 --- [http-nio-8080-exec-4] s.s.p.logging.ApplicationLoggerAspect    :  ---------------------------------------------- 
+ 
+ 
+
+2021-12-02 22:03:15.476 DEBUG 29337 --- [http-nio-8080-exec-4] s.s.p.logging.ApplicationLoggerAspect    :  Po metodě 
+ svoby.spring.projectmanagement.controllers.ZamestnanecController, zobrazitSeznamZamestnancu () with arguments[s] = [{seznam=[svoby.spring.projectmanagement.domain.Zamestnanec@7956330b, svoby.spring.projectmanagement.domain.Zamestnanec@63267d15, svoby.spring.projectmanagement.domain.Zamestnanec@53db4ecf, svoby.spring.projectmanagement.domain.Zamestnanec@7dc4ea54, svoby.spring.projectmanagement.domain.Zamestnanec@35c2508c, svoby.spring.projectmanagement.domain.Zamestnanec@65dc4df4, svoby.spring.projectmanagement.domain.Zamestnanec@6c78cab6, svoby.spring.projectmanagement.domain.Zamestnanec@36340b27]}]
+2021-12-02 22:03:15.476 DEBUG 29337 --- [http-nio-8080-exec-4] s.s.p.logging.ApplicationLoggerAspect    :  ---------------------------------------------- 
+ 
+ 
+
+2021-12-02 22:03:16.556 DEBUG 29337 --- [http-nio-8080-exec-6] s.s.p.logging.ApplicationLoggerAspect    : 
+ ------------------------------------------ 
+2021-12-02 22:03:16.557 DEBUG 29337 --- [http-nio-8080-exec-6] s.s.p.logging.ApplicationLoggerAspect    :  Před metodou 
+ svoby.spring.projectmanagement.controllers.ProjektController, zobrazitSeznamProjektu () with arguments[s] = [{}]
+2021-12-02 22:03:16.557 DEBUG 29337 --- [http-nio-8080-exec-6] s.s.p.logging.ApplicationLoggerAspect    :  ---------------------------------------------- 
+ 
+ 
+
+2021-12-02 22:03:16.565 DEBUG 29337 --- [http-nio-8080-exec-6] s.s.p.logging.ApplicationLoggerAspect    :  Po metodě 
+ svoby.spring.projectmanagement.controllers.ProjektController, zobrazitSeznamProjektu () with arguments[s] = [{seznam=[svoby.spring.projectmanagement.domain.Projekt@6c21f0b7, svoby.spring.projectmanagement.domain.Projekt@57221c7f, svoby.spring.projectmanagement.domain.Projekt@3d9913a8, svoby.spring.projectmanagement.domain.Projekt@6867d1f3, svoby.spring.projectmanagement.domain.Projekt@ba03000, svoby.spring.projectmanagement.domain.Projekt@4c2614ef, svoby.spring.projectmanagement.domain.Projekt@6543f1cd, svoby.spring.projectmanagement.domain.Projekt@19be00e6]}]
+2021-12-02 22:03:16.565 DEBUG 29337 --- [http-nio-8080-exec-6] s.s.p.logging.ApplicationLoggerAspect    :  ---------------------------------------------- 
+ 
+ 
+
+2021-12-02 22:03:24.023 DEBUG 29337 --- [http-nio-8080-exec-1] s.s.p.logging.ApplicationLoggerAspect    : 
+ ------------------------------------------ 
+2021-12-02 22:03:24.023 DEBUG 29337 --- [http-nio-8080-exec-1] s.s.p.logging.ApplicationLoggerAspect    :  Před metodou 
+ svoby.spring.projectmanagement.controllers.ProjektController, zobrazitProjektFormular () with arguments[s] = [{}]
+2021-12-02 22:03:24.023 DEBUG 29337 --- [http-nio-8080-exec-1] s.s.p.logging.ApplicationLoggerAspect    :  ---------------------------------------------- 
+ 
+ 
+
+2021-12-02 22:03:24.028 DEBUG 29337 --- [http-nio-8080-exec-1] s.s.p.logging.ApplicationLoggerAspect    :  Po metodě 
+ svoby.spring.projectmanagement.controllers.ProjektController, zobrazitProjektFormular () with arguments[s] = [{projekt=svoby.spring.projectmanagement.domain.Projekt@2129a928, zamestnanciList=[svoby.spring.projectmanagement.domain.Zamestnanec@76a3f14e, svoby.spring.projectmanagement.domain.Zamestnanec@1565a454, svoby.spring.projectmanagement.domain.Zamestnanec@6d3f3ebc, svoby.spring.projectmanagement.domain.Zamestnanec@3123ab72, svoby.spring.projectmanagement.domain.Zamestnanec@58e30599, svoby.spring.projectmanagement.domain.Zamestnanec@601c5dd5, svoby.spring.projectmanagement.domain.Zamestnanec@18990123, svoby.spring.projectmanagement.domain.Zamestnanec@1ae91510]}]
+2021-12-02 22:03:24.028 DEBUG 29337 --- [http-nio-8080-exec-1] s.s.p.logging.ApplicationLoggerAspect    :  ---------------------------------------------- 
+ 
+ 
+
+2021-12-02 22:04:38.692 DEBUG 29337 --- [http-nio-8080-exec-5] s.s.p.logging.ApplicationLoggerAspect    : 
+ ------------------------------------------ 
+2021-12-02 22:04:38.693 DEBUG 29337 --- [http-nio-8080-exec-5] s.s.p.logging.ApplicationLoggerAspect    :  Před metodou 
+ svoby.spring.projectmanagement.controllers.ProjektController, zobrazitProjektFormular () with arguments[s] = [{}]
+2021-12-02 22:04:38.693 DEBUG 29337 --- [http-nio-8080-exec-5] s.s.p.logging.ApplicationLoggerAspect    :  ---------------------------------------------- 
+ 
+ 
+
+2021-12-02 22:04:38.698 DEBUG 29337 --- [http-nio-8080-exec-5] s.s.p.logging.ApplicationLoggerAspect    :  Po metodě 
+ svoby.spring.projectmanagement.controllers.ProjektController, zobrazitProjektFormular () with arguments[s] = [{projekt=svoby.spring.projectmanagement.domain.Projekt@7361ad0e, zamestnanciList=[svoby.spring.projectmanagement.domain.Zamestnanec@42a5f0c7, svoby.spring.projectmanagement.domain.Zamestnanec@30f09be7, svoby.spring.projectmanagement.domain.Zamestnanec@3a046b89, svoby.spring.projectmanagement.domain.Zamestnanec@6194a154, svoby.spring.projectmanagement.domain.Zamestnanec@c5a5669, svoby.spring.projectmanagement.domain.Zamestnanec@3841dba6, svoby.spring.projectmanagement.domain.Zamestnanec@2100a704, svoby.spring.projectmanagement.domain.Zamestnanec@65da3c71]}]
+2021-12-02 22:04:38.699 DEBUG 29337 --- [http-nio-8080-exec-5] s.s.p.logging.ApplicationLoggerAspect    :  ---------------------------------------------- 
+ 
+ 
+
+2021-12-02 22:05:04.409 DEBUG 29337 --- [http-nio-8080-exec-7] s.s.p.logging.ApplicationLoggerAspect    : 
+ ------------------------------------------ 
+2021-12-02 22:05:04.409 DEBUG 29337 --- [http-nio-8080-exec-7] s.s.p.logging.ApplicationLoggerAspect    :  Před metodou 
+ svoby.spring.projectmanagement.controllers.ProjektController, zobrazitProjektFormular () with arguments[s] = [{}]
+2021-12-02 22:05:04.409 DEBUG 29337 --- [http-nio-8080-exec-7] s.s.p.logging.ApplicationLoggerAspect    :  ---------------------------------------------- 
+ 
+ 
+
+2021-12-02 22:05:04.418 DEBUG 29337 --- [http-nio-8080-exec-7] s.s.p.logging.ApplicationLoggerAspect    :  Po metodě 
+ svoby.spring.projectmanagement.controllers.ProjektController, zobrazitProjektFormular () with arguments[s] = [{projekt=svoby.spring.projectmanagement.domain.Projekt@198577c9, zamestnanciList=[svoby.spring.projectmanagement.domain.Zamestnanec@1b274041, svoby.spring.projectmanagement.domain.Zamestnanec@4040852d, svoby.spring.projectmanagement.domain.Zamestnanec@1ece9b0c, svoby.spring.projectmanagement.domain.Zamestnanec@21a74435, svoby.spring.projectmanagement.domain.Zamestnanec@232d08, svoby.spring.projectmanagement.domain.Zamestnanec@440eb9cc, svoby.spring.projectmanagement.domain.Zamestnanec@2e724cba, svoby.spring.projectmanagement.domain.Zamestnanec@35ef33ad]}]
+2021-12-02 22:05:04.420 DEBUG 29337 --- [http-nio-8080-exec-7] s.s.p.logging.ApplicationLoggerAspect    :  ---------------------------------------------- 
+ 
+ 
+
+2021-12-02 22:05:05.326 DEBUG 29337 --- [http-nio-8080-exec-9] s.s.p.logging.ApplicationLoggerAspect    : 
+ ------------------------------------------ 
+2021-12-02 22:05:05.327 DEBUG 29337 --- [http-nio-8080-exec-9] s.s.p.logging.ApplicationLoggerAspect    :  Před metodou 
+ svoby.spring.projectmanagement.controllers.ProjektController, zobrazitProjektFormular () with arguments[s] = [{}]
+2021-12-02 22:05:05.328 DEBUG 29337 --- [http-nio-8080-exec-9] s.s.p.logging.ApplicationLoggerAspect    :  ---------------------------------------------- 
+ 
+ 
+
+2021-12-02 22:05:05.343 DEBUG 29337 --- [http-nio-8080-exec-9] s.s.p.logging.ApplicationLoggerAspect    :  Po metodě 
+ svoby.spring.projectmanagement.controllers.ProjektController, zobrazitProjektFormular () with arguments[s] = [{projekt=svoby.spring.projectmanagement.domain.Projekt@77a03b1c, zamestnanciList=[svoby.spring.projectmanagement.domain.Zamestnanec@7a1426a5, svoby.spring.projectmanagement.domain.Zamestnanec@48b1a66e, svoby.spring.projectmanagement.domain.Zamestnanec@2b3af0e8, svoby.spring.projectmanagement.domain.Zamestnanec@4d885831, svoby.spring.projectmanagement.domain.Zamestnanec@16f26e2b, svoby.spring.projectmanagement.domain.Zamestnanec@53b5284d, svoby.spring.projectmanagement.domain.Zamestnanec@2f742f63, svoby.spring.projectmanagement.domain.Zamestnanec@20b2b36c]}]
+2021-12-02 22:05:05.344 DEBUG 29337 --- [http-nio-8080-exec-9] s.s.p.logging.ApplicationLoggerAspect    :  ---------------------------------------------- 
+ 
+ 
+
+2021-12-02 22:05:43.744 DEBUG 29337 --- [http-nio-8080-exec-1] s.s.p.logging.ApplicationLoggerAspect    : 
+ ------------------------------------------ 
+2021-12-02 22:05:43.745 DEBUG 29337 --- [http-nio-8080-exec-1] s.s.p.logging.ApplicationLoggerAspect    :  Před metodou 
+ svoby.spring.projectmanagement.controllers.ProjektController, zobrazitProjektFormular () with arguments[s] = [{}]
+2021-12-02 22:05:43.745 DEBUG 29337 --- [http-nio-8080-exec-1] s.s.p.logging.ApplicationLoggerAspect    :  ---------------------------------------------- 
+ 
+ 
+
+2021-12-02 22:05:43.751 DEBUG 29337 --- [http-nio-8080-exec-1] s.s.p.logging.ApplicationLoggerAspect    :  Po metodě 
+ svoby.spring.projectmanagement.controllers.ProjektController, zobrazitProjektFormular () with arguments[s] = [{projekt=svoby.spring.projectmanagement.domain.Projekt@5405f11f, zamestnanciList=[svoby.spring.projectmanagement.domain.Zamestnanec@1b1f438d, svoby.spring.projectmanagement.domain.Zamestnanec@2f67eaba, svoby.spring.projectmanagement.domain.Zamestnanec@430a51cc, svoby.spring.projectmanagement.domain.Zamestnanec@7f70ed9b, svoby.spring.projectmanagement.domain.Zamestnanec@1e92cad3, svoby.spring.projectmanagement.domain.Zamestnanec@eb0d181, svoby.spring.projectmanagement.domain.Zamestnanec@1f2575aa, svoby.spring.projectmanagement.domain.Zamestnanec@67c14fe0]}]
+2021-12-02 22:05:43.752 DEBUG 29337 --- [http-nio-8080-exec-1] s.s.p.logging.ApplicationLoggerAspect    :  ---------------------------------------------- 
+ 
+ 
+
+2021-12-02 22:08:33.117 DEBUG 29337 --- [http-nio-8080-exec-4] s.s.p.logging.ApplicationLoggerAspect    : 
+ ------------------------------------------ 
+2021-12-02 22:08:33.118 DEBUG 29337 --- [http-nio-8080-exec-4] s.s.p.logging.ApplicationLoggerAspect    :  Před metodou 
+ svoby.spring.projectmanagement.controllers.ProjektController, zobrazitProjektFormular () with arguments[s] = [{}]
+2021-12-02 22:08:33.118 DEBUG 29337 --- [http-nio-8080-exec-4] s.s.p.logging.ApplicationLoggerAspect    :  ---------------------------------------------- 
+ 
+ 
+
+2021-12-02 22:08:33.124 DEBUG 29337 --- [http-nio-8080-exec-4] s.s.p.logging.ApplicationLoggerAspect    :  Po metodě 
+ svoby.spring.projectmanagement.controllers.ProjektController, zobrazitProjektFormular () with arguments[s] = [{projekt=svoby.spring.projectmanagement.domain.Projekt@256a2d0e, zamestnanciList=[svoby.spring.projectmanagement.domain.Zamestnanec@5c38e75e, svoby.spring.projectmanagement.domain.Zamestnanec@7feb07c2, svoby.spring.projectmanagement.domain.Zamestnanec@fc04f9c, svoby.spring.projectmanagement.domain.Zamestnanec@8799f08, svoby.spring.projectmanagement.domain.Zamestnanec@13609b4e, svoby.spring.projectmanagement.domain.Zamestnanec@34124bf7, svoby.spring.projectmanagement.domain.Zamestnanec@39235e46, svoby.spring.projectmanagement.domain.Zamestnanec@7de617b5]}]
+2021-12-02 22:08:33.124 DEBUG 29337 --- [http-nio-8080-exec-4] s.s.p.logging.ApplicationLoggerAspect    :  ---------------------------------------------- 
+ 
+ 
+
+2021-12-02 22:09:41.645 DEBUG 29337 --- [http-nio-8080-exec-7] s.s.p.logging.ApplicationLoggerAspect    : 
+ ------------------------------------------ 
+2021-12-02 22:09:41.645 DEBUG 29337 --- [http-nio-8080-exec-7] s.s.p.logging.ApplicationLoggerAspect    :  Před metodou 
+ svoby.spring.projectmanagement.controllers.ProjektController, zobrazitProjektFormular () with arguments[s] = [{}]
+2021-12-02 22:09:41.645 DEBUG 29337 --- [http-nio-8080-exec-7] s.s.p.logging.ApplicationLoggerAspect    :  ---------------------------------------------- 
+ 
+ 
+
+2021-12-02 22:09:41.650 DEBUG 29337 --- [http-nio-8080-exec-7] s.s.p.logging.ApplicationLoggerAspect    :  Po metodě 
+ svoby.spring.projectmanagement.controllers.ProjektController, zobrazitProjektFormular () with arguments[s] = [{projekt=svoby.spring.projectmanagement.domain.Projekt@448de412, zamestnanciList=[svoby.spring.projectmanagement.domain.Zamestnanec@3ffc9453, svoby.spring.projectmanagement.domain.Zamestnanec@636f4c60, svoby.spring.projectmanagement.domain.Zamestnanec@1d813ed7, svoby.spring.projectmanagement.domain.Zamestnanec@51ebbcd2, svoby.spring.projectmanagement.domain.Zamestnanec@a6ef4b0, svoby.spring.projectmanagement.domain.Zamestnanec@137bb5d1, svoby.spring.projectmanagement.domain.Zamestnanec@71846ef, svoby.spring.projectmanagement.domain.Zamestnanec@b9967f2]}]
+2021-12-02 22:09:41.651 DEBUG 29337 --- [http-nio-8080-exec-7] s.s.p.logging.ApplicationLoggerAspect    :  ---------------------------------------------- 
+ 
+ 
+
+2021-12-02 22:12:58.820 DEBUG 29337 --- [http-nio-8080-exec-10] s.s.p.logging.ApplicationLoggerAspect    : 
+ ------------------------------------------ 
+2021-12-02 22:12:58.820 DEBUG 29337 --- [http-nio-8080-exec-10] s.s.p.logging.ApplicationLoggerAspect    :  Před metodou 
+ svoby.spring.projectmanagement.controllers.ProjektController, zobrazitProjektFormular () with arguments[s] = [{}]
+2021-12-02 22:12:58.821 DEBUG 29337 --- [http-nio-8080-exec-10] s.s.p.logging.ApplicationLoggerAspect    :  ---------------------------------------------- 
+ 
+ 
+
+2021-12-02 22:12:58.825 DEBUG 29337 --- [http-nio-8080-exec-10] s.s.p.logging.ApplicationLoggerAspect    :  Po metodě 
+ svoby.spring.projectmanagement.controllers.ProjektController, zobrazitProjektFormular () with arguments[s] = [{projekt=svoby.spring.projectmanagement.domain.Projekt@3733ba3e, zamestnanciList=[svoby.spring.projectmanagement.domain.Zamestnanec@112c37f9, svoby.spring.projectmanagement.domain.Zamestnanec@6b2db74a, svoby.spring.projectmanagement.domain.Zamestnanec@526c8fd3, svoby.spring.projectmanagement.domain.Zamestnanec@1615795d, svoby.spring.projectmanagement.domain.Zamestnanec@66f60799, svoby.spring.projectmanagement.domain.Zamestnanec@60676bea, svoby.spring.projectmanagement.domain.Zamestnanec@56c37222, svoby.spring.projectmanagement.domain.Zamestnanec@6b213636]}]
+2021-12-02 22:12:58.826 DEBUG 29337 --- [http-nio-8080-exec-10] s.s.p.logging.ApplicationLoggerAspect    :  ---------------------------------------------- 
+ 
+ 
+
+2021-12-02 22:14:18.101 DEBUG 29337 --- [http-nio-8080-exec-2] s.s.p.logging.ApplicationLoggerAspect    : 
+ ------------------------------------------ 
+2021-12-02 22:14:18.101 DEBUG 29337 --- [http-nio-8080-exec-2] s.s.p.logging.ApplicationLoggerAspect    :  Před metodou 
+ svoby.spring.projectmanagement.controllers.ProjektController, zobrazitProjektFormular () with arguments[s] = [{}]
+2021-12-02 22:14:18.101 DEBUG 29337 --- [http-nio-8080-exec-2] s.s.p.logging.ApplicationLoggerAspect    :  ---------------------------------------------- 
+ 
+ 
+
+2021-12-02 22:14:18.107 DEBUG 29337 --- [http-nio-8080-exec-2] s.s.p.logging.ApplicationLoggerAspect    :  Po metodě 
+ svoby.spring.projectmanagement.controllers.ProjektController, zobrazitProjektFormular () with arguments[s] = [{projekt=svoby.spring.projectmanagement.domain.Projekt@30f84a9b, zamestnanciList=[svoby.spring.projectmanagement.domain.Zamestnanec@380bef39, svoby.spring.projectmanagement.domain.Zamestnanec@5aed4c4a, svoby.spring.projectmanagement.domain.Zamestnanec@14366261, svoby.spring.projectmanagement.domain.Zamestnanec@4cdce1a1, svoby.spring.projectmanagement.domain.Zamestnanec@2bc9bd24, svoby.spring.projectmanagement.domain.Zamestnanec@1b762b0b, svoby.spring.projectmanagement.domain.Zamestnanec@3c74676e, svoby.spring.projectmanagement.domain.Zamestnanec@170e58a8]}]
+2021-12-02 22:14:18.108 DEBUG 29337 --- [http-nio-8080-exec-2] s.s.p.logging.ApplicationLoggerAspect    :  ---------------------------------------------- 
+ 
+ 
+
+2021-12-02 22:14:33.671 DEBUG 29337 --- [http-nio-8080-exec-5] s.s.p.logging.ApplicationLoggerAspect    : 
+ ------------------------------------------ 
+2021-12-02 22:14:33.671 DEBUG 29337 --- [http-nio-8080-exec-5] s.s.p.logging.ApplicationLoggerAspect    :  Před metodou 
+ svoby.spring.projectmanagement.controllers.ProjektController, zobrazitProjektFormular () with arguments[s] = [{}]
+2021-12-02 22:14:33.671 DEBUG 29337 --- [http-nio-8080-exec-5] s.s.p.logging.ApplicationLoggerAspect    :  ---------------------------------------------- 
+ 
+ 
+
+2021-12-02 22:14:33.677 DEBUG 29337 --- [http-nio-8080-exec-5] s.s.p.logging.ApplicationLoggerAspect    :  Po metodě 
+ svoby.spring.projectmanagement.controllers.ProjektController, zobrazitProjektFormular () with arguments[s] = [{projekt=svoby.spring.projectmanagement.domain.Projekt@1fe72db9, zamestnanciList=[svoby.spring.projectmanagement.domain.Zamestnanec@657c9d8e, svoby.spring.projectmanagement.domain.Zamestnanec@6a526d50, svoby.spring.projectmanagement.domain.Zamestnanec@6324d48b, svoby.spring.projectmanagement.domain.Zamestnanec@26e03de4, svoby.spring.projectmanagement.domain.Zamestnanec@27f1445b, svoby.spring.projectmanagement.domain.Zamestnanec@5eb08518, svoby.spring.projectmanagement.domain.Zamestnanec@1bf592c9, svoby.spring.projectmanagement.domain.Zamestnanec@3cdd834e]}]
+2021-12-02 22:14:33.677 DEBUG 29337 --- [http-nio-8080-exec-5] s.s.p.logging.ApplicationLoggerAspect    :  ---------------------------------------------- 
+ 
+ 
+
+2021-12-02 22:15:14.460 DEBUG 29337 --- [http-nio-8080-exec-7] s.s.p.logging.ApplicationLoggerAspect    : 
+ ------------------------------------------ 
+2021-12-02 22:15:14.461 DEBUG 29337 --- [http-nio-8080-exec-7] s.s.p.logging.ApplicationLoggerAspect    :  Před metodou 
+ svoby.spring.projectmanagement.controllers.ProjektController, zobrazitProjektFormular () with arguments[s] = [{}]
+2021-12-02 22:15:14.461 DEBUG 29337 --- [http-nio-8080-exec-7] s.s.p.logging.ApplicationLoggerAspect    :  ---------------------------------------------- 
+ 
+ 
+
+2021-12-02 22:15:14.468 DEBUG 29337 --- [http-nio-8080-exec-7] s.s.p.logging.ApplicationLoggerAspect    :  Po metodě 
+ svoby.spring.projectmanagement.controllers.ProjektController, zobrazitProjektFormular () with arguments[s] = [{projekt=svoby.spring.projectmanagement.domain.Projekt@2378e7ab, zamestnanciList=[svoby.spring.projectmanagement.domain.Zamestnanec@758f912a, svoby.spring.projectmanagement.domain.Zamestnanec@3986e277, svoby.spring.projectmanagement.domain.Zamestnanec@63311aa, svoby.spring.projectmanagement.domain.Zamestnanec@6f96e96b, svoby.spring.projectmanagement.domain.Zamestnanec@66192372, svoby.spring.projectmanagement.domain.Zamestnanec@6802f09c, svoby.spring.projectmanagement.domain.Zamestnanec@76a20277, svoby.spring.projectmanagement.domain.Zamestnanec@2ea76079]}]
+2021-12-02 22:15:14.469 DEBUG 29337 --- [http-nio-8080-exec-7] s.s.p.logging.ApplicationLoggerAspect    :  ---------------------------------------------- 
+ 
+ 
+
+2021-12-02 22:16:02.484 DEBUG 29337 --- [http-nio-8080-exec-9] s.s.p.logging.ApplicationLoggerAspect    : 
+ ------------------------------------------ 
+2021-12-02 22:16:02.484 DEBUG 29337 --- [http-nio-8080-exec-9] s.s.p.logging.ApplicationLoggerAspect    :  Před metodou 
+ svoby.spring.projectmanagement.controllers.ProjektController, zobrazitProjektFormular () with arguments[s] = [{}]
+2021-12-02 22:16:02.484 DEBUG 29337 --- [http-nio-8080-exec-9] s.s.p.logging.ApplicationLoggerAspect    :  ---------------------------------------------- 
+ 
+ 
+
+2021-12-02 22:16:02.489 DEBUG 29337 --- [http-nio-8080-exec-9] s.s.p.logging.ApplicationLoggerAspect    :  Po metodě 
+ svoby.spring.projectmanagement.controllers.ProjektController, zobrazitProjektFormular () with arguments[s] = [{projekt=svoby.spring.projectmanagement.domain.Projekt@25f4e0a1, zamestnanciList=[svoby.spring.projectmanagement.domain.Zamestnanec@314a1e45, svoby.spring.projectmanagement.domain.Zamestnanec@129e5b19, svoby.spring.projectmanagement.domain.Zamestnanec@5b23b65, svoby.spring.projectmanagement.domain.Zamestnanec@1d212f1a, svoby.spring.projectmanagement.domain.Zamestnanec@7cf8a2cd, svoby.spring.projectmanagement.domain.Zamestnanec@1cde78d8, svoby.spring.projectmanagement.domain.Zamestnanec@8230135, svoby.spring.projectmanagement.domain.Zamestnanec@1c6eb6d4]}]
+2021-12-02 22:16:02.489 DEBUG 29337 --- [http-nio-8080-exec-9] s.s.p.logging.ApplicationLoggerAspect    :  ---------------------------------------------- 
+ 
+ 
+
+2021-12-02 22:18:04.385 DEBUG 29337 --- [http-nio-8080-exec-3] s.s.p.logging.ApplicationLoggerAspect    : 
+ ------------------------------------------ 
+2021-12-02 22:18:04.385 DEBUG 29337 --- [http-nio-8080-exec-3] s.s.p.logging.ApplicationLoggerAspect    :  Před metodou 
+ svoby.spring.projectmanagement.controllers.ZamestnanecController, zobrazitSeznamZamestnancu () with arguments[s] = [{}]
+2021-12-02 22:18:04.385 DEBUG 29337 --- [http-nio-8080-exec-3] s.s.p.logging.ApplicationLoggerAspect    :  ---------------------------------------------- 
+ 
+ 
+
+2021-12-02 22:18:04.391 DEBUG 29337 --- [http-nio-8080-exec-3] s.s.p.logging.ApplicationLoggerAspect    :  Po metodě 
+ svoby.spring.projectmanagement.controllers.ZamestnanecController, zobrazitSeznamZamestnancu () with arguments[s] = [{seznam=[svoby.spring.projectmanagement.domain.Zamestnanec@5adbfb17, svoby.spring.projectmanagement.domain.Zamestnanec@25d7ee4f, svoby.spring.projectmanagement.domain.Zamestnanec@5ab9fd4e, svoby.spring.projectmanagement.domain.Zamestnanec@33fd098c, svoby.spring.projectmanagement.domain.Zamestnanec@367b5fa7, svoby.spring.projectmanagement.domain.Zamestnanec@2cc46ab1, svoby.spring.projectmanagement.domain.Zamestnanec@3982b1ea, svoby.spring.projectmanagement.domain.Zamestnanec@62686e3f]}]
+2021-12-02 22:18:04.391 DEBUG 29337 --- [http-nio-8080-exec-3] s.s.p.logging.ApplicationLoggerAspect    :  ---------------------------------------------- 
+ 
+ 
+
+2021-12-02 22:18:05.899 DEBUG 29337 --- [http-nio-8080-exec-4] s.s.p.logging.ApplicationLoggerAspect    : 
+ ------------------------------------------ 
+2021-12-02 22:18:05.900 DEBUG 29337 --- [http-nio-8080-exec-4] s.s.p.logging.ApplicationLoggerAspect    :  Před metodou 
+ svoby.spring.projectmanagement.controllers.ZamestnanecController, zobrazitZamestnanecFormular () with arguments[s] = [{}]
+2021-12-02 22:18:05.900 DEBUG 29337 --- [http-nio-8080-exec-4] s.s.p.logging.ApplicationLoggerAspect    :  ---------------------------------------------- 
+ 
+ 
+
+2021-12-02 22:18:05.900 DEBUG 29337 --- [http-nio-8080-exec-4] s.s.p.logging.ApplicationLoggerAspect    :  Po metodě 
+ svoby.spring.projectmanagement.controllers.ZamestnanecController, zobrazitZamestnanecFormular () with arguments[s] = [{zamestnanec=svoby.spring.projectmanagement.domain.Zamestnanec@2418fc2f}]
+2021-12-02 22:18:05.900 DEBUG 29337 --- [http-nio-8080-exec-4] s.s.p.logging.ApplicationLoggerAspect    :  ---------------------------------------------- 
+ 
+ 
+
+2021-12-02 22:18:10.698 DEBUG 29337 --- [http-nio-8080-exec-6] s.s.p.logging.ApplicationLoggerAspect    : 
+ ------------------------------------------ 
+2021-12-02 22:18:10.699 DEBUG 29337 --- [http-nio-8080-exec-6] s.s.p.logging.ApplicationLoggerAspect    :  Před metodou 
+ svoby.spring.projectmanagement.controllers.ProjektController, zobrazitSeznamProjektu () with arguments[s] = [{}]
+2021-12-02 22:18:10.699 DEBUG 29337 --- [http-nio-8080-exec-6] s.s.p.logging.ApplicationLoggerAspect    :  ---------------------------------------------- 
+ 
+ 
+
+2021-12-02 22:18:10.702 DEBUG 29337 --- [http-nio-8080-exec-6] s.s.p.logging.ApplicationLoggerAspect    :  Po metodě 
+ svoby.spring.projectmanagement.controllers.ProjektController, zobrazitSeznamProjektu () with arguments[s] = [{seznam=[svoby.spring.projectmanagement.domain.Projekt@7b5afcbc, svoby.spring.projectmanagement.domain.Projekt@cb9b3b8, svoby.spring.projectmanagement.domain.Projekt@60cd5fd0, svoby.spring.projectmanagement.domain.Projekt@7c32458, svoby.spring.projectmanagement.domain.Projekt@2b508700, svoby.spring.projectmanagement.domain.Projekt@6a35d5a1, svoby.spring.projectmanagement.domain.Projekt@600c34e8, svoby.spring.projectmanagement.domain.Projekt@7ef33d55]}]
+2021-12-02 22:18:10.703 DEBUG 29337 --- [http-nio-8080-exec-6] s.s.p.logging.ApplicationLoggerAspect    :  ---------------------------------------------- 
+ 
+ 
+
+2021-12-02 22:18:11.743 DEBUG 29337 --- [http-nio-8080-exec-8] s.s.p.logging.ApplicationLoggerAspect    : 
+ ------------------------------------------ 
+2021-12-02 22:18:11.744 DEBUG 29337 --- [http-nio-8080-exec-8] s.s.p.logging.ApplicationLoggerAspect    :  Před metodou 
+ svoby.spring.projectmanagement.controllers.ProjektController, zobrazitProjektFormular () with arguments[s] = [{}]
+2021-12-02 22:18:11.744 DEBUG 29337 --- [http-nio-8080-exec-8] s.s.p.logging.ApplicationLoggerAspect    :  ---------------------------------------------- 
+ 
+ 
+
+2021-12-02 22:18:11.748 DEBUG 29337 --- [http-nio-8080-exec-8] s.s.p.logging.ApplicationLoggerAspect    :  Po metodě 
+ svoby.spring.projectmanagement.controllers.ProjektController, zobrazitProjektFormular () with arguments[s] = [{projekt=svoby.spring.projectmanagement.domain.Projekt@1a5e373b, zamestnanciList=[svoby.spring.projectmanagement.domain.Zamestnanec@3a6b0c89, svoby.spring.projectmanagement.domain.Zamestnanec@70712337, svoby.spring.projectmanagement.domain.Zamestnanec@1c2f3e91, svoby.spring.projectmanagement.domain.Zamestnanec@59cf9eab, svoby.spring.projectmanagement.domain.Zamestnanec@3ba2ce5f, svoby.spring.projectmanagement.domain.Zamestnanec@42332a87, svoby.spring.projectmanagement.domain.Zamestnanec@278d4fe6, svoby.spring.projectmanagement.domain.Zamestnanec@212b77a]}]
+2021-12-02 22:18:11.749 DEBUG 29337 --- [http-nio-8080-exec-8] s.s.p.logging.ApplicationLoggerAspect    :  ---------------------------------------------- 
+ 
+ 
+
+2021-12-02 22:18:13.913 DEBUG 29337 --- [http-nio-8080-exec-10] s.s.p.logging.ApplicationLoggerAspect    : 
+ ------------------------------------------ 
+2021-12-02 22:18:13.914 DEBUG 29337 --- [http-nio-8080-exec-10] s.s.p.logging.ApplicationLoggerAspect    :  Před metodou 
+ svoby.spring.projectmanagement.controllers.ZamestnanecController, zobrazitSeznamZamestnancu () with arguments[s] = [{}]
+2021-12-02 22:18:13.914 DEBUG 29337 --- [http-nio-8080-exec-10] s.s.p.logging.ApplicationLoggerAspect    :  ---------------------------------------------- 
+ 
+ 
+
+2021-12-02 22:18:13.921 DEBUG 29337 --- [http-nio-8080-exec-10] s.s.p.logging.ApplicationLoggerAspect    :  Po metodě 
+ svoby.spring.projectmanagement.controllers.ZamestnanecController, zobrazitSeznamZamestnancu () with arguments[s] = [{seznam=[svoby.spring.projectmanagement.domain.Zamestnanec@449cf864, svoby.spring.projectmanagement.domain.Zamestnanec@11f93375, svoby.spring.projectmanagement.domain.Zamestnanec@409caa8b, svoby.spring.projectmanagement.domain.Zamestnanec@2c70636c, svoby.spring.projectmanagement.domain.Zamestnanec@f8cf15e, svoby.spring.projectmanagement.domain.Zamestnanec@57b60941, svoby.spring.projectmanagement.domain.Zamestnanec@725b39ce, svoby.spring.projectmanagement.domain.Zamestnanec@5d1f5fea]}]
+2021-12-02 22:18:13.922 DEBUG 29337 --- [http-nio-8080-exec-10] s.s.p.logging.ApplicationLoggerAspect    :  ---------------------------------------------- 
+ 
+ 
+
+2021-12-02 22:18:15.649 DEBUG 29337 --- [http-nio-8080-exec-3] s.s.p.logging.ApplicationLoggerAspect    : 
+ ------------------------------------------ 
+2021-12-02 22:18:15.649 DEBUG 29337 --- [http-nio-8080-exec-3] s.s.p.logging.ApplicationLoggerAspect    :  Před metodou 
+ svoby.spring.projectmanagement.controllers.ZamestnanecController, zobrazitZamestnanecFormular () with arguments[s] = [{}]
+2021-12-02 22:18:15.649 DEBUG 29337 --- [http-nio-8080-exec-3] s.s.p.logging.ApplicationLoggerAspect    :  ---------------------------------------------- 
+ 
+ 
+
+2021-12-02 22:18:15.649 DEBUG 29337 --- [http-nio-8080-exec-3] s.s.p.logging.ApplicationLoggerAspect    :  Po metodě 
+ svoby.spring.projectmanagement.controllers.ZamestnanecController, zobrazitZamestnanecFormular () with arguments[s] = [{zamestnanec=svoby.spring.projectmanagement.domain.Zamestnanec@4a3985ee}]
+2021-12-02 22:18:15.649 DEBUG 29337 --- [http-nio-8080-exec-3] s.s.p.logging.ApplicationLoggerAspect    :  ---------------------------------------------- 
+ 
+ 
+
+2021-12-02 22:22:24.060 DEBUG 29337 --- [http-nio-8080-exec-5] s.s.p.logging.ApplicationLoggerAspect    : 
+ ------------------------------------------ 
+2021-12-02 22:22:24.060 DEBUG 29337 --- [http-nio-8080-exec-5] s.s.p.logging.ApplicationLoggerAspect    :  Před metodou 
+ svoby.spring.projectmanagement.controllers.ZamestnanecController, zobrazitZamestnanecFormular () with arguments[s] = [{}]
+2021-12-02 22:22:24.060 DEBUG 29337 --- [http-nio-8080-exec-5] s.s.p.logging.ApplicationLoggerAspect    :  ---------------------------------------------- 
+ 
+ 
+
+2021-12-02 22:22:24.060 DEBUG 29337 --- [http-nio-8080-exec-5] s.s.p.logging.ApplicationLoggerAspect    :  Po metodě 
+ svoby.spring.projectmanagement.controllers.ZamestnanecController, zobrazitZamestnanecFormular () with arguments[s] = [{zamestnanec=svoby.spring.projectmanagement.domain.Zamestnanec@469bf9a7}]
+2021-12-02 22:22:24.061 DEBUG 29337 --- [http-nio-8080-exec-5] s.s.p.logging.ApplicationLoggerAspect    :  ---------------------------------------------- 
+ 
+ 
+
+2021-12-02 22:22:28.283 DEBUG 29337 --- [http-nio-8080-exec-7] s.s.p.logging.ApplicationLoggerAspect    : 
+ ------------------------------------------ 
+2021-12-02 22:22:28.284 DEBUG 29337 --- [http-nio-8080-exec-7] s.s.p.logging.ApplicationLoggerAspect    :  Před metodou 
+ svoby.spring.projectmanagement.controllers.ProjektController, zobrazitSeznamProjektu () with arguments[s] = [{}]
+2021-12-02 22:22:28.284 DEBUG 29337 --- [http-nio-8080-exec-7] s.s.p.logging.ApplicationLoggerAspect    :  ---------------------------------------------- 
+ 
+ 
+
+2021-12-02 22:22:28.290 DEBUG 29337 --- [http-nio-8080-exec-7] s.s.p.logging.ApplicationLoggerAspect    :  Po metodě 
+ svoby.spring.projectmanagement.controllers.ProjektController, zobrazitSeznamProjektu () with arguments[s] = [{seznam=[svoby.spring.projectmanagement.domain.Projekt@21bc3012, svoby.spring.projectmanagement.domain.Projekt@5bd10287, svoby.spring.projectmanagement.domain.Projekt@40c51cd0, svoby.spring.projectmanagement.domain.Projekt@6bb9ad10, svoby.spring.projectmanagement.domain.Projekt@2bc52cd5, svoby.spring.projectmanagement.domain.Projekt@78d3c610, svoby.spring.projectmanagement.domain.Projekt@10187646, svoby.spring.projectmanagement.domain.Projekt@36ef9878]}]
+2021-12-02 22:22:28.291 DEBUG 29337 --- [http-nio-8080-exec-7] s.s.p.logging.ApplicationLoggerAspect    :  ---------------------------------------------- 
+ 
+ 
+
+2021-12-02 22:22:34.470 DEBUG 29337 --- [http-nio-8080-exec-9] s.s.p.logging.ApplicationLoggerAspect    : 
+ ------------------------------------------ 
+2021-12-02 22:22:34.471 DEBUG 29337 --- [http-nio-8080-exec-9] s.s.p.logging.ApplicationLoggerAspect    :  Před metodou 
+ svoby.spring.projectmanagement.controllers.ZamestnanecController, zobrazitSeznamZamestnancu () with arguments[s] = [{}]
+2021-12-02 22:22:34.471 DEBUG 29337 --- [http-nio-8080-exec-9] s.s.p.logging.ApplicationLoggerAspect    :  ---------------------------------------------- 
+ 
+ 
+
+2021-12-02 22:22:34.477 DEBUG 29337 --- [http-nio-8080-exec-9] s.s.p.logging.ApplicationLoggerAspect    :  Po metodě 
+ svoby.spring.projectmanagement.controllers.ZamestnanecController, zobrazitSeznamZamestnancu () with arguments[s] = [{seznam=[svoby.spring.projectmanagement.domain.Zamestnanec@5e40b327, svoby.spring.projectmanagement.domain.Zamestnanec@5c68a6fa, svoby.spring.projectmanagement.domain.Zamestnanec@323b4d3a, svoby.spring.projectmanagement.domain.Zamestnanec@932d93e, svoby.spring.projectmanagement.domain.Zamestnanec@52b09ab4, svoby.spring.projectmanagement.domain.Zamestnanec@4b76a96e, svoby.spring.projectmanagement.domain.Zamestnanec@23cc6fa7, svoby.spring.projectmanagement.domain.Zamestnanec@3c28a9c9]}]
+2021-12-02 22:22:34.477 DEBUG 29337 --- [http-nio-8080-exec-9] s.s.p.logging.ApplicationLoggerAspect    :  ---------------------------------------------- 
+ 
+ 
+
+2021-12-02 22:22:38.381 DEBUG 29337 --- [http-nio-8080-exec-1] s.s.p.logging.ApplicationLoggerAspect    : 
+ ------------------------------------------ 
+2021-12-02 22:22:38.382 DEBUG 29337 --- [http-nio-8080-exec-1] s.s.p.logging.ApplicationLoggerAspect    :  Před metodou 
+ svoby.spring.projectmanagement.controllers.ZamestnanecController, zmenitDataZamestnance () with arguments[s] = [5, {}]
+2021-12-02 22:22:38.382 DEBUG 29337 --- [http-nio-8080-exec-1] s.s.p.logging.ApplicationLoggerAspect    :  ---------------------------------------------- 
+ 
+ 
+
+2021-12-02 22:22:38.401 DEBUG 29337 --- [http-nio-8080-exec-1] s.s.p.logging.ApplicationLoggerAspect    :  Po metodě 
+ svoby.spring.projectmanagement.controllers.ZamestnanecController, zmenitDataZamestnance () with arguments[s] = [5, {zamestnanec=svoby.spring.projectmanagement.domain.Zamestnanec@4e0c355a}]
+2021-12-02 22:22:38.402 DEBUG 29337 --- [http-nio-8080-exec-1] s.s.p.logging.ApplicationLoggerAspect    :  ---------------------------------------------- 
+ 
+ 
+
+2021-12-02 22:22:46.114 DEBUG 29337 --- [http-nio-8080-exec-2] s.s.p.logging.ApplicationLoggerAspect    : 
+ ------------------------------------------ 
+2021-12-02 22:22:46.114 DEBUG 29337 --- [http-nio-8080-exec-2] s.s.p.logging.ApplicationLoggerAspect    :  Před metodou 
+ svoby.spring.projectmanagement.controllers.ZamestnanecController, vytvoritZamestnance () with arguments[s] = [svoby.spring.projectmanagement.domain.Zamestnanec@1cf95917, {zamestnanec=svoby.spring.projectmanagement.domain.Zamestnanec@1cf95917, org.springframework.validation.BindingResult.zamestnanec=org.springframework.validation.BeanPropertyBindingResult: 0 errors}]
+2021-12-02 22:22:46.114 DEBUG 29337 --- [http-nio-8080-exec-2] s.s.p.logging.ApplicationLoggerAspect    :  ---------------------------------------------- 
+ 
+ 
+
+2021-12-02 22:22:46.153 DEBUG 29337 --- [http-nio-8080-exec-2] s.s.p.logging.ApplicationLoggerAspect    :  Po metodě 
+ svoby.spring.projectmanagement.controllers.ZamestnanecController, vytvoritZamestnance () with arguments[s] = [svoby.spring.projectmanagement.domain.Zamestnanec@1cf95917, {zamestnanec=svoby.spring.projectmanagement.domain.Zamestnanec@1cf95917, org.springframework.validation.BindingResult.zamestnanec=org.springframework.validation.BeanPropertyBindingResult: 0 errors}]
+2021-12-02 22:22:46.154 DEBUG 29337 --- [http-nio-8080-exec-2] s.s.p.logging.ApplicationLoggerAspect    :  ---------------------------------------------- 
+ 
+ 
+
+2021-12-02 22:22:46.164 DEBUG 29337 --- [http-nio-8080-exec-4] s.s.p.logging.ApplicationLoggerAspect    : 
+ ------------------------------------------ 
+2021-12-02 22:22:46.164 DEBUG 29337 --- [http-nio-8080-exec-4] s.s.p.logging.ApplicationLoggerAspect    :  Před metodou 
+ svoby.spring.projectmanagement.controllers.ZamestnanecController, zobrazitSeznamZamestnancu () with arguments[s] = [{}]
+2021-12-02 22:22:46.164 DEBUG 29337 --- [http-nio-8080-exec-4] s.s.p.logging.ApplicationLoggerAspect    :  ---------------------------------------------- 
+ 
+ 
+
+2021-12-02 22:22:46.169 DEBUG 29337 --- [http-nio-8080-exec-4] s.s.p.logging.ApplicationLoggerAspect    :  Po metodě 
+ svoby.spring.projectmanagement.controllers.ZamestnanecController, zobrazitSeznamZamestnancu () with arguments[s] = [{seznam=[svoby.spring.projectmanagement.domain.Zamestnanec@17c01bdd, svoby.spring.projectmanagement.domain.Zamestnanec@3d901980, svoby.spring.projectmanagement.domain.Zamestnanec@630574ee, svoby.spring.projectmanagement.domain.Zamestnanec@1dade8ff, svoby.spring.projectmanagement.domain.Zamestnanec@aa40664, svoby.spring.projectmanagement.domain.Zamestnanec@374542a9, svoby.spring.projectmanagement.domain.Zamestnanec@7f2ff2ab, svoby.spring.projectmanagement.domain.Zamestnanec@db707a1]}]
+2021-12-02 22:22:46.169 DEBUG 29337 --- [http-nio-8080-exec-4] s.s.p.logging.ApplicationLoggerAspect    :  ---------------------------------------------- 
+ 
+ 
+
+2021-12-02 22:22:50.789 DEBUG 29337 --- [http-nio-8080-exec-6] s.s.p.logging.ApplicationLoggerAspect    : 
+ ------------------------------------------ 
+2021-12-02 22:22:50.789 DEBUG 29337 --- [http-nio-8080-exec-6] s.s.p.logging.ApplicationLoggerAspect    :  Před metodou 
+ svoby.spring.projectmanagement.controllers.IndexController, zobrazitIndex () with arguments[s] = [{}]
+2021-12-02 22:22:50.789 DEBUG 29337 --- [http-nio-8080-exec-6] s.s.p.logging.ApplicationLoggerAspect    :  ---------------------------------------------- 
+ 
+ 
+
+2021-12-02 22:22:50.801 DEBUG 29337 --- [http-nio-8080-exec-6] s.s.p.logging.ApplicationLoggerAspect    :  Po metodě 
+ svoby.spring.projectmanagement.controllers.IndexController, zobrazitIndex () with arguments[s] = [{verzeCislo=0.0.1, projektStatusPocet=[{"stav":"Nezahájen","pocet":8}], projektyList=[svoby.spring.projectmanagement.domain.Projekt@70efb128, svoby.spring.projectmanagement.domain.Projekt@439c45ac, svoby.spring.projectmanagement.domain.Projekt@5b87a1c2, svoby.spring.projectmanagement.domain.Projekt@7417296, svoby.spring.projectmanagement.domain.Projekt@aaae5a7, svoby.spring.projectmanagement.domain.Projekt@2bba607b, svoby.spring.projectmanagement.domain.Projekt@4d555d7f, svoby.spring.projectmanagement.domain.Projekt@418c4381], zamestnanciListProjektyPocet=[org.springframework.data.jpa.repository.query.AbstractJpaQuery$TupleConverter$TupleBackedMap@1da08601, org.springframework.data.jpa.repository.query.AbstractJpaQuery$TupleConverter$TupleBackedMap@2c74a4a5, org.springframework.data.jpa.repository.query.AbstractJpaQuery$TupleConverter$TupleBackedMap@5a5c2e9f, org.springframework.data.jpa.repository.query.AbstractJpaQuery$TupleConverter$TupleBackedMap@43d53b5b, org.springframework.data.jpa.repository.query.AbstractJpaQuery$TupleConverter$TupleBackedMap@422d5c27, org.springframework.data.jpa.repository.query.AbstractJpaQuery$TupleConverter$TupleBackedMap@4bf5994b, org.springframework.data.jpa.repository.query.AbstractJpaQuery$TupleConverter$TupleBackedMap@70666e7c, org.springframework.data.jpa.repository.query.AbstractJpaQuery$TupleConverter$TupleBackedMap@1a839cc8]}]
+2021-12-02 22:22:50.801 DEBUG 29337 --- [http-nio-8080-exec-6] s.s.p.logging.ApplicationLoggerAspect    :  ---------------------------------------------- 
+ 
+ 
+
+2021-12-02 22:23:09.183 DEBUG 29337 --- [http-nio-8080-exec-9] s.s.p.logging.ApplicationLoggerAspect    : 
+ ------------------------------------------ 
+2021-12-02 22:23:09.183 DEBUG 29337 --- [http-nio-8080-exec-9] s.s.p.logging.ApplicationLoggerAspect    :  Před metodou 
+ svoby.spring.projectmanagement.controllers.ZamestnanecController, zobrazitSeznamZamestnancu () with arguments[s] = [{}]
+2021-12-02 22:23:09.183 DEBUG 29337 --- [http-nio-8080-exec-9] s.s.p.logging.ApplicationLoggerAspect    :  ---------------------------------------------- 
+ 
+ 
+
+2021-12-02 22:23:09.189 DEBUG 29337 --- [http-nio-8080-exec-9] s.s.p.logging.ApplicationLoggerAspect    :  Po metodě 
+ svoby.spring.projectmanagement.controllers.ZamestnanecController, zobrazitSeznamZamestnancu () with arguments[s] = [{seznam=[svoby.spring.projectmanagement.domain.Zamestnanec@25cbc3c3, svoby.spring.projectmanagement.domain.Zamestnanec@13dc99a1, svoby.spring.projectmanagement.domain.Zamestnanec@24a23927, svoby.spring.projectmanagement.domain.Zamestnanec@6f85cda1, svoby.spring.projectmanagement.domain.Zamestnanec@142bde49, svoby.spring.projectmanagement.domain.Zamestnanec@63cd4cfc, svoby.spring.projectmanagement.domain.Zamestnanec@56132aa3, svoby.spring.projectmanagement.domain.Zamestnanec@173a1d05]}]
+2021-12-02 22:23:09.190 DEBUG 29337 --- [http-nio-8080-exec-9] s.s.p.logging.ApplicationLoggerAspect    :  ---------------------------------------------- 
+ 
+ 
+
+2021-12-02 22:23:42.149 DEBUG 29337 --- [http-nio-8080-exec-1] s.s.p.logging.ApplicationLoggerAspect    : 
+ ------------------------------------------ 
+2021-12-02 22:23:42.149 DEBUG 29337 --- [http-nio-8080-exec-1] s.s.p.logging.ApplicationLoggerAspect    :  Před metodou 
+ svoby.spring.projectmanagement.controllers.ZamestnanecController, zmenitDataZamestnance () with arguments[s] = [10, {}]
+2021-12-02 22:23:42.149 DEBUG 29337 --- [http-nio-8080-exec-1] s.s.p.logging.ApplicationLoggerAspect    :  ---------------------------------------------- 
+ 
+ 
+
+2021-12-02 22:23:42.152 DEBUG 29337 --- [http-nio-8080-exec-1] s.s.p.logging.ApplicationLoggerAspect    :  Po metodě 
+ svoby.spring.projectmanagement.controllers.ZamestnanecController, zmenitDataZamestnance () with arguments[s] = [10, {zamestnanec=svoby.spring.projectmanagement.domain.Zamestnanec@26352f74}]
+2021-12-02 22:23:42.154 DEBUG 29337 --- [http-nio-8080-exec-1] s.s.p.logging.ApplicationLoggerAspect    :  ---------------------------------------------- 
+ 
+ 
+
+2021-12-02 22:23:45.760 DEBUG 29337 --- [http-nio-8080-exec-2] s.s.p.logging.ApplicationLoggerAspect    : 
+ ------------------------------------------ 
+2021-12-02 22:23:45.761 DEBUG 29337 --- [http-nio-8080-exec-2] s.s.p.logging.ApplicationLoggerAspect    :  Před metodou 
+ svoby.spring.projectmanagement.controllers.ZamestnanecController, vytvoritZamestnance () with arguments[s] = [svoby.spring.projectmanagement.domain.Zamestnanec@27d02e59, {zamestnanec=svoby.spring.projectmanagement.domain.Zamestnanec@27d02e59, org.springframework.validation.BindingResult.zamestnanec=org.springframework.validation.BeanPropertyBindingResult: 0 errors}]
+2021-12-02 22:23:45.761 DEBUG 29337 --- [http-nio-8080-exec-2] s.s.p.logging.ApplicationLoggerAspect    :  ---------------------------------------------- 
+ 
+ 
+
+2021-12-02 22:23:45.766 DEBUG 29337 --- [http-nio-8080-exec-2] s.s.p.logging.ApplicationLoggerAspect    :  Po metodě 
+ svoby.spring.projectmanagement.controllers.ZamestnanecController, vytvoritZamestnance () with arguments[s] = [svoby.spring.projectmanagement.domain.Zamestnanec@27d02e59, {zamestnanec=svoby.spring.projectmanagement.domain.Zamestnanec@27d02e59, org.springframework.validation.BindingResult.zamestnanec=org.springframework.validation.BeanPropertyBindingResult: 0 errors}]
+2021-12-02 22:23:45.767 DEBUG 29337 --- [http-nio-8080-exec-2] s.s.p.logging.ApplicationLoggerAspect    :  ---------------------------------------------- 
+ 
+ 
+
+2021-12-02 22:23:45.773 DEBUG 29337 --- [http-nio-8080-exec-4] s.s.p.logging.ApplicationLoggerAspect    : 
+ ------------------------------------------ 
+2021-12-02 22:23:45.773 DEBUG 29337 --- [http-nio-8080-exec-4] s.s.p.logging.ApplicationLoggerAspect    :  Před metodou 
+ svoby.spring.projectmanagement.controllers.ZamestnanecController, zobrazitSeznamZamestnancu () with arguments[s] = [{}]
+2021-12-02 22:23:45.773 DEBUG 29337 --- [http-nio-8080-exec-4] s.s.p.logging.ApplicationLoggerAspect    :  ---------------------------------------------- 
+ 
+ 
+
+2021-12-02 22:23:45.776 DEBUG 29337 --- [http-nio-8080-exec-4] s.s.p.logging.ApplicationLoggerAspect    :  Po metodě 
+ svoby.spring.projectmanagement.controllers.ZamestnanecController, zobrazitSeznamZamestnancu () with arguments[s] = [{seznam=[svoby.spring.projectmanagement.domain.Zamestnanec@437bee42, svoby.spring.projectmanagement.domain.Zamestnanec@5f968761, svoby.spring.projectmanagement.domain.Zamestnanec@14e90e39, svoby.spring.projectmanagement.domain.Zamestnanec@6ce36e81, svoby.spring.projectmanagement.domain.Zamestnanec@70f684a1, svoby.spring.projectmanagement.domain.Zamestnanec@1b30b851, svoby.spring.projectmanagement.domain.Zamestnanec@4774f5c8, svoby.spring.projectmanagement.domain.Zamestnanec@30140cc1]}]
+2021-12-02 22:23:45.776 DEBUG 29337 --- [http-nio-8080-exec-4] s.s.p.logging.ApplicationLoggerAspect    :  ---------------------------------------------- 
+ 
+ 
+
+2021-12-02 22:23:55.478 DEBUG 29337 --- [http-nio-8080-exec-8] s.s.p.logging.ApplicationLoggerAspect    : 
+ ------------------------------------------ 
+2021-12-02 22:23:55.478 DEBUG 29337 --- [http-nio-8080-exec-8] s.s.p.logging.ApplicationLoggerAspect    :  Před metodou 
+ svoby.spring.projectmanagement.controllers.IndexController, zobrazitIndex () with arguments[s] = [{}]
+2021-12-02 22:23:55.478 DEBUG 29337 --- [http-nio-8080-exec-8] s.s.p.logging.ApplicationLoggerAspect    :  ---------------------------------------------- 
+ 
+ 
+
+2021-12-02 22:23:55.490 DEBUG 29337 --- [http-nio-8080-exec-8] s.s.p.logging.ApplicationLoggerAspect    :  Po metodě 
+ svoby.spring.projectmanagement.controllers.IndexController, zobrazitIndex () with arguments[s] = [{verzeCislo=0.0.1, projektStatusPocet=[{"stav":"Nezahájen","pocet":8}], projektyList=[svoby.spring.projectmanagement.domain.Projekt@44f21a42, svoby.spring.projectmanagement.domain.Projekt@5b8ec1b7, svoby.spring.projectmanagement.domain.Projekt@53d29a01, svoby.spring.projectmanagement.domain.Projekt@5055a4ac, svoby.spring.projectmanagement.domain.Projekt@42184ee, svoby.spring.projectmanagement.domain.Projekt@298f7ea4, svoby.spring.projectmanagement.domain.Projekt@6ecaeb06, svoby.spring.projectmanagement.domain.Projekt@134752b7], zamestnanciListProjektyPocet=[org.springframework.data.jpa.repository.query.AbstractJpaQuery$TupleConverter$TupleBackedMap@65327bae, org.springframework.data.jpa.repository.query.AbstractJpaQuery$TupleConverter$TupleBackedMap@34448dc9, org.springframework.data.jpa.repository.query.AbstractJpaQuery$TupleConverter$TupleBackedMap@7e7a4da5, org.springframework.data.jpa.repository.query.AbstractJpaQuery$TupleConverter$TupleBackedMap@5da3e316, org.springframework.data.jpa.repository.query.AbstractJpaQuery$TupleConverter$TupleBackedMap@2bba1c07, org.springframework.data.jpa.repository.query.AbstractJpaQuery$TupleConverter$TupleBackedMap@3b00f67c, org.springframework.data.jpa.repository.query.AbstractJpaQuery$TupleConverter$TupleBackedMap@17bb93dc, org.springframework.data.jpa.repository.query.AbstractJpaQuery$TupleConverter$TupleBackedMap@55c2796e]}]
+2021-12-02 22:23:55.490 DEBUG 29337 --- [http-nio-8080-exec-8] s.s.p.logging.ApplicationLoggerAspect    :  ---------------------------------------------- 
+ 
+ 
+
+2021-12-02 22:24:16.647 DEBUG 29337 --- [http-nio-8080-exec-10] s.s.p.logging.ApplicationLoggerAspect    : 
+ ------------------------------------------ 
+2021-12-02 22:24:16.647 DEBUG 29337 --- [http-nio-8080-exec-10] s.s.p.logging.ApplicationLoggerAspect    :  Před metodou 
+ svoby.spring.projectmanagement.controllers.IndexController, zobrazitIndex () with arguments[s] = [{}]
+2021-12-02 22:24:16.647 DEBUG 29337 --- [http-nio-8080-exec-10] s.s.p.logging.ApplicationLoggerAspect    :  ---------------------------------------------- 
+ 
+ 
+
+2021-12-02 22:24:16.659 DEBUG 29337 --- [http-nio-8080-exec-10] s.s.p.logging.ApplicationLoggerAspect    :  Po metodě 
+ svoby.spring.projectmanagement.controllers.IndexController, zobrazitIndex () with arguments[s] = [{verzeCislo=0.0.1, projektStatusPocet=[{"stav":"Nezahájen","pocet":8}], projektyList=[svoby.spring.projectmanagement.domain.Projekt@31b67178, svoby.spring.projectmanagement.domain.Projekt@67da9611, svoby.spring.projectmanagement.domain.Projekt@5d702d86, svoby.spring.projectmanagement.domain.Projekt@35690fbc, svoby.spring.projectmanagement.domain.Projekt@37d695d8, svoby.spring.projectmanagement.domain.Projekt@40fe72d, svoby.spring.projectmanagement.domain.Projekt@58cff637, svoby.spring.projectmanagement.domain.Projekt@2526067d], zamestnanciListProjektyPocet=[org.springframework.data.jpa.repository.query.AbstractJpaQuery$TupleConverter$TupleBackedMap@5d34b912, org.springframework.data.jpa.repository.query.AbstractJpaQuery$TupleConverter$TupleBackedMap@58649e96, org.springframework.data.jpa.repository.query.AbstractJpaQuery$TupleConverter$TupleBackedMap@eb2ca08, org.springframework.data.jpa.repository.query.AbstractJpaQuery$TupleConverter$TupleBackedMap@31ec7b2a, org.springframework.data.jpa.repository.query.AbstractJpaQuery$TupleConverter$TupleBackedMap@4968a82c, org.springframework.data.jpa.repository.query.AbstractJpaQuery$TupleConverter$TupleBackedMap@35041fb9, org.springframework.data.jpa.repository.query.AbstractJpaQuery$TupleConverter$TupleBackedMap@2d7e619b, org.springframework.data.jpa.repository.query.AbstractJpaQuery$TupleConverter$TupleBackedMap@7f197a35]}]
+2021-12-02 22:24:16.659 DEBUG 29337 --- [http-nio-8080-exec-10] s.s.p.logging.ApplicationLoggerAspect    :  ---------------------------------------------- 
+ 
+ 
+
+2021-12-02 22:27:55.766  INFO 29337 --- [Thread-9] o.s.s.concurrent.ThreadPoolTaskExecutor  : Shutting down ExecutorService 'applicationTaskExecutor'
+2021-12-02 22:27:55.769  INFO 29337 --- [Thread-9] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2021-12-02 22:27:55.772  INFO 29337 --- [Thread-9] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2021-12-02 22:27:55.789  INFO 29337 --- [Thread-9] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.

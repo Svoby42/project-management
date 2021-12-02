@@ -10,13 +10,25 @@
 
         <nav th:replace="layouts :: navbar"></nav>
         <form th:action="@{/zamestnanci/ulozit}" th:object="${zamestnanec}" method="post">
-
+            <h3>Nový zaměstnanec</h3>
             <input type="hidden" th:field="${zamestnanec.zamestnanecId}">   <!--Nutné pro aktualizaci-->
 
-            <input type="text" placeholder="Jméno: " th:field="${zamestnanec.jmeno}">
-            <input type="text" placeholder="Přijmení: " th:field="${zamestnanec.prijmeni}">
-            <input type="text" placeholder="email" th:field="${zamestnanec.email}">
-            <button type="submit">Uložit zaměstnance</button>
+            <div class="row form-group pl-3 pr-3">
+                <input type="text" placeholder="Jméno: " th:field="${zamestnanec.jmeno}">
+                <span th:if="${#fields.hasErrors('jmeno')}"
+                      th:errors="${zamestnanec.jmeno}"></span>
+            </div>
+            <div class="row form-group pl-3 pr-3">
+                <input type="text" placeholder="Přijmení: " th:field="${zamestnanec.prijmeni}">
+                <span th:if="${#fields.hasErrors('prijmeni')}"
+                      th:errors="${zamestnanec.prijmeni}"></span>
+            </div>
+            <div class="row form-group pl-3 pr-3">
+                <input type="text" placeholder="email" th:field="${zamestnanec.email}">
+                <span th:if="${#fields.hasErrors('email')}"
+                      th:errors="${zamestnanec.email}"></span>
+            </div>
+            <button class="btn btn-dark" type="submit">Uložit zaměstnance</button>
 
         </form>
     </div>

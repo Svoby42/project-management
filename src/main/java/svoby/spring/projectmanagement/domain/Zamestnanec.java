@@ -5,6 +5,7 @@ import svoby.spring.projectmanagement.validators.UniqueValue;
 
 import javax.persistence.*;
 import javax.validation.constraints.Email;
+import javax.validation.constraints.NotBlank;
 import javax.validation.constraints.NotNull;
 import javax.validation.constraints.Size;
 import java.util.List;
@@ -16,16 +17,16 @@ public class Zamestnanec {
     @GeneratedValue(strategy = GenerationType.SEQUENCE, generator = "zamestnanec_seq")
     private long zamestnanecId;
 
-    @NotNull
-    @Size(min=2, max=50)
+    @NotBlank(message = "Zadejte jméno")
+    @Size(min=2, max=50, message = "Příliš krátké/dlouhé")
     private String jmeno;
 
-    @NotNull
-    @Size(min=1, max=50)
+    @NotBlank(message = "Zadejte přijmení")
+    @Size(min=1, max=50, message = "Příliš krátké/dlouhé")
     private String prijmeni;
 
-    @NotNull
-    @Email
+    @NotBlank
+    @Email(message = "Špatný formát")
     @UniqueValue
     private String email;
 
