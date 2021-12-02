@@ -44,7 +44,8 @@ public class SecurityConfig extends WebSecurityConfigurerAdapter {
                 .antMatchers("/zamestnanci/ulozit").hasRole("ADMIN")
                 .antMatchers("/", "/**", "/assets/**").permitAll()
                 .and().formLogin()/*.loginPage("/login-page")*/;
-                httpSecurity.csrf().ignoringAntMatchers("/app-api/zamestnanci");
+
+                httpSecurity.csrf().ignoringAntMatchers("/app-api/**");
 
     }
 

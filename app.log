@@ -532,3 +532,399 @@ Caused by: java.lang.ClassNotFoundException: com.fasterxml.jackson.core.exc.Stre
  
  
 
+2021-12-02 10:16:20.137  INFO 5668 --- [Thread-9] o.s.s.concurrent.ThreadPoolTaskExecutor  : Shutting down ExecutorService 'applicationTaskExecutor'
+2021-12-02 10:16:20.141  INFO 5668 --- [Thread-9] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2021-12-02 10:16:20.146  INFO 5668 --- [Thread-9] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2021-12-02 10:16:20.158  INFO 5668 --- [Thread-9] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2021-12-02 10:16:30.174  INFO 7501 --- [restartedMain] s.s.p.ProjectManagementApplication       : Starting ProjectManagementApplication on svobypc with PID 7501 (/home/svoby/Documents/project-management/target/classes started by svoby in /home/svoby/Documents/project-management)
+2021-12-02 10:16:30.177 DEBUG 7501 --- [restartedMain] s.s.p.ProjectManagementApplication       : Running with Spring Boot v2.1.4.RELEASE, Spring v5.1.6.RELEASE
+2021-12-02 10:16:30.178  INFO 7501 --- [restartedMain] s.s.p.ProjectManagementApplication       : The following profiles are active: dev
+2021-12-02 10:16:30.229  INFO 7501 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2021-12-02 10:16:30.230  INFO 7501 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2021-12-02 10:16:31.245  INFO 7501 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data repositories in DEFAULT mode.
+2021-12-02 10:16:31.298  INFO 7501 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 47ms. Found 3 repository interfaces.
+2021-12-02 10:16:31.666  INFO 7501 --- [restartedMain] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$b518f15e] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2021-12-02 10:16:31.707  INFO 7501 --- [restartedMain] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.hateoas.config.HateoasConfiguration' of type [org.springframework.hateoas.config.HateoasConfiguration$$EnhancerBySpringCGLIB$$34993e90] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2021-12-02 10:16:32.117  INFO 7501 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2021-12-02 10:16:32.156  INFO 7501 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2021-12-02 10:16:32.157  INFO 7501 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.17]
+2021-12-02 10:16:32.259  INFO 7501 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2021-12-02 10:16:32.259  INFO 7501 --- [restartedMain] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 2028 ms
+2021-12-02 10:16:32.548  INFO 7501 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2021-12-02 10:16:32.613  INFO 7501 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2021-12-02 10:16:32.676  INFO 7501 --- [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [
+	name: default
+	...]
+2021-12-02 10:16:32.719  INFO 7501 --- [restartedMain] org.hibernate.Version                    : HHH000412: Hibernate Core {5.3.9.Final}
+2021-12-02 10:16:32.720  INFO 7501 --- [restartedMain] org.hibernate.cfg.Environment            : HHH000206: hibernate.properties not found
+2021-12-02 10:16:32.842  INFO 7501 --- [restartedMain] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.0.4.Final}
+2021-12-02 10:16:32.922  INFO 7501 --- [restartedMain] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.PostgreSQL95Dialect
+2021-12-02 10:16:33.025  INFO 7501 --- [restartedMain] o.h.e.j.e.i.LobCreatorBuilderImpl        : HHH000421: Disabling contextual LOB creation as hibernate.jdbc.lob.non_contextual_creation is true
+2021-12-02 10:16:33.029  INFO 7501 --- [restartedMain] org.hibernate.type.BasicTypeRegistry     : HHH000270: Type registration [java.util.UUID] overrides previous : org.hibernate.type.UUIDBinaryType@4e205aa2
+2021-12-02 10:16:33.481  INFO 7501 --- [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2021-12-02 10:16:34.440  INFO 7501 --- [restartedMain] o.s.s.web.DefaultSecurityFilterChain     : Creating filter chain: any request, [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@5361dd86, org.springframework.security.web.context.SecurityContextPersistenceFilter@6fde616b, org.springframework.security.web.header.HeaderWriterFilter@1b3f2e4c, org.springframework.security.web.csrf.CsrfFilter@34c6f532, org.springframework.security.web.authentication.logout.LogoutFilter@19ca8998, org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter@3536abd1, org.springframework.security.web.authentication.ui.DefaultLoginPageGeneratingFilter@6db2d15, org.springframework.security.web.authentication.ui.DefaultLogoutPageGeneratingFilter@791ec9dd, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@d361884, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@5a7acb10, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@37a64301, org.springframework.security.web.session.SessionManagementFilter@5c2a5336, org.springframework.security.web.access.ExceptionTranslationFilter@4357c631, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@24ebac80]
+2021-12-02 10:16:34.687  INFO 7501 --- [restartedMain] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2021-12-02 10:16:34.768  WARN 7501 --- [restartedMain] aWebConfiguration$JpaWebMvcConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2021-12-02 10:16:35.043  INFO 7501 --- [restartedMain] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page template: index
+2021-12-02 10:16:35.343  INFO 7501 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2021-12-02 10:16:35.399  INFO 7501 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2021-12-02 10:16:35.406  INFO 7501 --- [restartedMain] s.s.p.ProjectManagementApplication       : Started ProjectManagementApplication in 5.797 seconds (JVM running for 6.807)
+2021-12-02 10:16:48.314  INFO 7501 --- [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2021-12-02 10:16:48.315  INFO 7501 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2021-12-02 10:16:48.333  INFO 7501 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 18 ms
+2021-12-02 10:16:48.409  INFO 7501 --- [http-nio-8080-exec-1] o.h.h.i.QueryTranslatorFactoryInitiator  : HHH000397: Using ASTQueryTranslatorFactory
+2021-12-02 10:17:32.530  WARN 7501 --- [http-nio-8080-exec-5] .w.s.m.s.DefaultHandlerExceptionResolver : Resolved [org.springframework.web.HttpRequestMethodNotSupportedException: Request method 'PUT' not supported]
+2021-12-02 10:18:14.114  INFO 7501 --- [Thread-6] o.s.s.concurrent.ThreadPoolTaskExecutor  : Shutting down ExecutorService 'applicationTaskExecutor'
+2021-12-02 10:18:14.119  INFO 7501 --- [Thread-6] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2021-12-02 10:18:14.122  INFO 7501 --- [Thread-6] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2021-12-02 10:18:14.142  INFO 7501 --- [Thread-6] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2021-12-02 10:18:14.311  INFO 7501 --- [restartedMain] s.s.p.ProjectManagementApplication       : Starting ProjectManagementApplication on svobypc with PID 7501 (/home/svoby/Documents/project-management/target/classes started by svoby in /home/svoby/Documents/project-management)
+2021-12-02 10:18:14.311 DEBUG 7501 --- [restartedMain] s.s.p.ProjectManagementApplication       : Running with Spring Boot v2.1.4.RELEASE, Spring v5.1.6.RELEASE
+2021-12-02 10:18:14.312  INFO 7501 --- [restartedMain] s.s.p.ProjectManagementApplication       : The following profiles are active: dev
+2021-12-02 10:18:14.779  INFO 7501 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data repositories in DEFAULT mode.
+2021-12-02 10:18:14.789  INFO 7501 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 10ms. Found 3 repository interfaces.
+2021-12-02 10:18:14.892  INFO 7501 --- [restartedMain] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$b518f15e] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2021-12-02 10:18:14.894  INFO 7501 --- [restartedMain] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.hateoas.config.HateoasConfiguration' of type [org.springframework.hateoas.config.HateoasConfiguration$$EnhancerBySpringCGLIB$$34993e90] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2021-12-02 10:18:14.960  INFO 7501 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2021-12-02 10:18:14.961  INFO 7501 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2021-12-02 10:18:14.962  INFO 7501 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.17]
+2021-12-02 10:18:14.970  INFO 7501 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2021-12-02 10:18:14.970  INFO 7501 --- [restartedMain] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 656 ms
+2021-12-02 10:18:15.066  INFO 7501 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-2 - Starting...
+2021-12-02 10:18:15.073  INFO 7501 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-2 - Start completed.
+2021-12-02 10:18:15.085  INFO 7501 --- [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [
+	name: default
+	...]
+2021-12-02 10:18:15.094  INFO 7501 --- [restartedMain] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.PostgreSQL95Dialect
+2021-12-02 10:18:15.204  INFO 7501 --- [restartedMain] o.h.e.j.e.i.LobCreatorBuilderImpl        : HHH000421: Disabling contextual LOB creation as hibernate.jdbc.lob.non_contextual_creation is true
+2021-12-02 10:18:15.205  INFO 7501 --- [restartedMain] org.hibernate.type.BasicTypeRegistry     : HHH000270: Type registration [java.util.UUID] overrides previous : org.hibernate.type.UUIDBinaryType@4e205aa2
+2021-12-02 10:18:15.318  INFO 7501 --- [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2021-12-02 10:18:15.701  INFO 7501 --- [restartedMain] o.s.s.web.DefaultSecurityFilterChain     : Creating filter chain: any request, [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@290e5f71, org.springframework.security.web.context.SecurityContextPersistenceFilter@234de62f, org.springframework.security.web.header.HeaderWriterFilter@18a5d64f, org.springframework.security.web.csrf.CsrfFilter@2f5c77a3, org.springframework.security.web.authentication.logout.LogoutFilter@68a9c8ef, org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter@74e0936b, org.springframework.security.web.authentication.ui.DefaultLoginPageGeneratingFilter@24193edd, org.springframework.security.web.authentication.ui.DefaultLogoutPageGeneratingFilter@4553c2dd, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@7e1cd4ea, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@483d72c8, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@44dc65c6, org.springframework.security.web.session.SessionManagementFilter@6f60650f, org.springframework.security.web.access.ExceptionTranslationFilter@1dd81a86, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@1482a190]
+2021-12-02 10:18:15.756  INFO 7501 --- [restartedMain] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2021-12-02 10:18:15.772  WARN 7501 --- [restartedMain] aWebConfiguration$JpaWebMvcConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2021-12-02 10:18:25.122  INFO 7738 --- [restartedMain] s.s.p.ProjectManagementApplication       : Starting ProjectManagementApplication on svobypc with PID 7738 (/home/svoby/Documents/project-management/target/classes started by svoby in /home/svoby/Documents/project-management)
+2021-12-02 10:18:25.124 DEBUG 7738 --- [restartedMain] s.s.p.ProjectManagementApplication       : Running with Spring Boot v2.1.4.RELEASE, Spring v5.1.6.RELEASE
+2021-12-02 10:18:25.125  INFO 7738 --- [restartedMain] s.s.p.ProjectManagementApplication       : The following profiles are active: dev
+2021-12-02 10:18:25.227  INFO 7738 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2021-12-02 10:18:25.228  INFO 7738 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2021-12-02 10:18:26.246  INFO 7738 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data repositories in DEFAULT mode.
+2021-12-02 10:18:26.295  INFO 7738 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 44ms. Found 3 repository interfaces.
+2021-12-02 10:18:26.642  INFO 7738 --- [restartedMain] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$b5b46680] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2021-12-02 10:18:26.686  INFO 7738 --- [restartedMain] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.hateoas.config.HateoasConfiguration' of type [org.springframework.hateoas.config.HateoasConfiguration$$EnhancerBySpringCGLIB$$3534b3b2] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2021-12-02 10:18:27.051  INFO 7738 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2021-12-02 10:18:27.076  INFO 7738 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2021-12-02 10:18:27.077  INFO 7738 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.17]
+2021-12-02 10:18:27.174  INFO 7738 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2021-12-02 10:18:27.174  INFO 7738 --- [restartedMain] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 1946 ms
+2021-12-02 10:18:27.431  INFO 7738 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2021-12-02 10:18:27.478  INFO 7738 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2021-12-02 10:18:27.522  INFO 7738 --- [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [
+	name: default
+	...]
+2021-12-02 10:18:27.553  INFO 7738 --- [restartedMain] org.hibernate.Version                    : HHH000412: Hibernate Core {5.3.9.Final}
+2021-12-02 10:18:27.553  INFO 7738 --- [restartedMain] org.hibernate.cfg.Environment            : HHH000206: hibernate.properties not found
+2021-12-02 10:18:27.634  INFO 7738 --- [restartedMain] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.0.4.Final}
+2021-12-02 10:18:27.714  INFO 7738 --- [restartedMain] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.PostgreSQL95Dialect
+2021-12-02 10:18:27.817  INFO 7738 --- [restartedMain] o.h.e.j.e.i.LobCreatorBuilderImpl        : HHH000421: Disabling contextual LOB creation as hibernate.jdbc.lob.non_contextual_creation is true
+2021-12-02 10:18:27.821  INFO 7738 --- [restartedMain] org.hibernate.type.BasicTypeRegistry     : HHH000270: Type registration [java.util.UUID] overrides previous : org.hibernate.type.UUIDBinaryType@49bf7e1f
+2021-12-02 10:18:28.193  INFO 7738 --- [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2021-12-02 10:18:29.033  INFO 7738 --- [restartedMain] o.s.s.web.DefaultSecurityFilterChain     : Creating filter chain: any request, [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@51ba2e5b, org.springframework.security.web.context.SecurityContextPersistenceFilter@d361884, org.springframework.security.web.header.HeaderWriterFilter@324b3ab0, org.springframework.security.web.csrf.CsrfFilter@1ca1121e, org.springframework.security.web.authentication.logout.LogoutFilter@f953082, org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter@2b640591, org.springframework.security.web.authentication.ui.DefaultLoginPageGeneratingFilter@334e1782, org.springframework.security.web.authentication.ui.DefaultLogoutPageGeneratingFilter@c6a4407, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@3353449b, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@3d8cc47b, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@3b53476, org.springframework.security.web.session.SessionManagementFilter@61633d92, org.springframework.security.web.access.ExceptionTranslationFilter@337f237e, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@31e0cd6e]
+2021-12-02 10:18:29.200  INFO 7738 --- [restartedMain] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2021-12-02 10:18:29.245  WARN 7738 --- [restartedMain] aWebConfiguration$JpaWebMvcConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2021-12-02 10:18:29.419  INFO 7738 --- [restartedMain] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page template: index
+2021-12-02 10:18:29.702  INFO 7738 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2021-12-02 10:18:29.766  INFO 7738 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2021-12-02 10:18:29.772  INFO 7738 --- [restartedMain] s.s.p.ProjectManagementApplication       : Started ProjectManagementApplication in 5.161 seconds (JVM running for 6.023)
+2021-12-02 10:18:40.272  INFO 7738 --- [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2021-12-02 10:18:40.275  INFO 7738 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2021-12-02 10:18:40.292  INFO 7738 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 17 ms
+2021-12-02 10:18:40.360  INFO 7738 --- [http-nio-8080-exec-1] o.h.h.i.QueryTranslatorFactoryInitiator  : HHH000397: Using ASTQueryTranslatorFactory
+2021-12-02 10:33:00.910  WARN 7738 --- [http-nio-8080-exec-7] .w.s.m.s.DefaultHandlerExceptionResolver : Resolved [org.springframework.web.HttpRequestMethodNotSupportedException: Request method 'PATCH' not supported]
+2021-12-02 10:33:00.914  WARN 7738 --- [http-nio-8080-exec-7] .w.s.m.s.DefaultHandlerExceptionResolver : Resolved [org.springframework.web.HttpRequestMethodNotSupportedException: Request method 'PATCH' not supported]
+2021-12-02 10:33:33.034  INFO 7738 --- [Thread-6] o.s.s.concurrent.ThreadPoolTaskExecutor  : Shutting down ExecutorService 'applicationTaskExecutor'
+2021-12-02 10:33:33.038  INFO 7738 --- [Thread-6] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2021-12-02 10:33:33.043  INFO 7738 --- [Thread-6] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2021-12-02 10:33:33.063  INFO 7738 --- [Thread-6] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2021-12-02 10:33:33.237  INFO 7738 --- [restartedMain] s.s.p.ProjectManagementApplication       : Starting ProjectManagementApplication on svobypc with PID 7738 (/home/svoby/Documents/project-management/target/classes started by svoby in /home/svoby/Documents/project-management)
+2021-12-02 10:33:33.238 DEBUG 7738 --- [restartedMain] s.s.p.ProjectManagementApplication       : Running with Spring Boot v2.1.4.RELEASE, Spring v5.1.6.RELEASE
+2021-12-02 10:33:33.238  INFO 7738 --- [restartedMain] s.s.p.ProjectManagementApplication       : The following profiles are active: dev
+2021-12-02 10:33:33.561  INFO 7738 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data repositories in DEFAULT mode.
+2021-12-02 10:33:33.570  INFO 7738 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 9ms. Found 3 repository interfaces.
+2021-12-02 10:33:33.646  INFO 7738 --- [restartedMain] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$b5b46680] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2021-12-02 10:33:33.648  INFO 7738 --- [restartedMain] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.hateoas.config.HateoasConfiguration' of type [org.springframework.hateoas.config.HateoasConfiguration$$EnhancerBySpringCGLIB$$3534b3b2] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2021-12-02 10:33:33.719  INFO 7738 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2021-12-02 10:33:33.720  INFO 7738 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2021-12-02 10:33:33.721  INFO 7738 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.17]
+2021-12-02 10:33:33.734  INFO 7738 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2021-12-02 10:33:33.734  INFO 7738 --- [restartedMain] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 494 ms
+2021-12-02 10:33:33.821  INFO 7738 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-2 - Starting...
+2021-12-02 10:33:33.832  INFO 7738 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-2 - Start completed.
+2021-12-02 10:33:33.839  INFO 7738 --- [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [
+	name: default
+	...]
+2021-12-02 10:33:33.851  INFO 7738 --- [restartedMain] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.PostgreSQL95Dialect
+2021-12-02 10:33:33.926  INFO 7738 --- [restartedMain] o.h.e.j.e.i.LobCreatorBuilderImpl        : HHH000421: Disabling contextual LOB creation as hibernate.jdbc.lob.non_contextual_creation is true
+2021-12-02 10:33:33.926  INFO 7738 --- [restartedMain] org.hibernate.type.BasicTypeRegistry     : HHH000270: Type registration [java.util.UUID] overrides previous : org.hibernate.type.UUIDBinaryType@49bf7e1f
+2021-12-02 10:33:34.020  INFO 7738 --- [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2021-12-02 10:33:34.290  INFO 7738 --- [restartedMain] o.s.s.web.DefaultSecurityFilterChain     : Creating filter chain: any request, [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@4b50356c, org.springframework.security.web.context.SecurityContextPersistenceFilter@7354fadf, org.springframework.security.web.header.HeaderWriterFilter@7303c4f3, org.springframework.security.web.csrf.CsrfFilter@159ddced, org.springframework.security.web.authentication.logout.LogoutFilter@5b593cd9, org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter@363820fd, org.springframework.security.web.authentication.ui.DefaultLoginPageGeneratingFilter@f8fadf5, org.springframework.security.web.authentication.ui.DefaultLogoutPageGeneratingFilter@37abe812, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@431ef42a, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@2ed784e6, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@3c71bd4e, org.springframework.security.web.session.SessionManagementFilter@855258c, org.springframework.security.web.access.ExceptionTranslationFilter@7ae94275, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@9804a3b]
+2021-12-02 10:33:34.344  INFO 7738 --- [restartedMain] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2021-12-02 10:33:34.356  WARN 7738 --- [restartedMain] aWebConfiguration$JpaWebMvcConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2021-12-02 10:33:34.417  INFO 7738 --- [restartedMain] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page template: index
+2021-12-02 10:33:34.517  INFO 7738 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2021-12-02 10:33:34.547  INFO 7738 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2021-12-02 10:33:34.548  INFO 7738 --- [restartedMain] s.s.p.ProjectManagementApplication       : Started ProjectManagementApplication in 1.343 seconds (JVM running for 910.799)
+2021-12-02 10:33:34.551  INFO 7738 --- [restartedMain] .ConditionEvaluationDeltaLoggingListener : Condition evaluation unchanged
+2021-12-02 10:33:37.982  INFO 7738 --- [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2021-12-02 10:33:37.984  INFO 7738 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2021-12-02 10:33:37.992  INFO 7738 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 8 ms
+2021-12-02 10:33:38.000  WARN 7738 --- [http-nio-8080-exec-1] .w.s.m.s.DefaultHandlerExceptionResolver : Resolved [org.springframework.web.HttpRequestMethodNotSupportedException: Request method 'PATCH' not supported]
+2021-12-02 10:33:38.003  WARN 7738 --- [http-nio-8080-exec-1] .w.s.m.s.DefaultHandlerExceptionResolver : Resolved [org.springframework.web.HttpRequestMethodNotSupportedException: Request method 'PATCH' not supported]
+2021-12-02 10:33:46.036  INFO 7738 --- [Thread-16] o.s.s.concurrent.ThreadPoolTaskExecutor  : Shutting down ExecutorService 'applicationTaskExecutor'
+2021-12-02 10:33:46.039  INFO 7738 --- [Thread-16] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2021-12-02 10:33:46.040  INFO 7738 --- [Thread-16] com.zaxxer.hikari.HikariDataSource       : HikariPool-2 - Shutdown initiated...
+2021-12-02 10:33:46.055  INFO 7738 --- [Thread-16] com.zaxxer.hikari.HikariDataSource       : HikariPool-2 - Shutdown completed.
+2021-12-02 10:33:51.682  INFO 8875 --- [restartedMain] s.s.p.ProjectManagementApplication       : Starting ProjectManagementApplication on svobypc with PID 8875 (/home/svoby/Documents/project-management/target/classes started by svoby in /home/svoby/Documents/project-management)
+2021-12-02 10:33:51.693 DEBUG 8875 --- [restartedMain] s.s.p.ProjectManagementApplication       : Running with Spring Boot v2.1.4.RELEASE, Spring v5.1.6.RELEASE
+2021-12-02 10:33:51.694  INFO 8875 --- [restartedMain] s.s.p.ProjectManagementApplication       : The following profiles are active: dev
+2021-12-02 10:33:51.777  INFO 8875 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2021-12-02 10:33:51.777  INFO 8875 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2021-12-02 10:33:52.885  INFO 8875 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data repositories in DEFAULT mode.
+2021-12-02 10:33:52.938  INFO 8875 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 47ms. Found 3 repository interfaces.
+2021-12-02 10:33:53.325  INFO 8875 --- [restartedMain] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$489e8a20] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2021-12-02 10:33:53.371  INFO 8875 --- [restartedMain] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.hateoas.config.HateoasConfiguration' of type [org.springframework.hateoas.config.HateoasConfiguration$$EnhancerBySpringCGLIB$$c81ed752] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2021-12-02 10:33:53.732  INFO 8875 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2021-12-02 10:33:53.757  INFO 8875 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2021-12-02 10:33:53.758  INFO 8875 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.17]
+2021-12-02 10:33:53.833  INFO 8875 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2021-12-02 10:33:53.834  INFO 8875 --- [restartedMain] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 2056 ms
+2021-12-02 10:33:54.067  INFO 8875 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2021-12-02 10:33:54.115  INFO 8875 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2021-12-02 10:33:54.162  INFO 8875 --- [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [
+	name: default
+	...]
+2021-12-02 10:33:54.193  INFO 8875 --- [restartedMain] org.hibernate.Version                    : HHH000412: Hibernate Core {5.3.9.Final}
+2021-12-02 10:33:54.194  INFO 8875 --- [restartedMain] org.hibernate.cfg.Environment            : HHH000206: hibernate.properties not found
+2021-12-02 10:33:54.280  INFO 8875 --- [restartedMain] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.0.4.Final}
+2021-12-02 10:33:54.415  INFO 8875 --- [restartedMain] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.PostgreSQL95Dialect
+2021-12-02 10:33:54.535  INFO 8875 --- [restartedMain] o.h.e.j.e.i.LobCreatorBuilderImpl        : HHH000421: Disabling contextual LOB creation as hibernate.jdbc.lob.non_contextual_creation is true
+2021-12-02 10:33:54.539  INFO 8875 --- [restartedMain] org.hibernate.type.BasicTypeRegistry     : HHH000270: Type registration [java.util.UUID] overrides previous : org.hibernate.type.UUIDBinaryType@4347903f
+2021-12-02 10:33:54.981  INFO 8875 --- [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2021-12-02 10:33:55.863  INFO 8875 --- [restartedMain] o.s.s.web.DefaultSecurityFilterChain     : Creating filter chain: any request, [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@3409ef0d, org.springframework.security.web.context.SecurityContextPersistenceFilter@22e593ca, org.springframework.security.web.header.HeaderWriterFilter@472fa461, org.springframework.security.web.csrf.CsrfFilter@125959aa, org.springframework.security.web.authentication.logout.LogoutFilter@26484bc1, org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter@3771f323, org.springframework.security.web.authentication.ui.DefaultLoginPageGeneratingFilter@188df9fd, org.springframework.security.web.authentication.ui.DefaultLogoutPageGeneratingFilter@53abe47b, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@4783c5ff, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@49da7036, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@690e7d37, org.springframework.security.web.session.SessionManagementFilter@44bfedfa, org.springframework.security.web.access.ExceptionTranslationFilter@73d74e60, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@5ea17c54]
+2021-12-02 10:33:56.103  INFO 8875 --- [restartedMain] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2021-12-02 10:33:56.157  WARN 8875 --- [restartedMain] aWebConfiguration$JpaWebMvcConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2021-12-02 10:33:56.451  INFO 8875 --- [restartedMain] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page template: index
+2021-12-02 10:33:56.781  INFO 8875 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2021-12-02 10:33:56.838  INFO 8875 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2021-12-02 10:33:56.842  INFO 8875 --- [restartedMain] s.s.p.ProjectManagementApplication       : Started ProjectManagementApplication in 5.76 seconds (JVM running for 7.142)
+2021-12-02 10:34:02.444  INFO 8875 --- [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2021-12-02 10:34:02.445  INFO 8875 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2021-12-02 10:34:02.460  INFO 8875 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 14 ms
+2021-12-02 10:34:02.528  INFO 8875 --- [http-nio-8080-exec-1] o.h.h.i.QueryTranslatorFactoryInitiator  : HHH000397: Using ASTQueryTranslatorFactory
+2021-12-02 10:34:26.471  WARN 8875 --- [http-nio-8080-exec-3] .w.s.m.s.DefaultHandlerExceptionResolver : Resolved [org.springframework.web.HttpRequestMethodNotSupportedException: Request method 'PATCH' not supported]
+2021-12-02 10:34:26.474  WARN 8875 --- [http-nio-8080-exec-3] .w.s.m.s.DefaultHandlerExceptionResolver : Resolved [org.springframework.web.HttpRequestMethodNotSupportedException: Request method 'PATCH' not supported]
+2021-12-02 10:34:56.790  WARN 8875 --- [http-nio-8080-exec-7] .w.s.m.s.DefaultHandlerExceptionResolver : Resolved [org.springframework.web.HttpRequestMethodNotSupportedException: Request method 'PATCH' not supported]
+2021-12-02 10:34:56.793  WARN 8875 --- [http-nio-8080-exec-7] .w.s.m.s.DefaultHandlerExceptionResolver : Resolved [org.springframework.web.HttpRequestMethodNotSupportedException: Request method 'PATCH' not supported]
+2021-12-02 10:36:52.627  INFO 8875 --- [Thread-9] o.s.s.concurrent.ThreadPoolTaskExecutor  : Shutting down ExecutorService 'applicationTaskExecutor'
+2021-12-02 10:36:52.630  INFO 8875 --- [Thread-9] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2021-12-02 10:36:52.634  INFO 8875 --- [Thread-9] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2021-12-02 10:36:52.658  INFO 8875 --- [Thread-9] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2021-12-02 10:37:06.012  INFO 9253 --- [restartedMain] s.s.p.ProjectManagementApplication       : Starting ProjectManagementApplication on svobypc with PID 9253 (/home/svoby/Documents/project-management/target/classes started by svoby in /home/svoby/Documents/project-management)
+2021-12-02 10:37:06.014 DEBUG 9253 --- [restartedMain] s.s.p.ProjectManagementApplication       : Running with Spring Boot v2.1.4.RELEASE, Spring v5.1.6.RELEASE
+2021-12-02 10:37:06.015  INFO 9253 --- [restartedMain] s.s.p.ProjectManagementApplication       : The following profiles are active: dev
+2021-12-02 10:37:06.098  INFO 9253 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2021-12-02 10:37:06.099  INFO 9253 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2021-12-02 10:37:07.147  INFO 9253 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data repositories in DEFAULT mode.
+2021-12-02 10:37:07.196  INFO 9253 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 43ms. Found 3 repository interfaces.
+2021-12-02 10:37:07.670  INFO 9253 --- [restartedMain] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$3c97c15d] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2021-12-02 10:37:07.721  INFO 9253 --- [restartedMain] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.hateoas.config.HateoasConfiguration' of type [org.springframework.hateoas.config.HateoasConfiguration$$EnhancerBySpringCGLIB$$bc180e8f] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2021-12-02 10:37:08.206  INFO 9253 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2021-12-02 10:37:08.246  INFO 9253 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2021-12-02 10:37:08.246  INFO 9253 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.17]
+2021-12-02 10:37:08.336  INFO 9253 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2021-12-02 10:37:08.336  INFO 9253 --- [restartedMain] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 2237 ms
+2021-12-02 10:37:08.651  INFO 9253 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2021-12-02 10:37:08.702  INFO 9253 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2021-12-02 10:37:08.752  INFO 9253 --- [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [
+	name: default
+	...]
+2021-12-02 10:37:08.786  INFO 9253 --- [restartedMain] org.hibernate.Version                    : HHH000412: Hibernate Core {5.3.9.Final}
+2021-12-02 10:37:08.787  INFO 9253 --- [restartedMain] org.hibernate.cfg.Environment            : HHH000206: hibernate.properties not found
+2021-12-02 10:37:08.876  INFO 9253 --- [restartedMain] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.0.4.Final}
+2021-12-02 10:37:08.973  INFO 9253 --- [restartedMain] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.PostgreSQL95Dialect
+2021-12-02 10:37:09.082  INFO 9253 --- [restartedMain] o.h.e.j.e.i.LobCreatorBuilderImpl        : HHH000421: Disabling contextual LOB creation as hibernate.jdbc.lob.non_contextual_creation is true
+2021-12-02 10:37:09.087  INFO 9253 --- [restartedMain] org.hibernate.type.BasicTypeRegistry     : HHH000270: Type registration [java.util.UUID] overrides previous : org.hibernate.type.UUIDBinaryType@eb8f03e
+2021-12-02 10:37:09.543  INFO 9253 --- [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2021-12-02 10:37:10.512  INFO 9253 --- [restartedMain] o.s.s.web.DefaultSecurityFilterChain     : Creating filter chain: any request, [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@3cf565c9, org.springframework.security.web.context.SecurityContextPersistenceFilter@13c75ee4, org.springframework.security.web.header.HeaderWriterFilter@233befc, org.springframework.security.web.csrf.CsrfFilter@5848ab3d, org.springframework.security.web.authentication.logout.LogoutFilter@3d48f11e, org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter@53dc1f07, org.springframework.security.web.authentication.ui.DefaultLoginPageGeneratingFilter@59307149, org.springframework.security.web.authentication.ui.DefaultLogoutPageGeneratingFilter@5c3d0ea4, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@139eb11, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@4bed7ed6, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@2b52fc41, org.springframework.security.web.session.SessionManagementFilter@3d399320, org.springframework.security.web.access.ExceptionTranslationFilter@1880e0bd, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@9bae86c]
+2021-12-02 10:37:10.702  INFO 9253 --- [restartedMain] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2021-12-02 10:37:10.745  WARN 9253 --- [restartedMain] aWebConfiguration$JpaWebMvcConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2021-12-02 10:37:10.956  INFO 9253 --- [restartedMain] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page template: index
+2021-12-02 10:37:11.294  INFO 9253 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2021-12-02 10:37:11.346  INFO 9253 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2021-12-02 10:37:11.350  INFO 9253 --- [restartedMain] s.s.p.ProjectManagementApplication       : Started ProjectManagementApplication in 5.852 seconds (JVM running for 7.109)
+2021-12-02 10:38:03.064  INFO 9253 --- [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2021-12-02 10:38:03.065  INFO 9253 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2021-12-02 10:38:03.087  INFO 9253 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 22 ms
+2021-12-02 10:38:03.114  WARN 9253 --- [http-nio-8080-exec-1] .w.s.m.s.DefaultHandlerExceptionResolver : Resolved [org.springframework.web.HttpRequestMethodNotSupportedException: Request method 'PATCH' not supported]
+2021-12-02 10:38:03.121  WARN 9253 --- [http-nio-8080-exec-1] .w.s.m.s.DefaultHandlerExceptionResolver : Resolved [org.springframework.web.HttpRequestMethodNotSupportedException: Request method 'PATCH' not supported]
+2021-12-02 10:45:29.946  INFO 9253 --- [Thread-9] o.s.s.concurrent.ThreadPoolTaskExecutor  : Shutting down ExecutorService 'applicationTaskExecutor'
+2021-12-02 10:45:29.949  INFO 9253 --- [Thread-9] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2021-12-02 10:45:29.954  INFO 9253 --- [Thread-9] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2021-12-02 10:45:29.972  INFO 9253 --- [Thread-9] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2021-12-02 10:45:46.010  INFO 9740 --- [restartedMain] s.s.p.ProjectManagementApplication       : Starting ProjectManagementApplication on svobypc with PID 9740 (/home/svoby/Documents/project-management/target/classes started by svoby in /home/svoby/Documents/project-management)
+2021-12-02 10:45:46.020 DEBUG 9740 --- [restartedMain] s.s.p.ProjectManagementApplication       : Running with Spring Boot v2.1.4.RELEASE, Spring v5.1.6.RELEASE
+2021-12-02 10:45:46.021  INFO 9740 --- [restartedMain] s.s.p.ProjectManagementApplication       : The following profiles are active: dev
+2021-12-02 10:45:46.101  INFO 9740 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2021-12-02 10:45:46.101  INFO 9740 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2021-12-02 10:45:47.434  INFO 9740 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data repositories in DEFAULT mode.
+2021-12-02 10:45:47.488  INFO 9740 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 49ms. Found 3 repository interfaces.
+2021-12-02 10:45:47.954  INFO 9740 --- [restartedMain] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$29bd8a1a] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2021-12-02 10:45:48.005  INFO 9740 --- [restartedMain] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.hateoas.config.HateoasConfiguration' of type [org.springframework.hateoas.config.HateoasConfiguration$$EnhancerBySpringCGLIB$$a93dd74c] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2021-12-02 10:45:48.510  INFO 9740 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2021-12-02 10:45:48.541  INFO 9740 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2021-12-02 10:45:48.541  INFO 9740 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.17]
+2021-12-02 10:45:48.636  INFO 9740 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2021-12-02 10:45:48.636  INFO 9740 --- [restartedMain] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 2533 ms
+2021-12-02 10:45:48.901  INFO 9740 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2021-12-02 10:45:48.954  INFO 9740 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2021-12-02 10:45:49.006  INFO 9740 --- [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [
+	name: default
+	...]
+2021-12-02 10:45:49.043  INFO 9740 --- [restartedMain] org.hibernate.Version                    : HHH000412: Hibernate Core {5.3.9.Final}
+2021-12-02 10:45:49.044  INFO 9740 --- [restartedMain] org.hibernate.cfg.Environment            : HHH000206: hibernate.properties not found
+2021-12-02 10:45:49.152  INFO 9740 --- [restartedMain] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.0.4.Final}
+2021-12-02 10:45:49.256  INFO 9740 --- [restartedMain] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.PostgreSQL95Dialect
+2021-12-02 10:45:49.406  INFO 9740 --- [restartedMain] o.h.e.j.e.i.LobCreatorBuilderImpl        : HHH000421: Disabling contextual LOB creation as hibernate.jdbc.lob.non_contextual_creation is true
+2021-12-02 10:45:49.412  INFO 9740 --- [restartedMain] org.hibernate.type.BasicTypeRegistry     : HHH000270: Type registration [java.util.UUID] overrides previous : org.hibernate.type.UUIDBinaryType@628fa51a
+2021-12-02 10:45:49.906  INFO 9740 --- [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2021-12-02 10:45:50.853  INFO 9740 --- [restartedMain] o.s.s.web.DefaultSecurityFilterChain     : Creating filter chain: any request, [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@4e9c0738, org.springframework.security.web.context.SecurityContextPersistenceFilter@1539773f, org.springframework.security.web.header.HeaderWriterFilter@48e18077, org.springframework.security.web.csrf.CsrfFilter@76dd22ee, org.springframework.security.web.authentication.logout.LogoutFilter@74b58ba2, org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter@6f6519bc, org.springframework.security.web.authentication.ui.DefaultLoginPageGeneratingFilter@907284, org.springframework.security.web.authentication.ui.DefaultLogoutPageGeneratingFilter@70923c92, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@6f2f0819, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@6d53a450, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@6addaeaa, org.springframework.security.web.session.SessionManagementFilter@3796f387, org.springframework.security.web.access.ExceptionTranslationFilter@5b282b7e, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@14182d2c]
+2021-12-02 10:45:51.016  INFO 9740 --- [restartedMain] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2021-12-02 10:45:51.053  WARN 9740 --- [restartedMain] aWebConfiguration$JpaWebMvcConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2021-12-02 10:45:51.235  INFO 9740 --- [restartedMain] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page template: index
+2021-12-02 10:45:51.525  INFO 9740 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2021-12-02 10:45:51.574  INFO 9740 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2021-12-02 10:45:51.579  INFO 9740 --- [restartedMain] s.s.p.ProjectManagementApplication       : Started ProjectManagementApplication in 6.405 seconds (JVM running for 7.714)
+2021-12-02 10:46:00.429  INFO 9740 --- [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2021-12-02 10:46:00.429  INFO 9740 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2021-12-02 10:46:00.448  INFO 9740 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 18 ms
+2021-12-02 10:46:05.011  INFO 9740 --- [http-nio-8080-exec-3] o.h.h.i.QueryTranslatorFactoryInitiator  : HHH000397: Using ASTQueryTranslatorFactory
+2021-12-02 10:46:24.161 DEBUG 9740 --- [http-nio-8080-exec-5] s.s.p.logging.ApplicationLoggerAspect    : 
+ ------------------------------------------ 
+2021-12-02 10:46:24.163 DEBUG 9740 --- [http-nio-8080-exec-5] s.s.p.logging.ApplicationLoggerAspect    :  Před metodou 
+ svoby.spring.projectmanagement.controllers.IndexController, zobrazitIndex () with arguments[s] = [{}]
+2021-12-02 10:46:24.164 DEBUG 9740 --- [http-nio-8080-exec-5] s.s.p.logging.ApplicationLoggerAspect    :  ---------------------------------------------- 
+ 
+ 
+
+2021-12-02 10:46:24.225 DEBUG 9740 --- [http-nio-8080-exec-5] s.s.p.logging.ApplicationLoggerAspect    :  Po metodě 
+ svoby.spring.projectmanagement.controllers.IndexController, zobrazitIndex () with arguments[s] = [{verzeCislo=0.0.1, projektStatusPocet=[{"stav":"Nezahájen","pocet":8}], projektyList=[svoby.spring.projectmanagement.domain.Projekt@7efa3df5, svoby.spring.projectmanagement.domain.Projekt@28a4d37b, svoby.spring.projectmanagement.domain.Projekt@5dd81889, svoby.spring.projectmanagement.domain.Projekt@75ba647e, svoby.spring.projectmanagement.domain.Projekt@5a00eaa9, svoby.spring.projectmanagement.domain.Projekt@5431c599, svoby.spring.projectmanagement.domain.Projekt@49b093c6, svoby.spring.projectmanagement.domain.Projekt@6f8f971a], zamestnanciListProjektyPocet=[org.springframework.data.jpa.repository.query.AbstractJpaQuery$TupleConverter$TupleBackedMap@17ae1847, org.springframework.data.jpa.repository.query.AbstractJpaQuery$TupleConverter$TupleBackedMap@38e93f76, org.springframework.data.jpa.repository.query.AbstractJpaQuery$TupleConverter$TupleBackedMap@6e8eebb1, org.springframework.data.jpa.repository.query.AbstractJpaQuery$TupleConverter$TupleBackedMap@2acf5d36, org.springframework.data.jpa.repository.query.AbstractJpaQuery$TupleConverter$TupleBackedMap@4d441408, org.springframework.data.jpa.repository.query.AbstractJpaQuery$TupleConverter$TupleBackedMap@3ca79059, org.springframework.data.jpa.repository.query.AbstractJpaQuery$TupleConverter$TupleBackedMap@25ed271f, org.springframework.data.jpa.repository.query.AbstractJpaQuery$TupleConverter$TupleBackedMap@759bf879, org.springframework.data.jpa.repository.query.AbstractJpaQuery$TupleConverter$TupleBackedMap@18925696, org.springframework.data.jpa.repository.query.AbstractJpaQuery$TupleConverter$TupleBackedMap@18b72885]}]
+2021-12-02 10:46:24.226 DEBUG 9740 --- [http-nio-8080-exec-5] s.s.p.logging.ApplicationLoggerAspect    :  ---------------------------------------------- 
+ 
+ 
+
+2021-12-02 10:53:06.541  INFO 9740 --- [Thread-6] o.s.s.concurrent.ThreadPoolTaskExecutor  : Shutting down ExecutorService 'applicationTaskExecutor'
+2021-12-02 10:53:06.545  INFO 9740 --- [Thread-6] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2021-12-02 10:53:06.549  INFO 9740 --- [Thread-6] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2021-12-02 10:53:06.563  INFO 9740 --- [Thread-6] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2021-12-02 10:53:06.797  INFO 9740 --- [restartedMain] s.s.p.ProjectManagementApplication       : Starting ProjectManagementApplication on svobypc with PID 9740 (/home/svoby/Documents/project-management/target/classes started by svoby in /home/svoby/Documents/project-management)
+2021-12-02 10:53:06.797 DEBUG 9740 --- [restartedMain] s.s.p.ProjectManagementApplication       : Running with Spring Boot v2.1.4.RELEASE, Spring v5.1.6.RELEASE
+2021-12-02 10:53:06.797  INFO 9740 --- [restartedMain] s.s.p.ProjectManagementApplication       : The following profiles are active: dev
+2021-12-02 10:53:07.132  INFO 9740 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data repositories in DEFAULT mode.
+2021-12-02 10:53:07.142  INFO 9740 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 10ms. Found 3 repository interfaces.
+2021-12-02 10:53:07.239  INFO 9740 --- [restartedMain] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$29bd8a1a] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2021-12-02 10:53:07.242  INFO 9740 --- [restartedMain] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.hateoas.config.HateoasConfiguration' of type [org.springframework.hateoas.config.HateoasConfiguration$$EnhancerBySpringCGLIB$$a93dd74c] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2021-12-02 10:53:07.340  INFO 9740 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2021-12-02 10:53:07.342  INFO 9740 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2021-12-02 10:53:07.343  INFO 9740 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.17]
+2021-12-02 10:53:07.354  INFO 9740 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2021-12-02 10:53:07.354  INFO 9740 --- [restartedMain] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 554 ms
+2021-12-02 10:53:07.443  INFO 9740 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-2 - Starting...
+2021-12-02 10:53:07.452  INFO 9740 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-2 - Start completed.
+2021-12-02 10:53:07.463  INFO 9740 --- [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [
+	name: default
+	...]
+2021-12-02 10:53:07.472  INFO 9740 --- [restartedMain] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.PostgreSQL95Dialect
+2021-12-02 10:53:07.545  INFO 9740 --- [restartedMain] o.h.e.j.e.i.LobCreatorBuilderImpl        : HHH000421: Disabling contextual LOB creation as hibernate.jdbc.lob.non_contextual_creation is true
+2021-12-02 10:53:07.546  INFO 9740 --- [restartedMain] org.hibernate.type.BasicTypeRegistry     : HHH000270: Type registration [java.util.UUID] overrides previous : org.hibernate.type.UUIDBinaryType@628fa51a
+2021-12-02 10:53:07.645  INFO 9740 --- [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2021-12-02 10:53:07.928  INFO 9740 --- [restartedMain] o.s.s.web.DefaultSecurityFilterChain     : Creating filter chain: any request, [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@317abd41, org.springframework.security.web.context.SecurityContextPersistenceFilter@59bd2919, org.springframework.security.web.header.HeaderWriterFilter@5b1f3324, org.springframework.security.web.csrf.CsrfFilter@4596a7e0, org.springframework.security.web.authentication.logout.LogoutFilter@7aac7e39, org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter@4330a3c4, org.springframework.security.web.authentication.ui.DefaultLoginPageGeneratingFilter@4a69638c, org.springframework.security.web.authentication.ui.DefaultLogoutPageGeneratingFilter@1b77c9f2, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@603237bf, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@4296ae8e, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@7c1bc2a3, org.springframework.security.web.session.SessionManagementFilter@29e42262, org.springframework.security.web.access.ExceptionTranslationFilter@602b23a2, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@549663bc]
+2021-12-02 10:53:07.968  INFO 9740 --- [restartedMain] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2021-12-02 10:53:07.976  WARN 9740 --- [restartedMain] aWebConfiguration$JpaWebMvcConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2021-12-02 10:53:08.032  INFO 9740 --- [restartedMain] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page template: index
+2021-12-02 10:53:08.111  INFO 9740 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2021-12-02 10:53:08.139  INFO 9740 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2021-12-02 10:53:08.140  INFO 9740 --- [restartedMain] s.s.p.ProjectManagementApplication       : Started ProjectManagementApplication in 1.413 seconds (JVM running for 444.275)
+2021-12-02 10:53:08.146  INFO 9740 --- [restartedMain] .ConditionEvaluationDeltaLoggingListener : Condition evaluation unchanged
+2021-12-02 10:58:24.949  INFO 9740 --- [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2021-12-02 10:58:24.949  INFO 9740 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2021-12-02 10:58:24.956  INFO 9740 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 7 ms
+2021-12-02 10:58:24.959 DEBUG 9740 --- [http-nio-8080-exec-1] s.s.p.logging.ApplicationLoggerAspect    : 
+ ------------------------------------------ 
+2021-12-02 10:58:24.959 DEBUG 9740 --- [http-nio-8080-exec-1] s.s.p.logging.ApplicationLoggerAspect    :  Před metodou 
+ svoby.spring.projectmanagement.controllers.IndexController, zobrazitIndex () with arguments[s] = [{}]
+2021-12-02 10:58:24.960 DEBUG 9740 --- [http-nio-8080-exec-1] s.s.p.logging.ApplicationLoggerAspect    :  ---------------------------------------------- 
+ 
+ 
+
+2021-12-02 10:58:24.969  INFO 9740 --- [http-nio-8080-exec-1] o.h.h.i.QueryTranslatorFactoryInitiator  : HHH000397: Using ASTQueryTranslatorFactory
+2021-12-02 10:58:24.988 DEBUG 9740 --- [http-nio-8080-exec-1] s.s.p.logging.ApplicationLoggerAspect    :  Po metodě 
+ svoby.spring.projectmanagement.controllers.IndexController, zobrazitIndex () with arguments[s] = [{verzeCislo=0.0.1, projektStatusPocet=[{"stav":"Nezahájen","pocet":8}], projektyList=[svoby.spring.projectmanagement.domain.Projekt@28addc51, svoby.spring.projectmanagement.domain.Projekt@408ec811, svoby.spring.projectmanagement.domain.Projekt@654ccd37, svoby.spring.projectmanagement.domain.Projekt@57341fac, svoby.spring.projectmanagement.domain.Projekt@113d1e4f, svoby.spring.projectmanagement.domain.Projekt@27c58239, svoby.spring.projectmanagement.domain.Projekt@24e3c683, svoby.spring.projectmanagement.domain.Projekt@535d64cc], zamestnanciListProjektyPocet=[org.springframework.data.jpa.repository.query.AbstractJpaQuery$TupleConverter$TupleBackedMap@45eb492c, org.springframework.data.jpa.repository.query.AbstractJpaQuery$TupleConverter$TupleBackedMap@176460c4, org.springframework.data.jpa.repository.query.AbstractJpaQuery$TupleConverter$TupleBackedMap@50eb98df, org.springframework.data.jpa.repository.query.AbstractJpaQuery$TupleConverter$TupleBackedMap@4fd609c7, org.springframework.data.jpa.repository.query.AbstractJpaQuery$TupleConverter$TupleBackedMap@4624c02d, org.springframework.data.jpa.repository.query.AbstractJpaQuery$TupleConverter$TupleBackedMap@72f2ea6d, org.springframework.data.jpa.repository.query.AbstractJpaQuery$TupleConverter$TupleBackedMap@7e53b98c, org.springframework.data.jpa.repository.query.AbstractJpaQuery$TupleConverter$TupleBackedMap@1341fb0, org.springframework.data.jpa.repository.query.AbstractJpaQuery$TupleConverter$TupleBackedMap@61718213, org.springframework.data.jpa.repository.query.AbstractJpaQuery$TupleConverter$TupleBackedMap@4b5bdd2]}]
+2021-12-02 10:58:24.988 DEBUG 9740 --- [http-nio-8080-exec-1] s.s.p.logging.ApplicationLoggerAspect    :  ---------------------------------------------- 
+ 
+ 
+
+2021-12-02 10:58:48.312 DEBUG 9740 --- [http-nio-8080-exec-6] s.s.p.logging.ApplicationLoggerAspect    : 
+ ------------------------------------------ 
+2021-12-02 10:58:48.313 DEBUG 9740 --- [http-nio-8080-exec-6] s.s.p.logging.ApplicationLoggerAspect    :  Před metodou 
+ svoby.spring.projectmanagement.controllers.IndexController, zobrazitIndex () with arguments[s] = [{}]
+2021-12-02 10:58:48.313 DEBUG 9740 --- [http-nio-8080-exec-6] s.s.p.logging.ApplicationLoggerAspect    :  ---------------------------------------------- 
+ 
+ 
+
+2021-12-02 10:58:48.330 DEBUG 9740 --- [http-nio-8080-exec-6] s.s.p.logging.ApplicationLoggerAspect    :  Po metodě 
+ svoby.spring.projectmanagement.controllers.IndexController, zobrazitIndex () with arguments[s] = [{verzeCislo=0.0.1, projektStatusPocet=[{"stav":"Nezahájen","pocet":8}], projektyList=[svoby.spring.projectmanagement.domain.Projekt@2795d3af, svoby.spring.projectmanagement.domain.Projekt@2bee4fa1, svoby.spring.projectmanagement.domain.Projekt@76669cd1, svoby.spring.projectmanagement.domain.Projekt@6021620c, svoby.spring.projectmanagement.domain.Projekt@69a0dd0c, svoby.spring.projectmanagement.domain.Projekt@30ea04de, svoby.spring.projectmanagement.domain.Projekt@76d55dc2, svoby.spring.projectmanagement.domain.Projekt@16f96b32], zamestnanciListProjektyPocet=[org.springframework.data.jpa.repository.query.AbstractJpaQuery$TupleConverter$TupleBackedMap@df809df, org.springframework.data.jpa.repository.query.AbstractJpaQuery$TupleConverter$TupleBackedMap@1f9c6871, org.springframework.data.jpa.repository.query.AbstractJpaQuery$TupleConverter$TupleBackedMap@60bf8d6b, org.springframework.data.jpa.repository.query.AbstractJpaQuery$TupleConverter$TupleBackedMap@27a0856d, org.springframework.data.jpa.repository.query.AbstractJpaQuery$TupleConverter$TupleBackedMap@6adbd6b7, org.springframework.data.jpa.repository.query.AbstractJpaQuery$TupleConverter$TupleBackedMap@1678e47d, org.springframework.data.jpa.repository.query.AbstractJpaQuery$TupleConverter$TupleBackedMap@a30e70c, org.springframework.data.jpa.repository.query.AbstractJpaQuery$TupleConverter$TupleBackedMap@291890ca, org.springframework.data.jpa.repository.query.AbstractJpaQuery$TupleConverter$TupleBackedMap@1dc29530, org.springframework.data.jpa.repository.query.AbstractJpaQuery$TupleConverter$TupleBackedMap@4c48d1f9]}]
+2021-12-02 10:58:48.332 DEBUG 9740 --- [http-nio-8080-exec-6] s.s.p.logging.ApplicationLoggerAspect    :  ---------------------------------------------- 
+ 
+ 
+
+2021-12-02 10:59:28.133 DEBUG 9740 --- [http-nio-8080-exec-9] s.s.p.logging.ApplicationLoggerAspect    : 
+ ------------------------------------------ 
+2021-12-02 10:59:28.134 DEBUG 9740 --- [http-nio-8080-exec-9] s.s.p.logging.ApplicationLoggerAspect    :  Před metodou 
+ svoby.spring.projectmanagement.controllers.IndexController, zobrazitIndex () with arguments[s] = [{}]
+2021-12-02 10:59:28.134 DEBUG 9740 --- [http-nio-8080-exec-9] s.s.p.logging.ApplicationLoggerAspect    :  ---------------------------------------------- 
+ 
+ 
+
+2021-12-02 10:59:28.148 DEBUG 9740 --- [http-nio-8080-exec-9] s.s.p.logging.ApplicationLoggerAspect    :  Po metodě 
+ svoby.spring.projectmanagement.controllers.IndexController, zobrazitIndex () with arguments[s] = [{verzeCislo=0.0.1, projektStatusPocet=[{"stav":"Nezahájen","pocet":8}], projektyList=[svoby.spring.projectmanagement.domain.Projekt@75a30a4d, svoby.spring.projectmanagement.domain.Projekt@1553debe, svoby.spring.projectmanagement.domain.Projekt@d273263, svoby.spring.projectmanagement.domain.Projekt@44124769, svoby.spring.projectmanagement.domain.Projekt@290eccc4, svoby.spring.projectmanagement.domain.Projekt@22a34175, svoby.spring.projectmanagement.domain.Projekt@1623db68, svoby.spring.projectmanagement.domain.Projekt@405cffca], zamestnanciListProjektyPocet=[org.springframework.data.jpa.repository.query.AbstractJpaQuery$TupleConverter$TupleBackedMap@31329fda, org.springframework.data.jpa.repository.query.AbstractJpaQuery$TupleConverter$TupleBackedMap@79ed18f8, org.springframework.data.jpa.repository.query.AbstractJpaQuery$TupleConverter$TupleBackedMap@3fe7d73c, org.springframework.data.jpa.repository.query.AbstractJpaQuery$TupleConverter$TupleBackedMap@7c2ba626, org.springframework.data.jpa.repository.query.AbstractJpaQuery$TupleConverter$TupleBackedMap@59c23a36, org.springframework.data.jpa.repository.query.AbstractJpaQuery$TupleConverter$TupleBackedMap@48f9d32e, org.springframework.data.jpa.repository.query.AbstractJpaQuery$TupleConverter$TupleBackedMap@4926a33a, org.springframework.data.jpa.repository.query.AbstractJpaQuery$TupleConverter$TupleBackedMap@689d26ae, org.springframework.data.jpa.repository.query.AbstractJpaQuery$TupleConverter$TupleBackedMap@2046a201, org.springframework.data.jpa.repository.query.AbstractJpaQuery$TupleConverter$TupleBackedMap@26206584]}]
+2021-12-02 10:59:28.149 DEBUG 9740 --- [http-nio-8080-exec-9] s.s.p.logging.ApplicationLoggerAspect    :  ---------------------------------------------- 
+ 
+ 
+
+2021-12-02 10:59:58.966 DEBUG 9740 --- [http-nio-8080-exec-8] s.s.p.logging.ApplicationLoggerAspect    : 
+ ------------------------------------------ 
+2021-12-02 10:59:58.966 DEBUG 9740 --- [http-nio-8080-exec-8] s.s.p.logging.ApplicationLoggerAspect    :  Před metodou 
+ svoby.spring.projectmanagement.controllers.IndexController, zobrazitIndex () with arguments[s] = [{}]
+2021-12-02 10:59:58.966 DEBUG 9740 --- [http-nio-8080-exec-8] s.s.p.logging.ApplicationLoggerAspect    :  ---------------------------------------------- 
+ 
+ 
+
+2021-12-02 10:59:58.977 DEBUG 9740 --- [http-nio-8080-exec-8] s.s.p.logging.ApplicationLoggerAspect    :  Po metodě 
+ svoby.spring.projectmanagement.controllers.IndexController, zobrazitIndex () with arguments[s] = [{verzeCislo=0.0.1, projektStatusPocet=[{"stav":"Nezahájen","pocet":8}], projektyList=[svoby.spring.projectmanagement.domain.Projekt@5da0882a, svoby.spring.projectmanagement.domain.Projekt@7a8c28c2, svoby.spring.projectmanagement.domain.Projekt@51e1743f, svoby.spring.projectmanagement.domain.Projekt@679f1363, svoby.spring.projectmanagement.domain.Projekt@3e272662, svoby.spring.projectmanagement.domain.Projekt@2576d35c, svoby.spring.projectmanagement.domain.Projekt@7f6c0b41, svoby.spring.projectmanagement.domain.Projekt@60f71bc4], zamestnanciListProjektyPocet=[org.springframework.data.jpa.repository.query.AbstractJpaQuery$TupleConverter$TupleBackedMap@3790c97f, org.springframework.data.jpa.repository.query.AbstractJpaQuery$TupleConverter$TupleBackedMap@2b7b8a2b, org.springframework.data.jpa.repository.query.AbstractJpaQuery$TupleConverter$TupleBackedMap@3465bf31, org.springframework.data.jpa.repository.query.AbstractJpaQuery$TupleConverter$TupleBackedMap@11751f3a, org.springframework.data.jpa.repository.query.AbstractJpaQuery$TupleConverter$TupleBackedMap@201ff75a, org.springframework.data.jpa.repository.query.AbstractJpaQuery$TupleConverter$TupleBackedMap@57c21ba0, org.springframework.data.jpa.repository.query.AbstractJpaQuery$TupleConverter$TupleBackedMap@4ec7ba5e, org.springframework.data.jpa.repository.query.AbstractJpaQuery$TupleConverter$TupleBackedMap@77f2e073, org.springframework.data.jpa.repository.query.AbstractJpaQuery$TupleConverter$TupleBackedMap@28086cf0]}]
+2021-12-02 10:59:58.978 DEBUG 9740 --- [http-nio-8080-exec-8] s.s.p.logging.ApplicationLoggerAspect    :  ---------------------------------------------- 
+ 
+ 
+
+2021-12-02 11:00:18.044 DEBUG 9740 --- [http-nio-8080-exec-4] s.s.p.logging.ApplicationLoggerAspect    : 
+ ------------------------------------------ 
+2021-12-02 11:00:18.045 DEBUG 9740 --- [http-nio-8080-exec-4] s.s.p.logging.ApplicationLoggerAspect    :  Před metodou 
+ svoby.spring.projectmanagement.controllers.IndexController, zobrazitIndex () with arguments[s] = [{}]
+2021-12-02 11:00:18.045 DEBUG 9740 --- [http-nio-8080-exec-4] s.s.p.logging.ApplicationLoggerAspect    :  ---------------------------------------------- 
+ 
+ 
+
+2021-12-02 11:00:18.060 DEBUG 9740 --- [http-nio-8080-exec-4] s.s.p.logging.ApplicationLoggerAspect    :  Po metodě 
+ svoby.spring.projectmanagement.controllers.IndexController, zobrazitIndex () with arguments[s] = [{verzeCislo=0.0.1, projektStatusPocet=[{"stav":"Nezahájen","pocet":8}], projektyList=[svoby.spring.projectmanagement.domain.Projekt@f8081ad, svoby.spring.projectmanagement.domain.Projekt@3321dfed, svoby.spring.projectmanagement.domain.Projekt@2cce6fa8, svoby.spring.projectmanagement.domain.Projekt@57ae984d, svoby.spring.projectmanagement.domain.Projekt@5c28e6fc, svoby.spring.projectmanagement.domain.Projekt@614b9423, svoby.spring.projectmanagement.domain.Projekt@3e27048d, svoby.spring.projectmanagement.domain.Projekt@1de88ff4], zamestnanciListProjektyPocet=[org.springframework.data.jpa.repository.query.AbstractJpaQuery$TupleConverter$TupleBackedMap@66fa7f13, org.springframework.data.jpa.repository.query.AbstractJpaQuery$TupleConverter$TupleBackedMap@31609b13, org.springframework.data.jpa.repository.query.AbstractJpaQuery$TupleConverter$TupleBackedMap@fe353f6, org.springframework.data.jpa.repository.query.AbstractJpaQuery$TupleConverter$TupleBackedMap@6143baca, org.springframework.data.jpa.repository.query.AbstractJpaQuery$TupleConverter$TupleBackedMap@54744316, org.springframework.data.jpa.repository.query.AbstractJpaQuery$TupleConverter$TupleBackedMap@61f9e288, org.springframework.data.jpa.repository.query.AbstractJpaQuery$TupleConverter$TupleBackedMap@749061a2, org.springframework.data.jpa.repository.query.AbstractJpaQuery$TupleConverter$TupleBackedMap@8f90010]}]
+2021-12-02 11:00:18.062 DEBUG 9740 --- [http-nio-8080-exec-4] s.s.p.logging.ApplicationLoggerAspect    :  ---------------------------------------------- 
+ 
+ 
+

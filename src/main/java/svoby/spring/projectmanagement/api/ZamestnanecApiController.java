@@ -47,4 +47,37 @@ public class ZamestnanecApiController {
         return zamestnanecRepository.save(zamestnanec);
     }
 
+    @PutMapping(consumes = "application/json")
+    @ResponseStatus(HttpStatus.OK)
+    public Zamestnanec update(@RequestBody Zamestnanec zamestnanec){
+        return zamestnanecRepository.save(zamestnanec);
+    }
+
+    @PatchMapping(path = "/{id}", consumes = "application/json")
+    public Zamestnanec partialUpdate(@PathVariable("id") Long id, @RequestBody Zamestnanec zPatch){
+        Zamestnanec z = zamestnanecRepository.findById(id).get();
+
+        if(zPatch.getEmail() != null){
+            z.setEmail(zPatch.getEmail());
+        }
+        if(zPatch.getJmeno() != null){
+            z.setJmeno(zPatch.getJmeno());
+        }
+        if(zPatch.getPrijmeni() != null){
+            z.setPrijmeni(zPatch.getPrijmeni());
+        }
+
+        return zamestnanecRepository.save(z);
+    }
+
+    @DeleteMapping("/{id}")
+    @ResponseStatus(HttpStatus.NO_CONTENT)
+    public void delete(@PathVariable("id") Long id){
+        try{
+            zamestnanecRepository.deleteById(id);
+        }catch (EmptyResultDataAccessException e) {
+
+        }
+    }
+
 }
